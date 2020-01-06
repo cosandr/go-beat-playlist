@@ -1,7 +1,10 @@
 package types
 
 import (
+	"crypto/sha1"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"strings"
 )
 
@@ -42,12 +45,12 @@ func (p *Playlist) ParseRaw() {
 				tmp.hash = str
 			case "key":
 				tmp.key = str
+			default:
+				continue
 			}
 		}
-		if tmp != (Song{}) {
-			p.Songs = append(p.Songs, tmp)
-			tmp = Song{}
-		}
+		p.Songs = append(p.Songs, tmp)
+		tmp = Song{}
 	}
 }
 
@@ -61,6 +64,23 @@ func (p *Playlist) String() string {
 	return ret
 }
 
+// Beatmap holds information about a song's map, its difficulty, path to the map file and type (standard, 360, lightshow)
+type Beatmap struct {
+	Difficulty string
+	File string
+	Type string
+}
+
+// String returns a pretty type: difficulty string
+func (bm *Beatmap) String() string {
+	return fmt.Sprintf("\n%s: %s", bm.Type, bm.Difficulty)
+}
+
+// Debug returns a string with all of this map's values
+func (bm *Beatmap) Debug() string {
+	return fmt.Sprintf("Type %s, %s\n%s", bm.Type, bm.Difficulty, bm.File)
+}
+
 // Song holds information about each song
 type Song struct {
 	Path  string
@@ -69,6 +89,71 @@ type Song struct {
 	Name  string
 	PP    float64
 	Stars float64
+	raw map[string]interface{}
+	Maps []Beatmap
+}
+
+// CalcHash calculates this song's hash using its Path
+func (s *Song) CalcHash() {
+	// SHA1 hash of info.dat + all difficulties
+	// f, err := os.Open(s.Path + "/info.dat")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
+
+	// h := sha1.New()
+	// if _, err := io.Copy(h, f); err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
+	// f.Close()
+	file, err := ioutil.ReadFile(s.Path + "/info.dat")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	h := sha1.New()
+	h.Write(file)
+
+	s.hash = fmt.Sprintf("%x", h.Sum(nil))
+}
+
+// ParseRaw parses this song's info.dat
+func (s *Song) ParseRaw() {
+	file, err := ioutil.ReadFile(s.Path + "/info.dat")
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	err = json.Unmarshal(file, &s.raw)
+	if err != nil {
+		return
+	}
+	var bm Beatmap
+	for _, sets := range s.raw["_difficultyBeatmapSets"].([]interface{}) {
+		for k, v := range sets.(map[string]interface{}) {
+			switch k {
+			case "_beatmapCharacteristicName":
+				bm.Type = v.(string)
+			case "_difficultyBeatmaps":
+				for _, diff := range v.([]interface{}) {
+					for kk, vv := range diff.(map[string]interface{}) {
+						switch kk {
+						case "_difficulty":
+							bm.Difficulty = vv.(string)
+						case "_beatmapFilename":
+							bm.File = s.Path + "/" + vv.(string)
+						}
+					}
+				}
+			default:
+				continue
+			}
+		}
+		s.Maps = append(s.Maps, bm)
+		bm = Beatmap{}
+	}
 }
 
 // Hash returns the hash in lower-case
@@ -94,10 +179,18 @@ func (s *Song) String() string {
 	} else if len(s.hash) > 0 {
 		ret += fmt.Sprintf(" [%s]", s.Hash())
 	}
+	for _, m := range s.Maps {
+		ret += m.String()
+	}
 	return ret
 }
 
 // Debug returns a string with all values in song
 func (s *Song) Debug() string {
-	return fmt.Sprintf("N: %s, K: %s, H: %s\nPP: %.2f, S: %.2f", s.Name, s.Key(), s.Hash(), s.PP, s.Stars)
+	var ret string
+	ret += fmt.Sprintf("N: %s, K: %s, H: %s\nPP: %.2f, S: %.2f\n", s.Name, s.Key(), s.Hash(), s.PP, s.Stars)
+	for _, m := range s.Maps {
+		ret += m.Debug()
+	}
+	return ret
 }

@@ -78,13 +78,17 @@ func main() {
 	endTimes["Read playlists"] = make(chan time.Time, 1)
 	endTimes["Read playlists"] <- time.Now()
 
-	printAllPlaylists(allPlaylists)
+	// printAllPlaylists(allPlaylists)
+	var _ = allPlaylists
 
+	s := mt.Song{Path: "C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Beat Saber_Data/CustomLevels/3dc (Something Just Like This - Jizzmo)"}
+	s.ParseRaw()
+	fmt.Println(s.String())
 	endTimes["MAIN"] = make(chan time.Time, 1)
 	endTimes["MAIN"] <- time.Now()
 	if timing {
 		for k, v := range endTimes {
-			fmt.Printf("%s ran in: %s\n", k, ((<-v).Sub(startTimes[k]).String()))
+			fmt.Printf("%s ran in: %s/n", k, ((<-v).Sub(startTimes[k]).String()))
 		}
 	}
 	
