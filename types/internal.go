@@ -3,6 +3,7 @@ package types
 import (
 	"bytes"
 	"crypto/sha1"
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"strings"
@@ -10,10 +11,11 @@ import (
 
 // Playlist holds the filename, raw JSON content and list of songs
 type Playlist struct {
-	Title string
-	File  string
-	Songs []Song
-	json  *PlaylistJSON
+	Title  string
+	Author string
+	File   string
+	Songs  []Song
+	json   *PlaylistJSON
 }
 
 // String returns playlist title and its songs
@@ -62,6 +64,34 @@ func (p *Playlist) Installed(installed *Playlist) {
 		newSongs = append(newSongs, newSong)
 	}
 	p.Songs = newSongs
+}
+
+// ToJSON returns a JSON representation of the Playlist
+func (p *Playlist) ToJSON() []byte {
+	var jSongs []SongJSON
+	for _, s := range p.Songs {
+		sj := SongJSON{
+			Key:  s.Key(),
+			Hash: s.Hash(),
+			Name: s.Name,
+		}
+		jSongs = append(jSongs, sj)
+	}
+	j := PlaylistJSON{
+		Title:  p.Title,
+		Author: p.Author,
+		Count:  len(p.Songs),
+		Songs:  jSongs,
+	}
+	var bytes bytes.Buffer
+	json := json.NewEncoder(&bytes)
+	json.SetEscapeHTML(false)
+	json.SetIndent("", " ")
+	err := json.Encode(j)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return bytes.Bytes()
 }
 
 // Song holds information about each song

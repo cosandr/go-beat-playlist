@@ -122,6 +122,14 @@ func main() {
 	}
 }
 
+func writePlaylist(path string, playlist *mt.Playlist) {
+	err := ioutil.WriteFile(path, playlist.ToJSON(), 0755)
+	if err != nil {
+		err = fmt.Errorf("JSON write error: %v ", err)
+		return
+	}
+}
+
 func readCfg(path string) (c mt.ConfigJSON, err error) {
 	file, err := ioutil.ReadFile(path)
 	if err != nil {
