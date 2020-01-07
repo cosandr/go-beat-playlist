@@ -28,6 +28,16 @@ func (p *Playlist) String() string {
 	return ret
 }
 
+// Debug returns all playlist and song fields
+func (p *Playlist) Debug() string {
+	var ret string
+	ret += fmt.Sprintf("Title: %s, Author: %s\nFile: %s\n--- %d SONGS ---\n", p.Title, p.Author, p.File, len(p.Songs))
+	for _, s := range p.Songs {
+		ret += s.Debug()
+	}
+	return ret
+}
+
 // Contains returns true if Song is in it
 func (p *Playlist) Contains(comp Song) bool {
 	for _, s := range p.Songs {
@@ -96,14 +106,16 @@ func (p *Playlist) ToJSON() []byte {
 
 // Song holds information about each song
 type Song struct {
-	Path  string
-	key   string
-	hash  string
-	Name  string
-	PP    float64
-	Stars float64
-	Maps  []Beatmap
-	json  *InfoJSON
+	Path   string
+	key    string
+	hash   string
+	Name   string
+	Author string
+	Mapper string
+	PP     float64
+	Stars  float64
+	Maps   []Beatmap
+	json   *InfoJSON
 }
 
 // CalcHash calculates this song's hash using its Path
