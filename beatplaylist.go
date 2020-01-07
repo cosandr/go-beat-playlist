@@ -7,7 +7,6 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"strings"
 	"time"
 
 	mt "github.com/cosandr/go-beat-playlist/types"
@@ -33,27 +32,13 @@ func readAllPlaylists(path string) (allPlaylists []mt.Playlist, err error) {
 		return
 	}
 	for _, file := range files {
-		p, readErr := readPlaylist(path + "/" + file.Name())
+		p, readErr := mt.MakePlaylist(path + "/" + file.Name())
 		if readErr != nil {
 			fmt.Println(readErr)
 			continue
 		}
 		allPlaylists = append(allPlaylists, p)
 	}
-	return
-}
-
-func readPlaylist(path string) (p mt.Playlist, err error) {
-	file, err := ioutil.ReadFile(path)
-	if err != nil {
-		return
-	}
-	err = json.Unmarshal(file, &p.Raw)
-	if err != nil {
-		return
-	}
-	p.File = path
-	p.ParseRaw()
 	return
 }
 
@@ -70,9 +55,11 @@ func readInstalledSongs(path string) (songs []mt.Song, err error) {
 			return err
 		}
 		if info.Name() == "info.dat" {
-			s := mt.Song{Path: strings.TrimSuffix(subpath, "info.dat")}
-			s.ParseRaw()
-			s.CalcHash()
+			s, makeErr := mt.MakeSong(subpath)
+			if makeErr != nil {
+				fmt.Printf("Cannot create song: %v\n", makeErr)
+				return nil
+			}
 			songs = append(songs, s)
 		}
 		return nil
@@ -89,7 +76,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	// var customSongs = c.Game + "/Beat Saber_Data/CustomLevels"
+	var customSongs = c.Game + "/Beat Saber_Data/CustomLevels"
 
 	var timing bool
 	var startTimes = make(map[string]time.Time)
@@ -101,25 +88,24 @@ func main() {
 	flag.Parse()
 	startTimes["Read playlists"] = time.Now()
 	allPlaylists, err := readAllPlaylists(c.Playlist)
+	if err != nil {
+		panic(err)
+	}
 	endTimes["Read playlists"] = make(chan time.Time, 1)
 	endTimes["Read playlists"] <- time.Now()
 
 	// printAllPlaylists(allPlaylists)
 	var _ = allPlaylists
 
-	// installed, err := readInstalledSongs(customSongs)
-	// if err != nil {
-	// 	panic(err)
-	// }
+	installed, err := readInstalledSongs(customSongs)
+	if err != nil {
+		panic(err)
+	}
 
-	// for _, s := range installed {
-	// 	fmt.Println(s.String())
-	// }
-
-	testS := mt.Song{Path: "./test/nightraid"}
-	testS.ParseRaw()
-	testS.CalcHash()
-	fmt.Println(testS.Debug())
+	var _ = installed
+	for _, s := range installed {
+		fmt.Println(s.String())
+	}
 
 	endTimes["MAIN"] = make(chan time.Time, 1)
 	endTimes["MAIN"] <- time.Now()
