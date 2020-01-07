@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"strings"
 )
 
 // Playlist holds the filename, raw JSON content and list of songs
@@ -41,9 +40,9 @@ func (p *Playlist) Debug() string {
 // Contains returns true if Song is in it
 func (p *Playlist) Contains(comp Song) bool {
 	for _, s := range p.Songs {
-		if s.Hash() != "" && s.Hash() == comp.Hash() {
+		if s.Hash != "" && s.Hash == comp.Hash {
 			return true
-		} else if s.Key() != "" && s.Key() == comp.Key() {
+		} else if s.Key != "" && s.Key == comp.Key {
 			return true
 		}
 	}
@@ -53,12 +52,12 @@ func (p *Playlist) Contains(comp Song) bool {
 // SongPath returns the requested song's path, if it exists
 func (p *Playlist) SongPath(comp Song) string {
 	for _, s := range p.Songs {
-		if s.Path == "" || (s.Hash() == "" && s.Key() == "") {
+		if s.Path == "" || (s.Hash == "" && s.Key == "") {
 			continue
 		}
-		if s.Hash() == comp.Hash() {
+		if s.Hash == comp.Hash {
 			return s.Path
-		} else if s.Key() == comp.Key() {
+		} else if s.Key == comp.Key {
 			return s.Path
 		}
 	}
@@ -81,8 +80,8 @@ func (p *Playlist) ToJSON() []byte {
 	var jSongs []SongJSON
 	for _, s := range p.Songs {
 		sj := SongJSON{
-			Key:  s.Key(),
-			Hash: s.Hash(),
+			Key:  s.Key,
+			Hash: s.Hash,
 			Name: s.Name,
 		}
 		jSongs = append(jSongs, sj)
@@ -107,8 +106,8 @@ func (p *Playlist) ToJSON() []byte {
 // Song holds information about each song
 type Song struct {
 	Path   string
-	key    string
-	hash   string
+	Key    string
+	Hash   string
 	Name   string
 	Author string
 	Mapper string
@@ -134,17 +133,7 @@ func (s *Song) CalcHash() {
 		}
 		buf.Write(file)
 	}
-	s.hash = fmt.Sprintf("%x", sha1.Sum(buf.Bytes()))
-}
-
-// Hash returns the hash in lower-case
-func (s *Song) Hash() string {
-	return strings.ToLower(s.hash)
-}
-
-// Key returns the key in lower case
-func (s *Song) Key() string {
-	return strings.ToLower(s.key)
+	s.Hash = fmt.Sprintf("%x", sha1.Sum(buf.Bytes()))
 }
 
 // String returns a string representation of the song
@@ -155,10 +144,10 @@ func (s *Song) String() string {
 	} else {
 		ret += "MISSING"
 	}
-	if len(s.key) > 0 {
-		ret += fmt.Sprintf(" [%s]", s.Key())
-	} else if len(s.hash) > 0 {
-		ret += fmt.Sprintf(" [%s]", s.Hash())
+	if len(s.Key) > 0 {
+		ret += fmt.Sprintf(" [%s]", s.Key)
+	} else if len(s.Hash) > 0 {
+		ret += fmt.Sprintf(" [%s]", s.Hash)
 	}
 	return ret
 }
@@ -166,7 +155,7 @@ func (s *Song) String() string {
 // Debug returns a string with all values in song
 func (s *Song) Debug() string {
 	var ret string
-	ret += fmt.Sprintf("N: %s, K: %s, H: %s\nPP: %.2f, S: %.2f\n", s.Name, s.Key(), s.Hash(), s.PP, s.Stars)
+	ret += fmt.Sprintf("N: %s, K: %s, H: %s\nPP: %.2f, S: %.2f\n", s.Name, s.Key, s.Hash, s.PP, s.Stars)
 	for _, m := range s.Maps {
 		ret += m.Debug()
 	}

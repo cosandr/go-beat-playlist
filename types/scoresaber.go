@@ -24,8 +24,8 @@ type ScoreSaberSong struct {
 // ToInternal returns a Song from this API response
 func (s *ScoreSaberSong) ToInternal() Song {
 	return Song{
-		key:    fmt.Sprintf("%d", s.UID),
-		hash:   strings.ToLower(s.ID),
+		Key:    fmt.Sprintf("%d", s.UID),
+		Hash:   strings.ToLower(s.ID),
 		Name:   s.Name,
 		Author: s.Author,
 		Mapper: s.Mapper,

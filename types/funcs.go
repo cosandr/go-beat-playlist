@@ -31,7 +31,11 @@ func MakePlaylist(path string) (p Playlist, err error) {
 		case string:
 			key = vv
 		}
-		songs = append(songs, Song{key: key, Name: s.Name, hash: s.Hash})
+		songs = append(songs, Song{
+			Key: strings.ToLower(key),
+			Name: s.Name,
+			Hash: strings.ToLower(s.Hash),
+		})
 	}
 	p.Songs = songs
 	return
