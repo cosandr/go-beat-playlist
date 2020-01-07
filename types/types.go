@@ -1,12 +1,32 @@
 package types
 
 import (
+	"bytes"
 	"crypto/sha1"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"runtime"
+	"regexp"
 	"strings"
 )
+
+// NewPath does nothing on Windows, replace C: with /mnt/c and all \ with / on Linux
+func NewPath(path string) string {
+	ret := path
+	if runtime.GOOS == "linux" {
+		re := regexp.MustCompile(`(\w):\\`)
+		m := re.FindStringSubmatchIndex(ret)
+		if len(m) == 4 {
+			// Find index of C:\ and replace it with /mnt/c/
+			// Works for drive other letters
+			ret = fmt.Sprintf("/mnt/%s/%s", strings.ToLower(ret[m[2]:m[3]]), ret[m[1]:])
+		}
+		// Strip all forward slashes
+		ret = strings.ReplaceAll(ret, "\\", "/")
+	}
+	return ret
+}
 
 // ConfigJSON is the structure of the config.json file
 type ConfigJSON struct {
@@ -67,8 +87,13 @@ func (p *Playlist) String() string {
 // Beatmap holds information about a song's map, its difficulty, path to the map file and type (standard, 360, lightshow)
 type Beatmap struct {
 	Difficulty string
-	File string
-	Type string
+	File       string
+	Type       string
+}
+
+// Full returns true if all values are set
+func (bm *Beatmap) Full() bool {
+	return len(bm.Difficulty) > 0 && len(bm.File) > 0 && len(bm.Type) > 0
 }
 
 // String returns a pretty type: difficulty string
@@ -89,34 +114,29 @@ type Song struct {
 	Name  string
 	PP    float64
 	Stars float64
-	raw map[string]interface{}
-	Maps []Beatmap
+	raw   map[string]interface{}
+	Maps  []Beatmap
 }
 
 // CalcHash calculates this song's hash using its Path
 func (s *Song) CalcHash() {
-	// SHA1 hash of info.dat + all difficulties
-	// f, err := os.Open(s.Path + "/info.dat")
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
-
-	// h := sha1.New()
-	// if _, err := io.Copy(h, f); err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
-	// f.Close()
+	// sha1 hash of (info.dat contents + contents of diff.dat files in order listed in info.dat)
 	file, err := ioutil.ReadFile(s.Path + "/info.dat")
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	h := sha1.New()
-	h.Write(file)
-
-	s.hash = fmt.Sprintf("%x", h.Sum(nil))
+	var buf bytes.Buffer
+	buf.Write(file)
+	for _, bm := range s.Maps {
+		file, err := ioutil.ReadFile(bm.File)
+		if err != nil {
+			fmt.Println(err)
+			continue
+		}
+		buf.Write(file)
+	}
+	s.hash = fmt.Sprintf("%x", sha1.Sum(buf.Bytes()))
 }
 
 // ParseRaw parses this song's info.dat
@@ -130,6 +150,7 @@ func (s *Song) ParseRaw() {
 	if err != nil {
 		return
 	}
+	s.Name = s.raw["_songName"].(string)
 	var bm Beatmap
 	for _, sets := range s.raw["_difficultyBeatmapSets"].([]interface{}) {
 		for k, v := range sets.(map[string]interface{}) {
@@ -145,14 +166,14 @@ func (s *Song) ParseRaw() {
 						case "_beatmapFilename":
 							bm.File = s.Path + "/" + vv.(string)
 						}
+						if bm.Full() {
+							s.Maps = append(s.Maps, bm)
+							bm = Beatmap{}
+						}
 					}
 				}
-			default:
-				continue
 			}
 		}
-		s.Maps = append(s.Maps, bm)
-		bm = Beatmap{}
 	}
 }
 

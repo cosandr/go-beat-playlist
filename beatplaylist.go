@@ -5,6 +5,9 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
+	"os"
+	"path/filepath"
+	"strings"
 	"time"
 
 	mt "github.com/cosandr/go-beat-playlist/types"
@@ -60,16 +63,39 @@ func printAllPlaylists(all []mt.Playlist) {
 	}
 }
 
+func readInstalledSongs(path string) (songs []mt.Song, err error) {
+	err = filepath.Walk(path, func(subpath string, info os.FileInfo, err error) error {
+		if err != nil {
+			fmt.Printf("prevent panic by handling failure accessing a path %q: %v\n", subpath, err)
+			return err
+		}
+		if info.Name() == "info.dat" {
+			s := mt.Song{Path: strings.TrimSuffix(subpath, "info.dat")}
+			s.ParseRaw()
+			s.CalcHash()
+			songs = append(songs, s)
+		}
+		return nil
+	})
+	if err != nil {
+		fmt.Printf("error walking the path: %v\n", err)
+		return
+	}
+	return
+}
+
 func main() {
 	c, err := readCfg("./config.json")
 	if err != nil {
 		panic(err)
 	}
+	// var customSongs = c.Game + "/Beat Saber_Data/CustomLevels"
+
 	var timing bool
 	var startTimes = make(map[string]time.Time)
 	var endTimes = make(map[string]chan time.Time)
 	startTimes["MAIN"] = time.Now()
-	
+
 	// Parse arguments
 	flag.BoolVar(&timing, "timing", false, "Enable timing")
 	flag.Parse()
@@ -81,15 +107,26 @@ func main() {
 	// printAllPlaylists(allPlaylists)
 	var _ = allPlaylists
 
-	s := mt.Song{Path: "C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Beat Saber_Data/CustomLevels/3dc (Something Just Like This - Jizzmo)"}
-	s.ParseRaw()
-	fmt.Println(s.String())
+	// installed, err := readInstalledSongs(customSongs)
+	// if err != nil {
+	// 	panic(err)
+	// }
+
+	// for _, s := range installed {
+	// 	fmt.Println(s.String())
+	// }
+
+	testS := mt.Song{Path: "./test/nightraid"}
+	testS.ParseRaw()
+	testS.CalcHash()
+	fmt.Println(testS.Debug())
+
 	endTimes["MAIN"] = make(chan time.Time, 1)
 	endTimes["MAIN"] <- time.Now()
 	if timing {
 		for k, v := range endTimes {
-			fmt.Printf("%s ran in: %s/n", k, ((<-v).Sub(startTimes[k]).String()))
+			fmt.Printf("%s ran in: %s\n", k, ((<-v).Sub(startTimes[k]).String()))
 		}
 	}
-	
+
 }
