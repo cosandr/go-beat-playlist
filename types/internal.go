@@ -26,6 +26,44 @@ func (p *Playlist) String() string {
 	return ret
 }
 
+// Contains returns true if Song is in it
+func (p *Playlist) Contains(comp Song) bool {
+	for _, s := range p.Songs {
+		if s.Hash() != "" && s.Hash() == comp.Hash() {
+			return true
+		} else if s.Key() != "" && s.Key() == comp.Key() {
+			return true
+		}
+	}
+	return false
+}
+
+// SongPath returns the requested song's path, if it exists
+func (p *Playlist) SongPath(comp Song) string {
+	for _, s := range p.Songs {
+		if s.Path == "" || (s.Hash() == "" && s.Key() == "") {
+			continue
+		}
+		if s.Hash() == comp.Hash() {
+			return s.Path
+		} else if s.Key() == comp.Key() {
+			return s.Path
+		}
+	}
+	return ""
+}
+
+// Installed sets the file path for all its songs, if they are present
+func (p *Playlist) Installed(installed *Playlist) {
+	var newSongs []Song
+	for _, s := range p.Songs {
+		newSong := s
+		newSong.Path = installed.SongPath(s)
+		newSongs = append(newSongs, newSong)
+	}
+	p.Songs = newSongs
+}
+
 // Song holds information about each song
 type Song struct {
 	Path  string
@@ -41,7 +79,7 @@ type Song struct {
 // CalcHash calculates this song's hash using its Path
 func (s *Song) CalcHash() {
 	// sha1 hash of (info.dat contents + contents of diff.dat files in order listed in info.dat)
-	var files = []string{s.Path+"info.dat"}
+	var files = []string{s.Path + "info.dat"}
 	for _, bm := range s.Maps {
 		files = append(files, s.Path+bm.File)
 	}
@@ -79,9 +117,6 @@ func (s *Song) String() string {
 		ret += fmt.Sprintf(" [%s]", s.Key())
 	} else if len(s.hash) > 0 {
 		ret += fmt.Sprintf(" [%s]", s.Hash())
-	}
-	for _, m := range s.Maps {
-		ret += m.String()
 	}
 	return ret
 }
