@@ -45,6 +45,7 @@ func MakeSongBrowserPlaylist(file *[]byte) (p Playlist, err error) {
 		for _, diff := range v.Diffs {
 			maps = append(maps, Beatmap{Type: "Standard", Difficulty: diff.Diff})
 		}
+		s.Maps = maps
 		songs = append(songs, s)
 	}
 	p = Playlist{

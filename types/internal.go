@@ -114,6 +114,7 @@ type Song struct {
 	PP     float64
 	Stars  float64
 	Maps   []Beatmap
+	URL    string
 	json   *InfoJSON
 }
 
