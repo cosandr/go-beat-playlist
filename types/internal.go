@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"sort"
 )
 
 // Playlist holds the filename, raw JSON content and list of songs
@@ -123,6 +124,13 @@ func (p *Playlist) Merge(op *Playlist) Playlist {
 		File:   p.File,
 		Songs:  songs,
 	}
+}
+
+// SortByPP sorts this playlist by PP in descending order
+func (p *Playlist) SortByPP() {
+	sort.Slice(p.Songs, func(i, j int) bool {
+		return p.Songs[i].PP > p.Songs[j].PP
+	})
 }
 
 // Song holds information about each song

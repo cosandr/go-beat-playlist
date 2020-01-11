@@ -37,3 +37,22 @@ func FetchByStars(num int) (p mt.Playlist, err error) {
 	}
 	return
 }
+
+// FetchByPP returns a Playlist of top `num` songs sorted by PP
+func FetchByPP(num int) (p mt.Playlist, err error) {
+	resp, err := http.Get(beatStarRanked)
+	if err != nil {
+		return
+	}
+	defer resp.Body.Close()
+	body, err := ioutil.ReadAll(resp.Body)
+	p, err = mt.MakeSongBrowserPlaylist(&body)
+	if err != nil {
+		return
+	}
+	// Sort by PP
+	p.SortByPP()
+	// Only keep num songs
+	p.Songs = p.Songs[:num]
+	return
+}

@@ -51,6 +51,7 @@ func mainMenu() {
 3: Show songs not in any playlists
 4: Show songs missing from playlists
 5: Create playlist sorted by ScoreSaber star difficulty
+6: Create playlist sorted by PP using Song Browser data
 0: Exit`
 	for {
 		fmt.Printf("\n%s\n", helpText)
@@ -77,8 +78,63 @@ func mainMenu() {
 			songsFromScoreSaber()
 			// Reload
 			loadAll()
+		case 6:
+			songsFromSongBrowser()
+			// Reload
+			loadAll()
 		default:
 			fmt.Println("Invalid option")
+		}
+	}
+}
+
+func songsFromSongBrowser() {
+	var helpText = `## %d songs from Song Browser data ##
+1: Show songs
+2: Add to playlist
+0: Back to main menu`
+	fmt.Print("Enter max number of songs to fetch: ")
+	numSongs := input.GetInputNumber()
+	ppSongs, err := (download.FetchByPP(numSongs))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	for {
+		numSongs = len((ppSongs).Songs)
+		fmt.Printf(helpText, numSongs)
+		fmt.Println()
+		fmt.Print("Select option: ")
+		in := input.GetInputNumber()
+		switch in {
+		case 0:
+			return
+		case 1:
+			for _, s := range ppSongs.Songs {
+				fmt.Printf("-> %.2f PP: %s\n", s.PP, s.Name)
+			}
+		case 2:
+			path := fmt.Sprintf("Top%dPP.bplist", numSongs)
+			fmt.Printf("Saving as %s\n", path)
+			path = fmt.Sprintf("%s/%s", conf.Playlists, path)
+			if mt.FileExists(path) {
+				backup := input.GetConfirm("Backup existing file? (Y/n) ")
+				if backup {
+					err := os.Rename(path, rePlayExt.ReplaceAllString(path, ".bak"))
+					if err != nil {
+						fmt.Printf("Cannot backup: %v\n", err)
+						continue
+					}
+				}
+			}
+			ppSongs.Title = fmt.Sprintf("Top %d PP", numSongs)
+			ppSongs.Author = "Dre"
+			err := ioutil.WriteFile(path, ppSongs.ToJSON(), 0755)
+			if err != nil {
+				fmt.Printf("Cannot write playlist: %v\n", err)
+				continue
+			}
+			return
 		}
 	}
 }
@@ -96,7 +152,8 @@ func songsFromScoreSaber() {
 		return
 	}
 	for {
-		fmt.Printf(helpText, len((starSongs).Songs))
+		numSongs = len((starSongs).Songs)
+		fmt.Printf(helpText, numSongs)
 		fmt.Println()
 		fmt.Print("Select option: ")
 		in := input.GetInputNumber()

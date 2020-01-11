@@ -2,7 +2,6 @@ package types
 
 import (
 	"encoding/json"
-	"fmt"
 	"strings"
 )
 
@@ -24,7 +23,6 @@ type ScoreSaberSong struct {
 // ToInternal returns a Song from this API response
 func (s *ScoreSaberSong) ToInternal() Song {
 	return Song{
-		Key:    fmt.Sprintf("%x", s.UID),
 		Hash:   strings.ToLower(s.ID),
 		Name:   s.Name,
 		Author: s.Author,
