@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"os"
 )
 
 // Playlist holds the filename, raw JSON content and list of songs
@@ -163,6 +164,18 @@ func (s *Song) Debug() string {
 	return ret
 }
 
+// DirName returns this song's directory name
+func (s *Song) DirName() string {
+	var ret string
+	if len(s.Key) > 0 {
+		ret = s.Key
+	} else {
+		ret = s.Hash[:4]
+	}
+	ret += fmt.Sprintf(" (%s)", s.Name)
+	return ret
+}
+
 // Beatmap holds information about a song's map, its difficulty, path to the map file and type (standard, 360, lightshow)
 type Beatmap struct {
 	Difficulty string
@@ -178,4 +191,59 @@ func (bm *Beatmap) String() string {
 // Debug returns a string with all of this map's values
 func (bm *Beatmap) Debug() string {
 	return fmt.Sprintf("Type %s, %s\n%s", bm.Type, bm.Difficulty, bm.File)
+}
+
+// Config is the internal config, storing various game paths
+type Config struct {
+	Base         string
+	Playlists    string
+	Songs        string
+	DeletedSongs string
+}
+
+// NewConfig reads the config at `path` and returns a `Config` object
+//
+// Will check for valid game path, creating missing directories (Playlists/CustomLevels)
+func NewConfig(path string) (c Config, err error) {
+	var jc ConfigJSON
+	file, err := ioutil.ReadFile(path)
+	if err != nil {
+		err = fmt.Errorf("Config file error: %v ", err)
+		return
+	}
+	err = json.Unmarshal(file, &jc)
+	if err != nil {
+		err = fmt.Errorf("Cannot parse %s: %v", path, err)
+		return
+	}
+
+	// Default to C Steam folder
+	if len(jc.Game) == 0 {
+		c.Base = "C:/Program Files (x86)/Steam/steamapps/common/Beat Saber"
+	} else {
+		c.Base = NewPath(jc.Game)
+	}
+	// Check for valid game path
+	if !DirExists(c.Base) {
+		err = fmt.Errorf("game not found at %s", c.Base)
+		return
+	}
+	mkdirMap := map[string]string{
+		"Playlists": c.Base + "/Playlists",
+		"Custom songs": c.Base + "/Beat Saber_Data/CustomLevels",
+		"Deleted songs": c.Base + "/DeletedSongs",
+	}
+	for k, v := range mkdirMap {
+		if !DirExists(v) {
+			err = os.MkdirAll(v, 0755)
+			if err != nil {
+				return
+			}
+			fmt.Printf("%s folder %s created\n", k, v)
+		}
+	}
+	c.Playlists = mkdirMap["Playlists"]
+	c.Songs = mkdirMap["Custom songs"]
+	c.DeletedSongs = mkdirMap["Deleted songs"]
+	return
 }

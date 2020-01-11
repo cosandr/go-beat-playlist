@@ -2,8 +2,7 @@ package types
 
 // ConfigJSON is the structure of the config.json file
 type ConfigJSON struct {
-	Playlist string `json:"playlists"`
-	Game     string `json:"game"`
+	Game string `json:"game"`
 }
 
 // PlaylistJSON is the structure of a playlist JSON or BPLIST

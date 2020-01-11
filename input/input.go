@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+
+	mt "github.com/cosandr/go-beat-playlist/types"
 )
 
 // GetInputNumber returns first valid number from user input
@@ -20,4 +22,34 @@ func GetInputNumber() int {
 		return num
 	}
 	return 0
+}
+
+// GetInputPlaylist returns complete path
+func GetInputPlaylist(dirPath string) (path string, exists bool) {
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Print("Enter playlist file: ")
+	for scanner.Scan() {
+		path = dirPath + "/" + scanner.Text()
+		exists = mt.FileExists(path)
+		return
+	}
+	return
+}
+
+// GetConfirm reads y/n answer and returns boolean, defaults to true (empty returns true)
+func GetConfirm(question string) bool {
+	scanner := bufio.NewScanner(os.Stdin)
+	fmt.Print(question)
+	for scanner.Scan() {
+		resp, err := strconv.ParseBool(scanner.Text())
+		if err != nil {
+			if len(scanner.Text()) == 0 {
+				return true
+			}
+			fmt.Printf("%s is not a valid response, try again: ", scanner.Text())
+			continue
+		}
+		return resp
+	}
+	return false
 }

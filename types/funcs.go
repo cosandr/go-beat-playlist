@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"os"
 	"regexp"
 	"runtime"
 	"strings"
@@ -32,7 +33,7 @@ func MakePlaylist(path string) (p Playlist, err error) {
 			key = vv
 		}
 		songs = append(songs, Song{
-			Key: strings.ToLower(key),
+			Key:  strings.ToLower(key),
 			Name: s.Name,
 			Hash: strings.ToLower(s.Hash),
 		})
@@ -86,4 +87,22 @@ func NewPath(path string) string {
 		ret = strings.ReplaceAll(ret, "\\", "/")
 	}
 	return ret
+}
+
+// FileExists returns true if `path` exists and is a file
+func FileExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return !info.IsDir()
+}
+
+// DirExists returns true if `path` exists and is a directory
+func DirExists(path string) bool {
+	info, err := os.Stat(path)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return info.IsDir()
 }
