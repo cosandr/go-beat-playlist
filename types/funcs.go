@@ -74,7 +74,7 @@ func MakeSong(path string) (s Song, err error) {
 		Mapper: j.Mapper,
 		Maps: maps,
 	}
-	s.CalcHash()
+	err = s.CalcHash()
 	return
 }
 

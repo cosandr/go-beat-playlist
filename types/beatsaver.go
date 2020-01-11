@@ -38,6 +38,7 @@ func MakeBeatSaverPlaylist(file *[]byte) (p Playlist, err error) {
 	for _, r := range resp {
 		s := Song{
 			Name:   r.Metadata.Name,
+			Author: r.Metadata.Author,
 			Key:    strings.ToLower(r.Key),
 			Hash:   strings.ToLower(r.Hash),
 			Mapper: r.Metadata.Mapper,
@@ -57,6 +58,33 @@ func MakeBeatSaverPlaylist(file *[]byte) (p Playlist, err error) {
 	p = Playlist{
 		Title: "BeatSaver Response",
 		Songs: songs,
+	}
+	return
+}
+
+// MakeBeatSaverSong returns a Song from a byte array (API response data)
+func MakeBeatSaverSong(file *[]byte) (s Song, err error) {
+	var resp BeatSaverSong
+	err = json.Unmarshal(*file, &resp)
+	if err != nil {
+		return
+	}
+	maps := []Beatmap{}
+	for _, diff := range resp.Metadata.Chars {
+		for k, v := range diff.Diffs {
+			if v != nil {
+				maps = append(maps, Beatmap{Type: diff.Name, Difficulty: k})
+			}
+		}
+	}
+	s = Song{
+		Name:   resp.Metadata.Name,
+		Author: resp.Metadata.Author,
+		Key:    strings.ToLower(resp.Key),
+		Hash:   strings.ToLower(resp.Hash),
+		Mapper: resp.Metadata.Mapper,
+		URL:    resp.URL,
+		Maps:   maps,
 	}
 	return
 }

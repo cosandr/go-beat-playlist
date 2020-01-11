@@ -1,11 +1,11 @@
 package main
 
 import (
-	"regexp"
 	"flag"
 	"fmt"
 	"io/ioutil"
 	"os"
+	"regexp"
 	"time"
 
 	"github.com/cosandr/go-beat-playlist/download"
@@ -46,15 +46,16 @@ func loadAll() {
 
 func mainMenu() {
 	const helpText = `Beat Saber playlist editor written in Go
+
 1: Show all read playlists and their songs
 2: Show all installed song data
-3: Show songs not in any playlists
-4: Show songs missing from playlists
+3: Songs not in any playlists
+4: Songs missing from playlists
 5: Create playlist sorted by ScoreSaber star difficulty
 6: Create playlist sorted by PP using Song Browser data
 0: Exit`
 	for {
-		fmt.Printf("\n%s\n", helpText)
+		fmt.Printf("%s\n", helpText)
 		fmt.Printf("Loaded %d songs and %d playlists.\n", len(installedSongs.Songs), len(allPlaylists))
 		fmt.Print("Select option: ")
 		in := input.GetInputNumber()
@@ -90,12 +91,13 @@ func mainMenu() {
 
 func songsFromSongBrowser() {
 	var helpText = `## %d songs from Song Browser data ##
+
 1: Show songs
 2: Add to playlist
 0: Back to main menu`
 	fmt.Print("Enter max number of songs to fetch: ")
 	numSongs := input.GetInputNumber()
-	ppSongs, err := (download.FetchByPP(numSongs))
+	ppSongs, err := (download.PPPlaylist(numSongs))
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -141,12 +143,13 @@ func songsFromSongBrowser() {
 
 func songsFromScoreSaber() {
 	var helpText = `## %d songs from ScoreSaber ##
+
 1: Show songs
 2: Add to playlist
 0: Back to main menu`
 	fmt.Print("Enter max number of songs to fetch: ")
 	numSongs := input.GetInputNumber()
-	starSongs, err := (download.FetchByStars(numSongs))
+	starSongs, err := (download.StarsPlaylist(numSongs))
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -193,6 +196,7 @@ func songsFromScoreSaber() {
 // songsWithoutPlaylists provides the UX for handling songs without playlists
 func songsWithoutPlaylists() {
 	var helpText = `## %d songs without playlists ##
+
 1: Show songs
 2: Add to playlist
 3: Move or delete all
@@ -266,9 +270,11 @@ func songsWithoutPlaylists() {
 
 func missingFromPlaylists() {
 	var helpText = `## %d songs missing from all playlists ##
+
 %s
 1: Show songs
 2: Remove from playlists
+3: Download
 0: Back to main menu`
 	for {
 		missingPlaylists := getMissingFromPlaylists()
@@ -303,11 +309,11 @@ func missingFromPlaylists() {
 					continue
 				}
 				writePlaylist = mt.Playlist{
-					Title: p.Title,
+					Title:  p.Title,
 					Author: p.Author,
-					Image: p.Image,
-					File: p.File,
-					Songs: songs,
+					Image:  p.Image,
+					File:   p.File,
+					Songs:  songs,
 				}
 				outBytes := writePlaylist.ToJSON()
 				path := p.File
@@ -323,6 +329,21 @@ func missingFromPlaylists() {
 				if err != nil {
 					fmt.Printf("Cannot write playlist: %v\n", err)
 					continue
+				}
+			}
+			return
+		case 3:
+			for name, p := range missingPlaylists {
+				fmt.Printf("--> Downloading missing from %s\n", name)
+				for _, s := range p.Songs {
+					fmt.Printf(" --> Downloading %s\n", s.String())
+					path := fmt.Sprintf("%s/%s", conf.Songs, s.DirName())
+					_, err := download.Song(path, &s)
+					if err != nil {
+						fmt.Printf("  -> Failed: %v\n", err)
+						continue
+					}
+					fmt.Println("  -> Success")
 				}
 			}
 			return
@@ -342,17 +363,16 @@ func getMissingFromPlaylists() map[string]mt.Playlist {
 		}
 		if len(songs) > 0 {
 			missing[p.Title] = mt.Playlist{
-				Title: p.Title,
+				Title:  p.Title,
 				Author: p.Author,
-				Image: p.Image,
-				File: p.File,
-				Songs: songs,
+				Image:  p.Image,
+				File:   p.File,
+				Songs:  songs,
 			}
 		}
 	}
 	return missing
 }
-
 
 func main() {
 	var timing bool

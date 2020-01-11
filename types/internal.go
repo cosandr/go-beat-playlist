@@ -1,6 +1,7 @@
 package types
 
 import (
+	"regexp"
 	"bytes"
 	"crypto/sha1"
 	"encoding/json"
@@ -12,11 +13,11 @@ import (
 
 // Playlist holds the filename, raw JSON content and list of songs
 type Playlist struct {
-	Title  string
 	Author string
-	Image  string
 	File   string
+	Image  string
 	Songs  []Song
+	Title  string
 }
 
 // String returns playlist title and its songs
@@ -135,20 +136,90 @@ func (p *Playlist) SortByPP() {
 
 // Song holds information about each song
 type Song struct {
-	Path   string
-	Key    string
-	Hash   string
-	Name   string
 	Author string
+	Hash   string
+	Key    string
 	Mapper string
+	Maps   []Beatmap
+	Name   string
+	Path   string
 	PP     float64
 	Stars  float64
-	Maps   []Beatmap
 	URL    string
 }
 
+// Merge returns a new song merged with the argument song
+//
+// Prioritizes self, that is, only adds missing fields
+func (s *Song) Merge(os *Song) Song {
+	var retSong Song
+	if len(s.Path) == 0 {
+		retSong.Path = os.Path
+	} else {
+		retSong.Path = s.Path
+	}
+
+	if len(s.Key) == 0 {
+		retSong.Key = os.Key
+	} else {
+		retSong.Key = s.Key
+	}
+
+	if len(s.Hash) == 0 {
+		retSong.Hash = os.Hash
+	} else {
+		retSong.Hash = s.Hash
+	}
+
+	if len(s.Name) == 0 {
+		retSong.Name = os.Name
+	} else {
+		retSong.Name = s.Name
+	}
+
+	if len(s.Author) == 0 {
+		retSong.Author = os.Author
+	} else {
+		retSong.Author = s.Author
+	}
+
+	if len(s.Mapper) == 0 {
+		retSong.Mapper = os.Mapper
+	} else {
+		retSong.Mapper = s.Mapper
+	}
+
+	if s.PP == 0 {
+		retSong.PP = os.PP
+	} else {
+		retSong.PP = s.PP
+	}
+
+	if s.Stars == 0 {
+		retSong.Stars = os.Stars
+	} else {
+		retSong.Stars = s.Stars
+	}
+
+	if len(s.Maps) == 0 {
+		retSong.Maps = os.Maps
+	} else {
+		retSong.Maps = s.Maps
+	}
+
+	if len(s.URL) == 0 {
+		retSong.URL = os.URL
+	} else {
+		retSong.URL = s.URL
+	}
+
+	return retSong
+}
+
 // CalcHash calculates this song's hash using its Path
-func (s *Song) CalcHash() {
+//
+// song.Hash must end with a trailing slash
+func (s *Song) CalcHash() (err error) {
 	// sha1 hash of (info.dat contents + contents of diff.dat files in order listed in info.dat)
 	var files = []string{s.Path + "info.dat"}
 	for _, bm := range s.Maps {
@@ -156,14 +227,15 @@ func (s *Song) CalcHash() {
 	}
 	var buf bytes.Buffer
 	for _, f := range files {
-		file, err := ioutil.ReadFile(f)
-		if err != nil {
-			fmt.Printf("%s hash failed: %v\n", s.Name, err)
+		file, errF := ioutil.ReadFile(f)
+		if errF != nil {
+			err = fmt.Errorf("%s hash failed: %v", s.Name, err)
 			return
 		}
 		buf.Write(file)
 	}
 	s.Hash = fmt.Sprintf("%x", sha1.Sum(buf.Bytes()))
+	return
 }
 
 // String returns a string representation of the song
@@ -185,9 +257,12 @@ func (s *Song) String() string {
 // Debug returns a string with all values in song
 func (s *Song) Debug() string {
 	var ret string
-	ret += fmt.Sprintf("N: %s, K: %s, H: %s\nPP: %.2f, S: %.2f\n", s.Name, s.Key, s.Hash, s.PP, s.Stars)
+	ret += fmt.Sprintf("Path: %s, URL: %s\n", s.Path, s.URL)
+	ret += fmt.Sprintf("Name: %s, Aut: %s, Mapper: %s\n", s.Name, s.Author, s.Mapper)
+	ret += fmt.Sprintf("Key: %s, Hash: %s, PP: %.2f, Stars: %.2f\n", s.Key, s.Hash, s.PP, s.Stars)
+	ret += "Beatmaps: "
 	for _, m := range s.Maps {
-		ret += m.Debug()
+		ret += "[" + m.Debug() + "] "
 	}
 	return ret
 }
@@ -210,6 +285,9 @@ func (s *Song) DirName() string {
 	if paran {
 		ret += ")"
 	}
+	// Strip invalid NTFS characters
+	reInvalid := regexp.MustCompile(`[<>:"\/\\|?*\n]+`)
+	ret = reInvalid.ReplaceAllString(ret, "")
 	return ret
 }
 
@@ -227,15 +305,18 @@ func (bm *Beatmap) String() string {
 
 // Debug returns a string with all of this map's values
 func (bm *Beatmap) Debug() string {
-	return fmt.Sprintf("Type %s, %s\n%s", bm.Type, bm.Difficulty, bm.File)
+	if len(bm.File) > 0 {
+		return fmt.Sprintf("%s, %s (%s)", bm.Type, bm.Difficulty, bm.File)
+	}
+	return fmt.Sprintf("%s, %s", bm.Type, bm.Difficulty)
 }
 
 // Config is the internal config, storing various game paths
 type Config struct {
 	Base         string
+	DeletedSongs string
 	Playlists    string
 	Songs        string
-	DeletedSongs string
 }
 
 // NewConfig reads the config at `path` and returns a `Config` object
