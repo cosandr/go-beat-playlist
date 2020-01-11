@@ -21,7 +21,6 @@ func MakePlaylist(path string) (p Playlist, err error) {
 	if err != nil {
 		return
 	}
-	p = Playlist{json: &j, Title: j.Title, File: path}
 	var songs []Song
 	for _, s := range j.Songs {
 		key := ""
@@ -38,7 +37,13 @@ func MakePlaylist(path string) (p Playlist, err error) {
 			Hash: strings.ToLower(s.Hash),
 		})
 	}
-	p.Songs = songs
+	p = Playlist{
+		Title: j.Title,
+		Author: j.Author,
+		Image: j.Image,
+		File: path,
+		Songs: songs,
+	}
 	return
 }
 
@@ -53,11 +58,6 @@ func MakeSong(path string) (s Song, err error) {
 	if err != nil {
 		return
 	}
-	s = Song{json: &j, Path: strings.TrimSuffix(path, "info.dat")}
-	s.Name = fmt.Sprintf("%s - %s", j.SongName, j.SongAuthor)
-	if len(j.Mapper) > 0 {
-		s.Name += fmt.Sprintf(" [%s]", j.Mapper)
-	}
 	var maps []Beatmap
 	for _, set := range j.Beatmaps {
 		for _, m := range set.Maps {
@@ -67,7 +67,13 @@ func MakeSong(path string) (s Song, err error) {
 			maps = append(maps, bm)
 		}
 	}
-	s.Maps = maps
+	s = Song{
+		Path: strings.TrimSuffix(path, "info.dat"),
+		Name: j.SongName,
+		Author: j.SongAuthor,
+		Mapper: j.Mapper,
+		Maps: maps,
+	}
 	s.CalcHash()
 	return
 }

@@ -81,22 +81,33 @@ func songsWithoutPlaylists(playlists *[]mt.Playlist, installed *mt.Playlist) {
 		case 1:
 			fmt.Print(orphansPlaylist.String())
 		case 2:
+			var outBytes []byte
 			// Ask for playlist path
 			path, exists := input.GetInputPlaylist(conf.Playlists)
 			// Confirm override
 			if exists {
-				ok := input.GetConfirm("File already exists, override? (Y/n) ")
-				if !ok {
-					continue
+				merging := input.GetConfirm("File already exists, merge? (Y/n) ")
+				if merging {
+					// Read existing playlist
+					existing, err := mt.MakePlaylist(path)
+					if err != nil {
+						fmt.Printf("Cannot read playlist: %v\n", err)
+						continue
+					}
+					// Merge with orphans
+					writePlaylist := existing.Merge(&orphansPlaylist)
+					outBytes = writePlaylist.ToJSON()
+					fmt.Println("Merging orphans with playlist")
+				} else {
+					outBytes = orphansPlaylist.ToJSON()
+					fmt.Println("Writing new playlist")
 				}
 			}
-			outBytes := orphansPlaylist.ToJSON()
 			err := ioutil.WriteFile(path, outBytes, 0755)
 			if err != nil {
 				fmt.Printf("Cannot write playlist: %v\n", err)
 				continue
 			}
-			fmt.Println("New playlist created")
 			return
 		case 3:
 			move := input.GetConfirm("Move to DeletedSongs instead of deleting? (Y/n) ")
@@ -187,7 +198,7 @@ func main() {
 		panic(err)
 	}
 	endTimes["Read playlists"] = time.Now()
-	fmt.Println(installed.Songs[0].Debug())
+
 	decideRun(&playlists, &installed)
 
 	if timing {

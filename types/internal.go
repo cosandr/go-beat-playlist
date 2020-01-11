@@ -13,9 +13,9 @@ import (
 type Playlist struct {
 	Title  string
 	Author string
+	Image  string
 	File   string
 	Songs  []Song
-	json   *PlaylistJSON
 }
 
 // String returns playlist title and its songs
@@ -104,6 +104,26 @@ func (p *Playlist) ToJSON() []byte {
 	return bytes.Bytes()
 }
 
+// Merge returns a new playlist merged with the argument playlist
+func (p *Playlist) Merge(op *Playlist) Playlist {
+	var songs []Song
+	// Keep all songs in this playlist
+	songs = append(songs, p.Songs...)
+	// Add songs only in other playlist
+	for _, s := range op.Songs {
+		if !p.Contains(s) {
+			songs = append(songs, s)
+		}
+	}
+	return Playlist{
+		Title:  p.Title,
+		Author: p.Author,
+		Image: p.Image,
+		File:   p.File,
+		Songs:  songs,
+	}
+}
+
 // Song holds information about each song
 type Song struct {
 	Path   string
@@ -116,7 +136,6 @@ type Song struct {
 	Stars  float64
 	Maps   []Beatmap
 	URL    string
-	json   *InfoJSON
 }
 
 // CalcHash calculates this song's hash using its Path
@@ -167,12 +186,21 @@ func (s *Song) Debug() string {
 // DirName returns this song's directory name
 func (s *Song) DirName() string {
 	var ret string
+	var paran bool
 	if len(s.Key) > 0 {
-		ret = s.Key
+		ret = fmt.Sprintf("%s (%s", s.Key, s.Name)
+		paran = true
 	} else {
-		ret = s.Hash[:4]
+		ret = s.Name
 	}
-	ret += fmt.Sprintf(" (%s)", s.Name)
+	if len(s.Author) > 0 {
+		ret += fmt.Sprintf(" - %s", s.Author)
+	} else if len(s.Mapper) > 0 {
+		ret += fmt.Sprintf(" - %s", s.Mapper)
+	}
+	if paran {
+		ret += ")"
+	}
 	return ret
 }
 
@@ -229,8 +257,8 @@ func NewConfig(path string) (c Config, err error) {
 		return
 	}
 	mkdirMap := map[string]string{
-		"Playlists": c.Base + "/Playlists",
-		"Custom songs": c.Base + "/Beat Saber_Data/CustomLevels",
+		"Playlists":     c.Base + "/Playlists",
+		"Custom songs":  c.Base + "/Beat Saber_Data/CustomLevels",
 		"Deleted songs": c.Base + "/DeletedSongs",
 	}
 	for k, v := range mkdirMap {
