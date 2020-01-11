@@ -5,7 +5,8 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	
+	"strings"
+
 	mt "github.com/cosandr/go-beat-playlist/types"
 )
 
@@ -28,20 +29,18 @@ func getSongsWithoutPlaylists() mt.Playlist {
 	return mt.Playlist{Title: "Orphans", Songs: orphans}
 }
 
-func writePlaylist(path string, playlist *mt.Playlist) {
-	err := ioutil.WriteFile(path, playlist.ToJSON(), 0755)
-	if err != nil {
-		err = fmt.Errorf("JSON write error: %v ", err)
-		return
-	}
-}
-
 func readAllPlaylists(path string) (playlists []mt.Playlist, err error) {
 	files, err := ioutil.ReadDir(path)
 	if err != nil {
 		return
 	}
 	for _, file := range files {
+		if !rePlayExt.MatchString(file.Name()) {
+			if !strings.HasSuffix(file.Name(), ".bak") {
+				fmt.Printf("%s is not a valid playlist, skipping.", file.Name())
+			}
+			continue
+		}
 		p, readErr := mt.MakePlaylist(path + "/" + file.Name())
 		if readErr != nil {
 			fmt.Println(readErr)

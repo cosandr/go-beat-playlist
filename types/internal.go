@@ -90,6 +90,7 @@ func (p *Playlist) ToJSON() []byte {
 	j := PlaylistJSON{
 		Title:  p.Title,
 		Author: p.Author,
+		Image: p.Image,
 		Count:  len(p.Songs),
 		Songs:  jSongs,
 	}

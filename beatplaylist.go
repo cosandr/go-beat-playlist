@@ -1,6 +1,7 @@
 package main
 
 import (
+	"regexp"
 	"flag"
 	"fmt"
 	"io/ioutil"
@@ -13,7 +14,9 @@ import (
 
 var conf mt.Config
 var installedSongs mt.Playlist
-var allPlaylists []mt.Playlist
+var allPlaylists map[string]mt.Playlist
+
+var rePlayExt *regexp.Regexp = regexp.MustCompile(`(\.json$|\.bplist$)`)
 
 func init() {
 	c, err := mt.NewConfig("./config.json")
@@ -34,11 +37,14 @@ func loadAll() {
 	if err != nil {
 		panic(err)
 	}
-	allPlaylists = newPlaylists
+	allPlaylists = make(map[string]mt.Playlist)
+	for _, p := range newPlaylists {
+		allPlaylists[p.Title] = p
+	}
 }
 
-func decideRun() {
-	const helpText = `Beat Saber Playlist editor written in Go
+func mainMenu() {
+	const helpText = `Beat Saber playlist editor written in Go
 1: Show all read playlists and their songs
 2: Show all installed song data
 3: Show songs not in any playlists
@@ -62,6 +68,8 @@ func decideRun() {
 			loadAll()
 		case 4:
 			missingFromPlaylists()
+			// Reload
+			loadAll()
 		default:
 			fmt.Println("Invalid option")
 		}
@@ -73,7 +81,7 @@ func songsWithoutPlaylists() {
 	var helpText = `## %d songs without playlists ##
 1: Show songs
 2: Add to playlist
-3: Delete or move all
+3: Move or delete all
 0: Back to main menu`
 	for {
 		orphansPlaylist := getSongsWithoutPlaylists()
@@ -142,7 +150,72 @@ func songsWithoutPlaylists() {
 }
 
 func missingFromPlaylists() {
-	var missing = make(map[string][]mt.Song)
+	var helpText = `## %d songs missing from all playlists ##
+%s
+1: Show songs
+2: Remove from playlists
+0: Back to main menu`
+	for {
+		missingPlaylists := getMissingFromPlaylists()
+		var missingTotal int
+		var missingSummary string
+		for _, p := range missingPlaylists {
+			missingTotal += len(p.Songs)
+			missingSummary += fmt.Sprintf("-> %d from %s\n", len(p.Songs), p.Title)
+		}
+		fmt.Printf(helpText, missingTotal, missingSummary)
+		fmt.Println()
+		in := input.GetInputNumber()
+		fmt.Println()
+		switch in {
+		case 0:
+			return
+		case 1:
+			for _, p := range missingPlaylists {
+				fmt.Println(p.String())
+			}
+		case 2:
+			var writePlaylist mt.Playlist
+			for name, p := range missingPlaylists {
+				songs := []mt.Song{}
+				for _, s := range allPlaylists[name].Songs {
+					if s.Path != "" {
+						songs = append(songs, s)
+					}
+				}
+				if len(songs) == 0 {
+					continue
+				}
+				writePlaylist = mt.Playlist{
+					Title: p.Title,
+					Author: p.Author,
+					Image: p.Image,
+					File: p.File,
+					Songs: songs,
+				}
+				outBytes := writePlaylist.ToJSON()
+				path := p.File
+				backup := input.GetConfirm(fmt.Sprintf("Backup %s? (Y/n) ", p.Title))
+				if backup {
+					err := os.Rename(path, rePlayExt.ReplaceAllString(path, ".bak"))
+					if err != nil {
+						fmt.Printf("Cannot backup %s: %v\n", p.Title, err)
+						continue
+					}
+				}
+				err := ioutil.WriteFile(path, outBytes, 0755)
+				if err != nil {
+					fmt.Printf("Cannot write playlist: %v\n", err)
+					continue
+				}
+			}
+			return
+		}
+	}
+}
+
+func getMissingFromPlaylists() map[string]mt.Playlist {
+	var missing = make(map[string]mt.Playlist)
 	// Populate song paths
 	for _, p := range allPlaylists {
 		songs := []mt.Song{}
@@ -152,16 +225,18 @@ func missingFromPlaylists() {
 			}
 		}
 		if len(songs) > 0 {
-			missing[p.Title] = songs
+			missing[p.Title] = mt.Playlist{
+				Title: p.Title,
+				Author: p.Author,
+				Image: p.Image,
+				File: p.File,
+				Songs: songs,
+			}
 		}
 	}
-	for k, v := range missing {
-		fmt.Printf("\t --- %d missing from %s ---\n", len(v), k)
-		for _, s := range v {
-			fmt.Println(s.String())
-		}
-	}
+	return missing
 }
+
 
 func main() {
 	var timing bool
@@ -172,7 +247,7 @@ func main() {
 	flag.BoolVar(&timing, "timing", false, "Enable timing")
 	flag.Parse()
 
-	decideRun()
+	mainMenu()
 
 	if timing {
 		for k, v := range endTimes {
