@@ -90,7 +90,7 @@ func (p *Playlist) ToJSON() []byte {
 	j := PlaylistJSON{
 		Title:  p.Title,
 		Author: p.Author,
-		Image: p.Image,
+		Image:  p.Image,
 		Count:  len(p.Songs),
 		Songs:  jSongs,
 	}
@@ -119,7 +119,7 @@ func (p *Playlist) Merge(op *Playlist) Playlist {
 	return Playlist{
 		Title:  p.Title,
 		Author: p.Author,
-		Image: p.Image,
+		Image:  p.Image,
 		File:   p.File,
 		Songs:  songs,
 	}
@@ -275,4 +275,13 @@ func NewConfig(path string) (c Config, err error) {
 	c.Songs = mkdirMap["Custom songs"]
 	c.DeletedSongs = mkdirMap["Deleted songs"]
 	return
+}
+
+// StringSet a set for strings, useful for keeping track of elements
+type StringSet map[string]struct{}
+
+// Contains returns true if `v` is in the set
+func (s StringSet) Contains(v string) bool {
+	_, ok := s[v]
+	return ok
 }

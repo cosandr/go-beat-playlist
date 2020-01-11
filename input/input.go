@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 
 	mt "github.com/cosandr/go-beat-playlist/types"
 )
@@ -12,7 +13,6 @@ import (
 // GetInputNumber returns first valid number from user input
 func GetInputNumber() int {
 	scanner := bufio.NewScanner(os.Stdin)
-	fmt.Print("Enter number: ")
 	for scanner.Scan() {
 		num, err := strconv.Atoi(scanner.Text())
 		if err != nil || num < 0 {
@@ -41,15 +41,16 @@ func GetConfirm(question string) bool {
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Print(question)
 	for scanner.Scan() {
-		resp, err := strconv.ParseBool(scanner.Text())
-		if err != nil {
-			if len(scanner.Text()) == 0 {
-				return true
-			}
+		if len(scanner.Text()) == 0 {
+			return true
+		} else if strings.ToLower(scanner.Text()) == "y" {
+			return true
+		} else if strings.ToLower(scanner.Text()) == "n" {
+			return false
+		} else {
 			fmt.Printf("%s is not a valid response, try again: ", scanner.Text())
 			continue
 		}
-		return resp
 	}
 	return false
 }

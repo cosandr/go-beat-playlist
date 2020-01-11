@@ -24,7 +24,7 @@ type ScoreSaberSong struct {
 // ToInternal returns a Song from this API response
 func (s *ScoreSaberSong) ToInternal() Song {
 	return Song{
-		Key:    fmt.Sprintf("%d", s.UID),
+		Key:    fmt.Sprintf("%x", s.UID),
 		Hash:   strings.ToLower(s.ID),
 		Name:   s.Name,
 		Author: s.Author,
@@ -41,7 +41,14 @@ func MakeScoreSaberPlaylist(file *[]byte) (p Playlist, err error) {
 		return
 	}
 	var songs []Song
+	// Keep track of added hashes
+	var songSet = make(StringSet)
+	var empty struct{}
 	for _, s := range resp.Songs {
+		if songSet.Contains(s.ID) {
+			continue
+		}
+		songSet[s.ID] = empty
 		songs = append(songs, s.ToInternal())
 	}
 	p = Playlist{

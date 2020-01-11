@@ -8,6 +8,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/cosandr/go-beat-playlist/download"
 	"github.com/cosandr/go-beat-playlist/input"
 	mt "github.com/cosandr/go-beat-playlist/types"
 )
@@ -49,10 +50,12 @@ func mainMenu() {
 2: Show all installed song data
 3: Show songs not in any playlists
 4: Show songs missing from playlists
+5: Create playlist sorted by ScoreSaber star difficulty
 0: Exit`
 	for {
 		fmt.Printf("\n%s\n", helpText)
 		fmt.Printf("Loaded %d songs and %d playlists.\n", len(installedSongs.Songs), len(allPlaylists))
+		fmt.Print("Select option: ")
 		in := input.GetInputNumber()
 		fmt.Println()
 		switch in {
@@ -70,8 +73,62 @@ func mainMenu() {
 			missingFromPlaylists()
 			// Reload
 			loadAll()
+		case 5:
+			songsFromScoreSaber()
+			// Reload
+			loadAll()
 		default:
 			fmt.Println("Invalid option")
+		}
+	}
+}
+
+func songsFromScoreSaber() {
+	var helpText = `## %d songs from ScoreSaber ##
+1: Show songs
+2: Add to playlist
+0: Back to main menu`
+	fmt.Print("Enter max number of songs to fetch: ")
+	numSongs := input.GetInputNumber()
+	starSongs, err := (download.FetchByStars(numSongs))
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	for {
+		fmt.Printf(helpText, len((starSongs).Songs))
+		fmt.Println()
+		fmt.Print("Select option: ")
+		in := input.GetInputNumber()
+		switch in {
+		case 0:
+			return
+		case 1:
+			for _, s := range starSongs.Songs {
+				fmt.Printf("-> %.2f stars: %s\n", s.Stars, s.Name)
+			}
+		case 2:
+			path := fmt.Sprintf("Top%dStars.bplist", numSongs)
+			fmt.Printf("Saving as %s\n", path)
+			path = fmt.Sprintf("%s/%s", conf.Playlists, path)
+			if mt.FileExists(path) {
+				backup := input.GetConfirm("Backup existing file? (Y/n) ")
+				if backup {
+					err := os.Rename(path, rePlayExt.ReplaceAllString(path, ".bak"))
+					if err != nil {
+						fmt.Printf("Cannot backup: %v\n", err)
+						continue
+					}
+				}
+			}
+			starSongs.Title = fmt.Sprintf("Top %d Stars", numSongs)
+			starSongs.Author = "Dre"
+			err := ioutil.WriteFile(path, starSongs.ToJSON(), 0755)
+			if err != nil {
+				fmt.Printf("Cannot write playlist: %v\n", err)
+				continue
+			}
+			return
 		}
 	}
 }
@@ -87,6 +144,7 @@ func songsWithoutPlaylists() {
 		orphansPlaylist := getSongsWithoutPlaylists()
 		fmt.Printf(helpText, len((orphansPlaylist).Songs))
 		fmt.Println()
+		fmt.Print("Select option: ")
 		in := input.GetInputNumber()
 		fmt.Println()
 		switch in {
@@ -165,6 +223,7 @@ func missingFromPlaylists() {
 		}
 		fmt.Printf(helpText, missingTotal, missingSummary)
 		fmt.Println()
+		fmt.Print("Select option: ")
 		in := input.GetInputNumber()
 		fmt.Println()
 		switch in {

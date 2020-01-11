@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	mt "github.com/cosandr/go-beat-playlist/types"
+	"github.com/cosandr/go-beat-playlist/download"
+	// mt "github.com/cosandr/go-beat-playlist/types"
 )
 
 func main() {
@@ -18,13 +19,9 @@ func main() {
 	// p, err := mt.MakeBeatSaverPlaylist(&file)
 	// fmt.Printf("%s\n", p.Debug())
 	// fmt.Println(p.Songs[110].Debug())
-	path := "test/parse/playlist.bplist"
-	p, _ := mt.MakePlaylist(path)
-	path = "C:/Program Files (x86)/Steam/steamapps/common/Beat Saber/Playlists/Top100Star.json"
-	existing, _ := mt.MakePlaylist(path)
-	merged := existing.Merge(&p)
-	fmt.Printf("Existing: T: %s, A: %s, F: %s, S: %d\nNew: T: %s, A: %s, F: %s, S: %d\nMerged: T: %s, A: %s, F: %s, S: %d\n",
-		existing.Title, existing.Author, existing.File, len(existing.Songs),
-		p.Title, p.Author, p.File, len(p.Songs),
-		merged.Title, merged.Author, merged.File, len(merged.Songs))
+	p, err := (download.FetchByStars(10))
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(p.Debug())
 }
