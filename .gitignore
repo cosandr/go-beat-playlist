@@ -1,2 +1,5 @@
-test*
+*.egg
+*.jpg
 .vscode
+*.exe
+*.log

@@ -1,0 +1,6874 @@
+{
+    "92C7490D903F3E676069B92B7DE9E56B03A9677A": {
+        "diffs": [
+            {
+                "pp": "498.637",
+                "star": "11.79",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "6a37",
+        "mapper": "Kobaryo",
+        "song": "Villain Virus - [feat. Camellia]"
+    },
+    "97F3EC9CF48316CB1060CABA1029A0EEC0B402D4": {
+        "diffs": [
+            {
+                "pp": "476.433",
+                "star": "11.24",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "336.057",
+                "star": "7.9",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "208.985",
+                "star": "4.83",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "78a8",
+        "mapper": "Kobaryo",
+        "song": "SEITEN NO TERIYAKI - "
+    },
+    "DF1ED601C950F08221BDF4ED90F84E40ABEA0DDE": {
+        "diffs": [
+            {
+                "pp": "458.676",
+                "star": "11.05",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "343.575",
+                "star": "7.96",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "207.873",
+                "star": "4.81",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "76e9",
+        "mapper": "BLANKFIELD",
+        "song": "Flat World, Plain Asia - "
+    },
+    "9BF202F68C333421C69CA6AA15C648D65D4A1E0F": {
+        "diffs": [
+            {
+                "pp": "444.801",
+                "star": "10.45",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "333.754",
+                "star": "7.77",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "218.366",
+                "star": "5.06",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "7457",
+        "mapper": "Camellia",
+        "song": "Night Raid with a Dragon - "
+    },
+    "6A5AEA3CE9A7A9F120EBD4DEEA377B4A54640BFB": {
+        "diffs": [
+            {
+                "pp": "434.692",
+                "star": "10.36",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "364.577",
+                "star": "8.63",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "244.583",
+                "star": "5.7",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "202.66",
+                "star": "4.68",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "6b5f",
+        "mapper": "The Quick Brown Fox",
+        "song": "Break - "
+    },
+    "CFCA2FE00BCC418DC9ECF64D92FC01CEEC52C375": {
+        "diffs": [
+            {
+                "pp": "428.087",
+                "star": "10.08",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3036",
+        "mapper": "Hexagonial",
+        "song": "Milk Crown on Sonnetica - nameless"
+    },
+    "B7CC9DC9760CA85294C0B5FD5CA54C34522F4953": {
+        "diffs": [
+            {
+                "pp": "417.337",
+                "star": "9.76",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "317.289",
+                "star": "7.35",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "226.608",
+                "star": "5.24",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "721e",
+        "mapper": "t+pazolite",
+        "song": "RAVE-O-LUTION 456 - "
+    },
+    "7719B8DE597CB1BFDFD6048E5FC51656DD5219EE": {
+        "diffs": [
+            {
+                "pp": "413.337",
+                "star": "9.72",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "29d0",
+        "mapper": "Hexagonial",
+        "song": "Happppy song - SOOOO"
+    },
+    "463D142CFF785702A3BFC7CD511AE84DB2DB68E8": {
+        "diffs": [
+            {
+                "pp": "399.827",
+                "star": "9.7",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "330.832",
+                "star": "7.73",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "235.575",
+                "star": "5.47",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "7904",
+        "mapper": "Kaneko Chiharu",
+        "song": "iLLness LiLin - "
+    },
+    "762B7BF1C06DBCC7AAB23D955A553E5420FBA6E5": {
+        "diffs": [
+            {
+                "pp": "397.606",
+                "star": "9.38",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "28c5",
+        "mapper": "Hexagonial",
+        "song": "NUCLEAR-STAR - Camellia"
+    },
+    "68B26B53BC3E1B5999770DB7B6C4358251717521": {
+        "diffs": [
+            {
+                "pp": "393.596",
+                "star": "9.18",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "765d",
+        "mapper": "Kobaryo",
+        "song": "Recollection - "
+    },
+    "2C908DF9BB7AA93884AB9BFA8DDC598C3DE479E9": {
+        "diffs": [
+            {
+                "pp": "391.265",
+                "star": "9.15",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "5309",
+        "mapper": "t+pazolite",
+        "song": "Chrome VOX (Uncut Edition) - "
+    },
+    "A03D474F37137E0DB7FD0D58BE1D97D8458E8AE5": {
+        "diffs": [
+            {
+                "pp": "384.973",
+                "star": "9.09",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1009",
+        "mapper": "Hexagonial",
+        "song": "G1ll35 d3 R415 - Team Grimoire"
+    },
+    "E80ADF683AED066F94BBBA3E49162D7D0D7247B4": {
+        "diffs": [
+            {
+                "pp": "382.768",
+                "star": "9.07",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4479",
+        "mapper": "Electrostats",
+        "song": "Louder Than Steel - Ryu-5150"
+    },
+    "01FB2AA5064D8E30105DE66181BE1B3FBC9FA28A": {
+        "diffs": [
+            {
+                "pp": "381.02",
+                "star": "8.85",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "75f1",
+        "mapper": "Camellia",
+        "song": "Arche - "
+    },
+    "4867E299296A5B965EDC4DCD930C07703B06B96E": {
+        "diffs": [
+            {
+                "pp": "380.156",
+                "star": "8.9",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2200",
+        "mapper": "Hexagonial",
+        "song": "Daisuki, Evolution - Minazuki Airi with Atsushi"
+    },
+    "B04F04FDAA3ED6C2BCF09C0F4E9058E3CB153CD2": {
+        "diffs": [
+            {
+                "pp": "378.348",
+                "star": "8.85",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "42e8",
+        "mapper": "DankruptMemer & Moriik",
+        "song": "GHOST - Camellia"
+    },
+    "D826FA2F751020AD7E59B1AEB3F5D2902755A406": {
+        "diffs": [
+            {
+                "pp": "376.378",
+                "star": "8.88",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "229.871",
+                "star": "5.33",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "161.744",
+                "star": "3.74",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "3aa3",
+        "mapper": "iraky",
+        "song": "Hype feat. Such - PSYQUI"
+    },
+    "840DC308FFC8FDA9FA3F09401E89C7428EF1AA7F": {
+        "diffs": [
+            {
+                "pp": "374.825",
+                "star": "8.73",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "6b9b",
+        "mapper": "USAO",
+        "song": "Night sky - [Extended Mix]"
+    },
+    "66CEEFD205ECC6CD007EA851F1BF7E4856AB8FFC": {
+        "diffs": [
+            {
+                "pp": "372.353",
+                "star": "8.69",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "630e",
+        "mapper": "Camellia",
+        "song": "werewolf howls. - [''Growling'' Long ver.]"
+    },
+    "36AFD0E84D8DB7600DB5D023BE779BB47421BE6F": {
+        "diffs": [
+            {
+                "pp": "370.731",
+                "star": "8.74",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4a53",
+        "mapper": "Yun0",
+        "song": "Enigma II - Toromaru"
+    },
+    "16D54B364C4620B9951CAAC5516A8C7E7345070F": {
+        "diffs": [
+            {
+                "pp": "370.196",
+                "star": "8.71",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3d07",
+        "mapper": "iraky",
+        "song": "Acid burst - Memme"
+    },
+    "4947A4B2FB332578375A412E568DE751436429BC": {
+        "diffs": [
+            {
+                "pp": "366.796",
+                "star": "8.58",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "342b",
+        "mapper": "cheesydream",
+        "song": "Walk This Way! - Kano"
+    },
+    "3565E51A94FA064674438B961CCEDDA21BC76342": {
+        "diffs": [
+            {
+                "pp": "362.897",
+                "star": "8.49",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "658c",
+        "mapper": "Camellia",
+        "song": "B L A C K - R A Y - "
+    },
+    "30BB09ED78B0ABEE79BDECA20D60C2D071662C23": {
+        "diffs": [
+            {
+                "pp": "360.804",
+                "star": "8.44",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "624e",
+        "mapper": "Ace Aura",
+        "song": "Flow - "
+    },
+    "4310F1B1D5AE5344F6CCD0AB31B892DF166F6C1A": {
+        "diffs": [
+            {
+                "pp": "360.643",
+                "star": "8.49",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1bdd",
+        "mapper": "Various Mappers",
+        "song": "osu!memories - SakiZ"
+    },
+    "2FDDB136BDA7F9E29B4CB6621D6D8E0F8A43B126": {
+        "diffs": [
+            {
+                "pp": "359.856",
+                "star": "8.14",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1f90",
+        "mapper": "Nuketime",
+        "song": "Overkill - RIOT"
+    },
+    "1F2453197F1537DEAD709B6DD0DCB74CAD9B6BE4": {
+        "diffs": [
+            {
+                "pp": "354.733",
+                "star": "8.3",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "354.733",
+                "star": "8.3",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "305.76",
+                "star": "7.08",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "305.76",
+                "star": "7.08",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "190.409",
+                "star": "4.4",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "190.409",
+                "star": "3.46",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "139.248",
+                "star": "3.21",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "139.248",
+                "star": "4.17",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "732e",
+        "mapper": "BABYMETAL",
+        "song": "Distortion - "
+    },
+    "207CC54D61A787E26DA47CE6C0CC45D9608D87FB": {
+        "diffs": [
+            {
+                "pp": "353.966",
+                "star": "8.23",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3e4b",
+        "mapper": "Rogdude & Loloppe",
+        "song": "Heeartbeeat Oveerheeat!!!! - Camellia feat. Nanahira"
+    },
+    "8AFB0C840EA4B07DB2A16E96164CE8BE094B2339": {
+        "diffs": [
+            {
+                "pp": "350.238",
+                "star": "8.15",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "5c81",
+        "mapper": "Kobaryo",
+        "song": "Tool-Assisted Speedcore - (TQBF Frame Advance RMX)"
+    },
+    "5C6C8B78EA64E9B82FEBE58A7F8A48632F03C4E3": {
+        "diffs": [
+            {
+                "pp": "348.888",
+                "star": "8.13",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "65ee",
+        "mapper": "Camellia",
+        "song": "Bangin' Burst  - (\"Outburst\" Long ver.)"
+    },
+    "189596BB9BF3904E8E3F2178ADD7BB77FA25E21C": {
+        "diffs": [
+            {
+                "pp": "344.731",
+                "star": "8.13",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "21f4",
+        "mapper": "Hexagonial/Loloppe",
+        "song": "Brain Power (SDVX Mix) - NOMA"
+    },
+    "1E8728EDA10252145AE5C82A3562FFAB48569DFA": {
+        "diffs": [
+            {
+                "pp": "338.09",
+                "star": "7.88",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "34a8",
+        "mapper": "cheesydream",
+        "song": "PUMP - YUC'e"
+    },
+    "D8E8ED7E0661BAAD0C0E53F9720D557456E365DE": {
+        "diffs": [
+            {
+                "pp": "337.668",
+                "star": "7.86",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "217.169",
+                "star": "5.04",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "153.1",
+                "star": "3.54",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "5b2e",
+        "mapper": "DETRO",
+        "song": "volcanic - "
+    },
+    "FCD2FD6DAD7EFC7B06636E838078210B3EAC608A": {
+        "diffs": [
+            {
+                "pp": "337.644",
+                "star": "7.9",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "6b36",
+        "mapper": "Camellia x Nanahira",
+        "song": "NANI THE FUCK!! - "
+    },
+    "97747D8098D115BA2654452986893FFCC157392C": {
+        "diffs": [
+            {
+                "pp": "337.11",
+                "star": "7.89",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "468e",
+        "mapper": "Fern & Oddloop",
+        "song": "Blue Zenith - xi"
+    },
+    "BFF86E80DD163511B37444E31C49569E084E7B40": {
+        "diffs": [
+            {
+                "pp": "336.423",
+                "star": "7.84",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "5c85",
+        "mapper": "Chroma",
+        "song": "sink to the deep sea world - "
+    },
+    "9D5D9271F2F7E793748AD4028511EDEE800B40E8": {
+        "diffs": [
+            {
+                "pp": "336.141",
+                "star": "7.82",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4837",
+        "mapper": "Souk & Puds",
+        "song": "Yugure - Kobaryo"
+    },
+    "629EE2C1A14A27968A64B8AD9B25FB52F30DDE5C": {
+        "diffs": [
+            {
+                "pp": "334.498",
+                "star": "7.79",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3cbc",
+        "mapper": "Amanatsu & Pug",
+        "song": "YELL! (feat. Moimoi) - DJ Genki & Camellia"
+    },
+    "4692C6C200BC92364C268A518E9DEE89146E4391": {
+        "diffs": [
+            {
+                "pp": "332.009",
+                "star": "7.72",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "86a",
+        "mapper": "Roffle",
+        "song": "Freedom Dive - v2"
+    },
+    "AEDD974BD0B7BFAF8C9F9950BFD6368C04ADE258": {
+        "diffs": [
+            {
+                "pp": "330.284",
+                "star": "7.67",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "187.353",
+                "star": "4.36",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "2683",
+        "mapper": "Hexagonial & Splake & Puds",
+        "song": "Routine - Silent Siren"
+    },
+    "283095490EB5D0AA60B8117BF90D52FBC7D8300F": {
+        "diffs": [
+            {
+                "pp": "329.7",
+                "star": "7.7",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "214.851",
+                "star": "5.02",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "153.48",
+                "star": "3.55",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "122.341",
+                "star": "2.82",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "4502",
+        "mapper": "Saut & ManDynasty",
+        "song": "Monster - Reol"
+    },
+    "A6BEE89340610820701B2B4B706C73D86098C15C": {
+        "diffs": [
+            {
+                "pp": "329.699",
+                "star": "7.68",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "277.672",
+                "star": "6.47",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "211.058",
+                "star": "4.9",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "6b35",
+        "mapper": "Hazuki",
+        "song": "Legend of Millennium - (Short Ver.)"
+    },
+    "9DC600EE749197F16EC4F75F5D5BF2AB38F8E4F8": {
+        "diffs": [
+            {
+                "pp": "326.569",
+                "star": "7.69",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2eea",
+        "mapper": "splake & Moriik",
+        "song": "Labyrinth - Lapix"
+    },
+    "B444C14C69F0D04C7350621EBA7955496C698936": {
+        "diffs": [
+            {
+                "pp": "323.783",
+                "star": "7.53",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2bcf",
+        "mapper": "miitchel & ManDynasty",
+        "song": "Ascension to Heaven - xi"
+    },
+    "E129EA8229FA270A97799EB5B7637C6FD76E4EEC": {
+        "diffs": [
+            {
+                "pp": "323.437",
+                "star": "7.53",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3e95",
+        "mapper": "Pug",
+        "song": "EmbryO - Kabocha"
+    },
+    "04C5AECE9740A97FD3FED5A328F03FCF895FB397": {
+        "diffs": [
+            {
+                "pp": "321.43",
+                "star": "7.51",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1d77",
+        "mapper": "Zeekin",
+        "song": "RED ZONE - Tatsh & NAOKI"
+    },
+    "52FE9BF8625FF8BE431E42B228F803B628FDC7BF": {
+        "diffs": [
+            {
+                "pp": "319.945",
+                "star": "7.49",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2c27",
+        "mapper": "Various Mappers",
+        "song": "Bluenation - yaseta"
+    },
+    "1320CCC37C776EF3245A811B60D6A5E0C3E672A8": {
+        "diffs": [
+            {
+                "pp": "317.324",
+                "star": "7.37",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "5a19",
+        "mapper": "Knife Party & Tom Morello",
+        "song": "Battle Sirens (RIOT Remix) - "
+    },
+    "AEB177797284C67D7763FA820084449B483D2748": {
+        "diffs": [
+            {
+                "pp": "314.97",
+                "star": "7.36",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "e4d",
+        "mapper": "Hexagonial",
+        "song": "Ange du Blanc Pur - ke-ji feat. Nanahira"
+    },
+    "196D1061EAC3CD4BC586E5AFCAEA07C35F1D69D0": {
+        "diffs": [
+            {
+                "pp": "312.328",
+                "star": "7.36",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "191.233",
+                "star": "4.5",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "136.602",
+                "star": "3.15",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "60.473",
+                "star": "1.39",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1db6",
+        "mapper": "Saut",
+        "song": "Setsuna Imitation (feat. Yurica, Hanatan) - Yairi"
+    },
+    "F99FB53FD30F612E7716898C446984F50BC4C37D": {
+        "diffs": [
+            {
+                "pp": "311.971",
+                "star": "7.25",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "6c62",
+        "mapper": "a crowd of rebellion",
+        "song": "M1917 - "
+    },
+    "01FE02CF7CC8C74E94D5AE68D8F23F6AB143B33A": {
+        "diffs": [
+            {
+                "pp": "310.894",
+                "star": "7.25",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "270b",
+        "mapper": "Rogdude",
+        "song": "TIERRA - Dj Genki"
+    },
+    "152DA020C774105DB2D70FCBFD4991EF2878384B": {
+        "diffs": [
+            {
+                "pp": "309.685",
+                "star": "7.2",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1d68",
+        "mapper": "miitchel",
+        "song": "Galactic Symphony - Mandragora"
+    },
+    "27FCBAB3FB731B16EABA14A5D039EEFFD7BD44C9": {
+        "diffs": [
+            {
+                "pp": "306.649",
+                "star": "6.95",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1ef6",
+        "mapper": "Kry",
+        "song": "Overkill - RIOT"
+    },
+    "3DEDF5840D5438920D9105315D44FD35625F5BCD": {
+        "diffs": [
+            {
+                "pp": "306.572",
+                "star": "7.12",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1460",
+        "mapper": "Zorowo",
+        "song": "Avalanche - Memme"
+    },
+    "B758BA486DDD190D87EF5C87525FB1286E36E52B": {
+        "diffs": [
+            {
+                "pp": "305.091",
+                "star": "7.21",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "233.55",
+                "star": "5.43",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "17e4",
+        "mapper": "Hexagonial (V2)",
+        "song": "HONESTY - GYZE feat. Ettore Rigotti"
+    },
+    "D3A0DE31EBE3B61D3328D03A0E82C4152A9BE5A8": {
+        "diffs": [
+            {
+                "pp": "302.493",
+                "star": "7.05",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "e27",
+        "mapper": "xi",
+        "song": "Blue Zenith - "
+    },
+    "0EDC32C8B6414DACC62562C41953193F29E3B159": {
+        "diffs": [
+            {
+                "pp": "302.01",
+                "star": "7.05",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2800",
+        "mapper": "Hexagonial",
+        "song": "Teo (ft. Hatsune Miku) - Omoi"
+    },
+    "0597F8F7D8E396EBFEF511DC9EC98B69635CE532": {
+        "diffs": [
+            {
+                "pp": "301.899",
+                "star": "7.03",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "168.889",
+                "star": "3.92",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "88.953",
+                "star": "2.05",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "5130",
+        "mapper": "ejiejidayo",
+        "song": "Saint's Beat - Zeami"
+    },
+    "B24E5DBF100388DB53BD9EE04EEE66BD365DF84B": {
+        "diffs": [
+            {
+                "pp": "299.783",
+                "star": "6.95",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3dd3",
+        "mapper": "Rogdude",
+        "song": "Zetsubou Plantation - Yousei Teikoku"
+    },
+    "2920185B3EC35535E46E990980607F5C33547317": {
+        "diffs": [
+            {
+                "pp": "297.483",
+                "star": "7.03",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "11d1",
+        "mapper": "Kry",
+        "song": "Tool-Assisted Speedcore - Kobaryo"
+    },
+    "BC6220ACE2AEDE409EFF44851C2272322AC75C84": {
+        "diffs": [
+            {
+                "pp": "293.369",
+                "star": "6.89",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "123b",
+        "mapper": "Mapped by roeek",
+        "song": "TWISTSTEP - Pa's Lam System"
+    },
+    "F77728BB6BFFD097E6E4C10CCBE72B5E8A51FF82": {
+        "diffs": [
+            {
+                "pp": "292.722",
+                "star": "6.82",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "21f6",
+        "mapper": "Hexagonial",
+        "song": "quaver - dj TAKA"
+    },
+    "B889D49CF68A91B8A1A11D76FAFC0720063B0998": {
+        "diffs": [
+            {
+                "pp": "291.685",
+                "star": "6.78",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "29bf",
+        "mapper": "Psyc0pathic & Hexagonial",
+        "song": "Hentacito - Luis Fonsi ft. Daddy Yankee/S3RL/DaymanOurSavior"
+    },
+    "A5BE6E439863B22BB0CA36E2F4EAD53452E1B978": {
+        "diffs": [
+            {
+                "pp": "288.701",
+                "star": "6.72",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "176.126",
+                "star": "4.11",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "101.957",
+                "star": "2.35",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1a33",
+        "mapper": "Saut",
+        "song": "RELOADED - EGOIST"
+    },
+    "75B10748149340DEA74FF1870B2A59F609ACE7F5": {
+        "diffs": [
+            {
+                "pp": "286.817",
+                "star": "6.7",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "151.796",
+                "star": "3.53",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "81.173",
+                "star": "1.87",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "49.756",
+                "star": "1.14",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "34.478",
+                "star": "0.79",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "41f3",
+        "mapper": "squeaksies",
+        "song": "Magnetism - M2U"
+    },
+    "4CE7BCA5960C90FE634D73F4BB8375EC6A31ADAE": {
+        "diffs": [
+            {
+                "pp": "284.726",
+                "star": "6.62",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "140.522",
+                "star": "3.26",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1f11",
+        "mapper": "BlackBlazon & Kolezan",
+        "song": "g a r d e n (Short Ver.) - DM DOKURO"
+    },
+    "EA08458FFE4336A205E1CBAE539183E697845358": {
+        "diffs": [
+            {
+                "pp": "283.224",
+                "star": "6.63",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "194.111",
+                "star": "4.49",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "106.247",
+                "star": "2.45",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "68.875",
+                "star": "1.58",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "62c9",
+        "mapper": "ryo (supercell)",
+        "song": "Great Distance - feat.chelly"
+    },
+    "AB2F578EC7A8D381D59B35E102389DF8E516D9AD": {
+        "diffs": [
+            {
+                "pp": "281.474",
+                "star": "6.62",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1ed3",
+        "mapper": "Kikis",
+        "song": "Akasha - xi"
+    },
+    "41C21A4C326D3B427DC68509921A4CB6C0F4B3CA": {
+        "diffs": [
+            {
+                "pp": "281.359",
+                "star": "6.6",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2789",
+        "mapper": "squeaksies",
+        "song": "Quo Vadis - M2U"
+    },
+    "F172A6F3B7061BF8ED321A65ABA63D6E226CE6F2": {
+        "diffs": [
+            {
+                "pp": "278.909",
+                "star": "6.54",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "360b",
+        "mapper": "squeaksies",
+        "song": "Mare Maris - M2U"
+    },
+    "1511D6A7D4BEDEB8D9E9C0286EA44784F01EAE0E": {
+        "diffs": [
+            {
+                "pp": "278.487",
+                "star": "6.48",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2731",
+        "mapper": "Yun0 & Moriik",
+        "song": "ALTONA - SOUND HOLIC Vs. SWING HOLIC"
+    },
+    "DEE2EF2FC976487AFCE124AE05403DB9135DB731": {
+        "diffs": [
+            {
+                "pp": "277.364",
+                "star": "6.59",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1e80",
+        "mapper": "miitchel",
+        "song": "Der Wald (kors k Remix) - Erehamonika remixed by kors k"
+    },
+    "3D8FA87644F593218A74886988B17BE56BAD6345": {
+        "diffs": [
+            {
+                "pp": "276.451",
+                "star": "6.42",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1d7c",
+        "mapper": "Zeekin",
+        "song": "V for EXTREME - dj TAKA"
+    },
+    "BA2FD3E414A9E0868AC4D0D450ED9F74B5797CC2": {
+        "diffs": [
+            {
+                "pp": "275.907",
+                "star": "6.49",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "48e9",
+        "mapper": "Scrappy",
+        "song": "Last Proof - ZAQ"
+    },
+    "BEE657BFA017983257C34347FC23D867996F114F": {
+        "diffs": [
+            {
+                "pp": "275.206",
+                "star": "6.38",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "24ec",
+        "mapper": "Kry & AaltopahWi",
+        "song": "Phantasia - Yunosuke"
+    },
+    "D03257E1541D4E6381ACCA614DCA5225D62FA1E4": {
+        "diffs": [
+            {
+                "pp": "274.517",
+                "star": "6.38",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1665",
+        "mapper": "Todokete",
+        "song": "Two-Faced Lovers feat. Miku - by Wowaka"
+    },
+    "3082BDB176578E683C0B5AE755A7ABAB5FF80363": {
+        "diffs": [
+            {
+                "pp": "272.933",
+                "star": "6.41",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "200.74",
+                "star": "4.66",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "146.732",
+                "star": "3.41",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "113.373",
+                "star": "2.62",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "450b",
+        "mapper": "Saut",
+        "song": "FIRST - AKI AKANE"
+    },
+    "55DA5573F7F2CE29C9E414837581364B162F52B6": {
+        "diffs": [
+            {
+                "pp": "272.85",
+                "star": "6.39",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "49cb",
+        "mapper": "iraky & Loloppe",
+        "song": "flying in the flow of deep-sea (Short Ver.) - Camellia"
+    },
+    "B5F2D1D582BE2706E44B860B8A04C7F5F1BE2910": {
+        "diffs": [
+            {
+                "pp": "272.314",
+                "star": "6.35",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2449",
+        "mapper": "Psyc0pathic & Rinku & AaltopahWi & Shad",
+        "song": "Solace of Oblivion - Helblinde"
+    },
+    "8C51D94E3E247DF86A4C7113E9FDBCC434A56F4B": {
+        "diffs": [
+            {
+                "pp": "269.526",
+                "star": "6.48",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "e55",
+        "mapper": "Various Mappers",
+        "song": "Cycle Hit - KASAI HARCORES"
+    },
+    "061DB548E0E73A58E93835997A3B06C7C27756E6": {
+        "diffs": [
+            {
+                "pp": "269.405",
+                "star": "6.32",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "215.214",
+                "star": "5.01",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "167.009",
+                "star": "3.88",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "103.524",
+                "star": "2.39",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "64.064",
+                "star": "1.48",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "294c",
+        "mapper": "Saut",
+        "song": "CANDYYYLAND (Pa's Lam System Remix) - tofubeats"
+    },
+    "E1FB83BE49CBE3BB000D0DDC186CB0516AFDCC0B": {
+        "diffs": [
+            {
+                "pp": "263.402",
+                "star": "6.13",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3e24",
+        "mapper": "Rogdude",
+        "song": "HIBANA feat. Hatsune Miku - DECO*27"
+    },
+    "AA4038E7B937773382C569A097D7B3CF0C40407D": {
+        "diffs": [
+            {
+                "pp": "263.183",
+                "star": "6.11",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "65.232",
+                "star": "1.5",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "32.669",
+                "star": "0.75",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1949",
+        "mapper": "Chroma",
+        "song": "Black Emperor - Chart by Mystikmol"
+    },
+    "F369747C6B54914DEAA163AAE85816BA5A8C1845": {
+        "diffs": [
+            {
+                "pp": "261.206",
+                "star": "6.09",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "245.791",
+                "star": "5.74",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "157.569",
+                "star": "3.64",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "103.954",
+                "star": "2.4",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "48.276",
+                "star": "1.11",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "449a",
+        "mapper": "Uninstaller & Saut",
+        "song": "Fallen (Short Ver.) - EGOIST"
+    },
+    "688DD94E8DCC7634A9DC5D38D3A7AA1522A05475": {
+        "diffs": [
+            {
+                "pp": "261.144",
+                "star": "6.13",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "235b",
+        "mapper": "splake",
+        "song": "Halcyon - xi"
+    },
+    "BD93D34BEFA6C15388707DB4144796307D428A9A": {
+        "diffs": [
+            {
+                "pp": "261.044",
+                "star": "6.07",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4554",
+        "mapper": "Aithke",
+        "song": "MIRROR - THE ORAL CIGARETTES"
+    },
+    "83C08F4B86A4BBE232A8DEB9527EC6D6B24EC9AB": {
+        "diffs": [
+            {
+                "pp": "260.294",
+                "star": "6.09",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "190.278",
+                "star": "4.42",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1ed1",
+        "mapper": "Hexagonial",
+        "song": "Sidetracked Day (Short Ver.) - VINXIS"
+    },
+    "200549108BB22752112C62D102BF69EE0C47FD7A": {
+        "diffs": [
+            {
+                "pp": "258.39",
+                "star": "5.99",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2f94",
+        "mapper": "Yun0",
+        "song": "DeltaMAX - DM Ashura"
+    },
+    "C02550F9A61779CA5FB2962883B917EA0673F5FE": {
+        "diffs": [
+            {
+                "pp": "258.278",
+                "star": "6.02",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "361f",
+        "mapper": "RaZn",
+        "song": "Wish upon Twin Stars - xi"
+    },
+    "E3EF6CAB44FF2222C09B399E8E5A62A095233621": {
+        "diffs": [
+            {
+                "pp": "254.806",
+                "star": "5.91",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "21b8",
+        "mapper": "JackoDEJ",
+        "song": "Senpai Notice Me - Camellia ft. Nanahira"
+    },
+    "54373BB7B8A3ACD8BFB6B4CE65A2B37B39E3F6BE": {
+        "diffs": [
+            {
+                "pp": "254.7",
+                "star": "5.95",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "6b33",
+        "mapper": "Takeshi Watanabe",
+        "song": "Fallin' Angel - "
+    },
+    "203819C121D010276D910FD2793F3DAD26ACD5DD": {
+        "diffs": [
+            {
+                "pp": "253.494",
+                "star": "5.88",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "183.362",
+                "star": "4.25",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "76f5",
+        "mapper": "Gabber Piet",
+        "song": "Hakke & Zage - (Radio Mix)"
+    },
+    "9F58BC121CE735E903E42A8DD4947FA2E9360ED8": {
+        "diffs": [
+            {
+                "pp": "252.169",
+                "star": "5.85",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "18e3",
+        "mapper": "Zorowo",
+        "song": "You're Everything - P*Light vs Yuyoyuppe"
+    },
+    "53C04084A8B33AC931C10D1D942E9D6B86D3ECA0": {
+        "diffs": [
+            {
+                "pp": "250.785",
+                "star": "5.85",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "216.175",
+                "star": "5.05",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1ed4",
+        "mapper": "Hexagonial",
+        "song": "Inferno - 9mm Parabellum Bullet"
+    },
+    "E1AE03504B1E23AA44CCB194134C84B1BE21C8DA": {
+        "diffs": [
+            {
+                "pp": "250.354",
+                "star": "5.85",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "188.469",
+                "star": "4.36",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "86.734",
+                "star": "2",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "4e10",
+        "mapper": "Various Mappers",
+        "song": "Ether Strike - Akira Complex"
+    },
+    "6089D255B56DEA46C030AEB3A66BE8AA48029E7D": {
+        "diffs": [
+            {
+                "pp": "249.795",
+                "star": "5.8",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "13fe",
+        "mapper": "NiceToMeetYou",
+        "song": "Ievan Polkka - Nightcore - "
+    },
+    "81D9E735CF005F93BC6064A963FE49B4C1BEEF62": {
+        "diffs": [
+            {
+                "pp": "249.197",
+                "star": "5.85",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "13cd",
+        "mapper": "Saut",
+        "song": "Future Candy - YUC'e"
+    },
+    "839245D64719D018E40E2F11654B7C49230CA126": {
+        "diffs": [
+            {
+                "pp": "247.998",
+                "star": "5.77",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "102.818",
+                "star": "2.37",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "44.79",
+                "star": "1.03",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "5f00",
+        "mapper": "saradisk",
+        "song": "166 - Suzuya Homerarete Nobiru Type Nandesu. - "
+    },
+    "AFB47D1ABB417A76A4293D29A725D6DD74D76782": {
+        "diffs": [
+            {
+                "pp": "245.72",
+                "star": "5.71",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "114.279",
+                "star": "2.64",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "71.723",
+                "star": "1.65",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "46.999",
+                "star": "1.08",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "40.984",
+                "star": "0.94",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "32d4",
+        "mapper": "Redmagi",
+        "song": "MariannE (Lanota Edit) - Yooh"
+    },
+    "F52F1B4028F16C095237EA504A5A56B76ECB318E": {
+        "diffs": [
+            {
+                "pp": "245.298",
+                "star": "5.73",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1d19",
+        "mapper": "Splake",
+        "song": "ANiMA - Xi"
+    },
+    "F7E5BA8295C1040E1DBDC69F5F4C21A0557D960F": {
+        "diffs": [
+            {
+                "pp": "240.922",
+                "star": "5.63",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1aeb",
+        "mapper": "DankruptMemer",
+        "song": "Be Wild - Camellia feat. Yukacco"
+    },
+    "CA4F921E9FB576192203CEB7FCAF54E230055591": {
+        "diffs": [
+            {
+                "pp": "239.305",
+                "star": "5.59",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "fa3",
+        "mapper": "Ruckus",
+        "song": "Deadly Nostalgia - Zemeth"
+    },
+    "D60CA1E3B6175D57DAC7463D532989F83C257EFB": {
+        "diffs": [
+            {
+                "pp": "237.254",
+                "star": "5.49",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "176.806",
+                "star": "4.1",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "27d8",
+        "mapper": "fraies",
+        "song": "Monochrome Butterfly - Aitsuki Nakuru"
+    },
+    "36C0FA7FA9F5408A535C248E52B599A284C76190": {
+        "diffs": [
+            {
+                "pp": "236.602",
+                "star": "5.49",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "259b",
+        "mapper": "Kry",
+        "song": "Midnight - Teikyou"
+    },
+    "EA294DB03D1BAF7919B48F09DBC02C8494AB5B5A": {
+        "diffs": [
+            {
+                "pp": "235.525",
+                "star": "5.47",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4f33",
+        "mapper": "Scrappy",
+        "song": "Enantiomorphs - Camellia"
+    },
+    "C1679483DEEF2187F09DD5CCB4E16CADE04D7013": {
+        "diffs": [
+            {
+                "pp": "235.305",
+                "star": "5.46",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1368",
+        "mapper": "jackscape",
+        "song": "ParagonX9 - Infiltration - "
+    },
+    "0F1467CF627A9B8CCA54985FFE95670CC39201BE": {
+        "diffs": [
+            {
+                "pp": "234.954",
+                "star": "5.45",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "110.179",
+                "star": "2.54",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "74.758",
+                "star": "1.72",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "49.711",
+                "star": "1.14",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "69de",
+        "mapper": "KURORAK",
+        "song": "Jakarta PROGRESSION - "
+    },
+    "6D657DEC81613BF44917E7A1AD1B00763128B9E4": {
+        "diffs": [
+            {
+                "pp": "231.586",
+                "star": "5.38",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "2bb6",
+        "mapper": "splake",
+        "song": "Stay Alive (Jun Kuroda Bootleg Remix) - EMILIA (CV: Rie Takahashi)"
+    },
+    "1E86B21402C5EE98F3DB246F218135B3FF61A21A": {
+        "diffs": [
+            {
+                "pp": "230.501",
+                "star": "5.38",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "210.884",
+                "star": "4.9",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "123.619",
+                "star": "2.86",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "85.831",
+                "star": "1.97",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "55.494",
+                "star": "1.28",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "4e92",
+        "mapper": "iraky & Hoppaw",
+        "song": "Shera - MYUKKE"
+    },
+    "58E760690FFB379864D76B06505F4056E84FBE84": {
+        "diffs": [
+            {
+                "pp": "228.399",
+                "star": "5.3",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "93.551",
+                "star": "2.17",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "66.371",
+                "star": "1.53",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "50.44",
+                "star": "1.16",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "34.642",
+                "star": "0.8",
+                "scores": "0",
+                "diff": "Easy"
+            },
+            {
+                "pp": "34.642",
+                "star": "0.8",
+                "scores": "0",
+                "diff": "Easy"
+            },
+            {
+                "pp": "34.642",
+                "star": "0.8",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "6b8c",
+        "mapper": "TheFatRat",
+        "song": "MAYDAY - feat. Laura Brehm"
+    },
+    "131742D6624B8C25BA46FBE5913C542CA51C9332": {
+        "diffs": [
+            {
+                "pp": "227.759",
+                "star": "5.33",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2a03",
+        "mapper": "Yun0",
+        "song": "ouroboros -twin stroke of the end- - Cranky VS MASAKI"
+    },
+    "8FB6C0898680ECDC9D5CEBB7B823D7341D850C0A": {
+        "diffs": [
+            {
+                "pp": "227.362",
+                "star": "5.28",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "8e9",
+        "mapper": "dahZee",
+        "song": "Big Sky (Agnelli & Nelson Remix) - John O'Callaghan"
+    },
+    "8B3707777D0288E8233531594F31857C24FFDC2D": {
+        "diffs": [
+            {
+                "pp": "226.658",
+                "star": "5.3",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3c6c",
+        "mapper": "Kikis",
+        "song": "Engage-Rex- - Getty vs DJ DiA"
+    },
+    "587EE9411A4F81E56A97FE2F281AA0C82ADA84F5": {
+        "diffs": [
+            {
+                "pp": "224.337",
+                "star": "5.2",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3da7",
+        "mapper": "Barry Seggai",
+        "song": "Trusting - Merry (CV: Chika Anzai)"
+    },
+    "3FB5C8CC39DFEE210530C02FDC2EB55B9179209C": {
+        "diffs": [
+            {
+                "pp": "223.73",
+                "star": "5.19",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4038",
+        "mapper": "Aithke",
+        "song": "Zettai Tokken Shuchou Shimasu! Hoshi Syoko Solo Remix - Syoko Hoshi (CV: Satsumi Matsuda)"
+    },
+    "D0B6C6880FC6415CD4839A71691D71E41B2C4D76": {
+        "diffs": [
+            {
+                "pp": "222.36",
+                "star": "5.22",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4c",
+        "mapper": "UNDEAD CORPORATION (mapped by Roffle)",
+        "song": "Everything will freeze - "
+    },
+    "999FC247E84E51D701A6DB68EB543D2DE2047A99": {
+        "diffs": [
+            {
+                "pp": "222.324",
+                "star": "5.18",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "31d4",
+        "mapper": "Goatgarien",
+        "song": "Arcade Busters - cysmix"
+    },
+    "0BFAB2B62C6D7EA1C3587C48EFD1A0EEC365D983": {
+        "diffs": [
+            {
+                "pp": "220.015",
+                "star": "5.26",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "117.793",
+                "star": "2.77",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "51.226",
+                "star": "1.18",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "126c",
+        "mapper": "Kaneko Chiharu",
+        "song": "iLLness LiLin - Chart by Mystikmol"
+    },
+    "376F2ACE119DC0BA9C7D2DA74BF5AE096E0021E1": {
+        "diffs": [
+            {
+                "pp": "219.852",
+                "star": "5.11",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1ba1",
+        "mapper": "Kry",
+        "song": "ACE FOR ACES - TAGxU1"
+    },
+    "E5F61DBD37A9CB46506C899ECC6861B6491D27DD": {
+        "diffs": [
+            {
+                "pp": "218.702",
+                "star": "5.06",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "180.332",
+                "star": "4.17",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "81.576",
+                "star": "1.88",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "50.52",
+                "star": "1.16",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "2dd6",
+        "mapper": "Yun0",
+        "song": "Berry Go !! - Freezer (Feat. Kiichigo)"
+    },
+    "326C13F6664093537D89222CDF1C3FF7C9CE09C8": {
+        "diffs": [
+            {
+                "pp": "218.649",
+                "star": "5.06",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2ab1",
+        "mapper": "Pug & Puds",
+        "song": "Star Night Snow (Short edit) - n-buna x Orangestar feat. Hatsune Miku"
+    },
+    "3DC717E1B6AC8EFBD709D021665774B4D3B08430": {
+        "diffs": [
+            {
+                "pp": "216.785",
+                "star": "5.02",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "72ef",
+        "mapper": "Yuyoyuppe",
+        "song": "Hidamari no Uta - "
+    },
+    "A5C831BAE7B74BB1CDF02FDE8EB93E40023EE15B": {
+        "diffs": [
+            {
+                "pp": "212.844",
+                "star": "4.94",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1493",
+        "mapper": "DropOfFire",
+        "song": "R4V3 B0Y (Rave Boy) - S3RL"
+    },
+    "DACC5522BCF427BEE197E7688D96A29DCDD48FB8": {
+        "diffs": [
+            {
+                "pp": "211.904",
+                "star": "4.94",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1d64",
+        "mapper": "Yun0",
+        "song": "Sakura Reflection (P*Light Slayer Remix) - P*Light"
+    },
+    "85979CB6C4289DF5DB64CA2BF1A564CA265F430A": {
+        "diffs": [
+            {
+                "pp": "211.299",
+                "star": "4.9",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "3e27",
+        "mapper": "BlackBlazon & EpicEwok",
+        "song": "Barracuda - Noisestorm"
+    },
+    "B70AEEF2EE915CED48593422931E8BA2A1F4E973": {
+        "diffs": [
+            {
+                "pp": "207.941",
+                "star": "4.83",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "117.852",
+                "star": "2.73",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "75.221",
+                "star": "1.73",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "38.238",
+                "star": "0.88",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "31.731",
+                "star": "0.73",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "4a2a",
+        "mapper": "squeaksies",
+        "song": "Crying for Rain - Minami"
+    },
+    "59EDC79516ACBC2EDAA130542F8D3A204585BFF0": {
+        "diffs": [
+            {
+                "pp": "207.314",
+                "star": "4.8",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "3e05",
+        "mapper": "Rogdude",
+        "song": "Koi no Hime Hime Pettanko - *namirin"
+    },
+    "5C382E8993DE8780A39B0B77E07B0CCFE00BD3A3": {
+        "diffs": [
+            {
+                "pp": "206.457",
+                "star": "4.78",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "118.188",
+                "star": "2.73",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "81.498",
+                "star": "1.88",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "55.078",
+                "star": "1.27",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "39bc",
+        "mapper": "ManDynasty",
+        "song": "World's End, Girl's Rondo (Asterisk DnB Remix) - Wakeshima Kanon"
+    },
+    "CDA9F371D927E69B219D1603C53CC4661A87C926": {
+        "diffs": [
+            {
+                "pp": "204.827",
+                "star": "4.77",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "3ca3",
+        "mapper": "squeaksies",
+        "song": "Stereo Future (TV Size) - BiSH"
+    },
+    "1CCA456BF71339F4A9B0E7BEE5EF9E6A016D20CC": {
+        "diffs": [
+            {
+                "pp": "204.166",
+                "star": "4.75",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "153.57",
+                "star": "3.56",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "67.618",
+                "star": "1.56",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "243e",
+        "mapper": "Edzo",
+        "song": "Snakey Chantey - Kumi Tanioka"
+    },
+    "E4920174BBEF9E571750F10E99133811D74ABF72": {
+        "diffs": [
+            {
+                "pp": "204.139",
+                "star": "4.74",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "163.467",
+                "star": "3.78",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "79.931",
+                "star": "1.84",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "712e",
+        "mapper": "ASIAN KUNG-FU GENERATION",
+        "song": "Haruka Kanata - (TV Size)"
+    },
+    "3F729EE74DB0D1F3807524C99A5D81C0EF81D800": {
+        "diffs": [
+            {
+                "pp": "203.612",
+                "star": "4.73",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "141.977",
+                "star": "3.29",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "91.229",
+                "star": "2.1",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "67.038",
+                "star": "1.54",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "5d9f",
+        "mapper": "Freezer (Feat. Kiichigo)",
+        "song": "Dreamin' Tonight - "
+    },
+    "E94785A8520A1AA69F7BBE9CBEF12917A765ACC1": {
+        "diffs": [
+            {
+                "pp": "203.495",
+                "star": "4.73",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1c77",
+        "mapper": "Hexagonial",
+        "song": "Belly Flopper - O2i3"
+    },
+    "045662B7C37AF1D09E0F0A54C7076D4B2CB2C721": {
+        "diffs": [
+            {
+                "pp": "195.691",
+                "star": "4.54",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1aed",
+        "mapper": "Fayhe(EX+ by Mystimol)",
+        "song": "Pray(TV Size) - Chisuga Haruka"
+    },
+    "D0B80C6F3B072791779D39A2BC637719B6E99250": {
+        "diffs": [
+            {
+                "pp": "194.627",
+                "star": "4.52",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "96.313",
+                "star": "2.22",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "46.346",
+                "star": "1.07",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "243f",
+        "mapper": "Todokete",
+        "song": "Bomb Rush Blush (Smash Ultimate Mix) - Tomoya Ohtani"
+    },
+    "58EB1C803030D10EE71E91D4FE6C966B09AC341C": {
+        "diffs": [
+            {
+                "pp": "193.741",
+                "star": "4.47",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "71e5",
+        "mapper": "Hifumi",
+        "song": "Moudoku ga Osou - (Mafumafu Cover)"
+    },
+    "C9C15D3F3109A8F732B41B299CE84556BEBF73AC": {
+        "diffs": [
+            {
+                "pp": "192.943",
+                "star": "4.46",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "116.14",
+                "star": "2.68",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "83.065",
+                "star": "1.92",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "56.267",
+                "star": "1.29",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "41.45",
+                "star": "0.95",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "4adb",
+        "mapper": "Redmagi",
+        "song": "Deja Vu (Short Ver.) - Dave Rodgers"
+    },
+    "2AD4E086C43A343D9DCDADBE3E7822095109B5E9": {
+        "diffs": [
+            {
+                "pp": "191.9",
+                "star": "4.65",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "d95",
+        "mapper": "Penoreri",
+        "song": "Everlasting Message - Chart by Mystikmol"
+    },
+    "A1563B3D664E6D58419F2D77E924C751B909EC7F": {
+        "diffs": [
+            {
+                "pp": "191.783",
+                "star": "4.44",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "22d8",
+        "mapper": "Kry",
+        "song": "Spectrum - Zedd"
+    },
+    "7DD5CB9A2E55426BC5BE81566378A5DA97D07102": {
+        "diffs": [
+            {
+                "pp": "190.6",
+                "star": "4.42",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "305b",
+        "mapper": "OrangeW",
+        "song": "Mirai to Mirai - nayutalien ft. Mirai Akari"
+    },
+    "B8C98FFC598703AADB4A3CB921D2830D270B57A5": {
+        "diffs": [
+            {
+                "pp": "190.092",
+                "star": "4.39",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "132.12",
+                "star": "3.06",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "57c2",
+        "mapper": "Getter Jaani",
+        "song": "Rockefeller Street (Nightcore) - "
+    },
+    "8851ADD15E0FFA4818EE033CCC92DE6CE133DEC4": {
+        "diffs": [
+            {
+                "pp": "189.783",
+                "star": "4.61",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "a76",
+        "mapper": "kamome sano electric orchestra",
+        "song": "HE4VEN - Chart by Mystikmol"
+    },
+    "22DEB3F337EE75AAECF646C257D3FCC91D27728D": {
+        "diffs": [
+            {
+                "pp": "186.939",
+                "star": "4.34",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "141.607",
+                "star": "3.27",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "71.167",
+                "star": "1.64",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "5fd4",
+        "mapper": "ShinRa-Bansho",
+        "song": "Real Or Fake - "
+    },
+    "EB28A79E2DBC80948D0EA09631E83557EA6B6735": {
+        "diffs": [
+            {
+                "pp": "186.745",
+                "star": "4.33",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "152.312",
+                "star": "3.52",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "104.894",
+                "star": "2.42",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "68.975",
+                "star": "1.59",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "54.102",
+                "star": "1.24",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1ffd",
+        "mapper": "Kolezan",
+        "song": "Senbonzakura (Short Ver.) - Kradness + Giga-P"
+    },
+    "6F41DB10DB5070511552D5932419C738B17D3E41": {
+        "diffs": [
+            {
+                "pp": "186.557",
+                "star": "4.41",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "19de",
+        "mapper": "Chroma",
+        "song": "Made In Love - Chart by Mystikmol"
+    },
+    "8EEB20D53093FCF060460AA9AC6815D0668D27D1": {
+        "diffs": [
+            {
+                "pp": "183.089",
+                "star": "4.42",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1211",
+        "mapper": "Saut",
+        "song": "City Lights (Pa's Lam System Remix) - HyperJuice"
+    },
+    "8BD769820F8D71EBC25964771DDC950B5EBD3AAB": {
+        "diffs": [
+            {
+                "pp": "182.475",
+                "star": "4.27",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2120",
+        "mapper": "Hexagonial",
+        "song": "OKAY - Tokyo Machine"
+    },
+    "F2CBCAF5C58BA9F7218CC4BCB304A401F874B784": {
+        "diffs": [
+            {
+                "pp": "181.24",
+                "star": "4.21",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "130.1",
+                "star": "3",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "257c",
+        "mapper": "BlackBlazon & Minty & Nolan",
+        "song": "level One - Dj Striden"
+    },
+    "F1591BF3F2D821A48BB86214C9DA47D8CFF24046": {
+        "diffs": [
+            {
+                "pp": "179.993",
+                "star": "4.16",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "123.118",
+                "star": "2.84",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "92.79",
+                "star": "2.14",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "68bb",
+        "mapper": "xi",
+        "song": "FREEDOM DiVE - (ZipperKim Remix)"
+    },
+    "EC09852C974341516030D69776322DA85F9BF539": {
+        "diffs": [
+            {
+                "pp": "179.843",
+                "star": "4.18",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "360f",
+        "mapper": "squeaksies",
+        "song": "Again - YUI"
+    },
+    "967D96E7DFD3EE444071E0A24DCC5FBB5B535266": {
+        "diffs": [
+            {
+                "pp": "178.804",
+                "star": "4.15",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "102.525",
+                "star": "2.37",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "46ba",
+        "mapper": "Uninstaller",
+        "song": "Summer Night Hiking - YUC'e"
+    },
+    "D52D9C4D44C2C9CCD8AA4C27F82C96432B871E79": {
+        "diffs": [
+            {
+                "pp": "176.455",
+                "star": "4.1",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "123.364",
+                "star": "2.85",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "95.851",
+                "star": "2.21",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "33fe",
+        "mapper": "Uninstaller",
+        "song": "Hoshi ga Matataku Konna Yoru ni - supercell"
+    },
+    "60DBD91B8D38DE792614A847FFE1D8E227597EB8": {
+        "diffs": [
+            {
+                "pp": "173.059",
+                "star": "4.01",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "554",
+        "mapper": "Jeff Williams",
+        "song": "Time To Say Goodbye - ft. Casey Lee Williams"
+    },
+    "E3DAD947B390E4CDA91875543E99DE7F918E3CE3": {
+        "diffs": [
+            {
+                "pp": "170.762",
+                "star": "3.97",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "29c0",
+        "mapper": "Psyc0pathic & Hexagonial",
+        "song": "Teopacito feat. Will Stetson - Luis Fonsi ft. Daddy Yankee / R3 Music Box / Omoi"
+    },
+    "DD1E4D372642EE3079BC9494D424C1294239CE78": {
+        "diffs": [
+            {
+                "pp": "168.568",
+                "star": "3.91",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "21bb",
+        "mapper": "ejiejidayo",
+        "song": "THE BLUE - M.S.S Project"
+    },
+    "73AA21E280242CC6935CFE371B9DA96720032FF7": {
+        "diffs": [
+            {
+                "pp": "168.106",
+                "star": "3.9",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1a8a",
+        "mapper": "Rogdude",
+        "song": "Bitch Lasagna - PewdiePie"
+    },
+    "D2E8521CED63CD513B70E91CD23394FCA0045842": {
+        "diffs": [
+            {
+                "pp": "168.041",
+                "star": "3.89",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "2711",
+        "mapper": "Joetastic",
+        "song": "Courage - Yuuki Asuna (CV: Tomatsu Haruka)"
+    },
+    "718C11D8C8342CC4B46302B4C6C92302440A52FD": {
+        "diffs": [
+            {
+                "pp": "166.078",
+                "star": "3.86",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "111.068",
+                "star": "2.57",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "79.136",
+                "star": "1.82",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "50.954",
+                "star": "1.17",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1763",
+        "mapper": "Kizuflux",
+        "song": "Black Shout - Roselia"
+    },
+    "692C3639C199DC1FA381325B77A70966186C125F": {
+        "diffs": [
+            {
+                "pp": "165.349",
+                "star": "3.91",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "109.473",
+                "star": "2.54",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "71.489",
+                "star": "1.65",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1942",
+        "mapper": "Moriik",
+        "song": "Chrome Vox - t+pazolite"
+    },
+    "43E15D7F562EDD3C5ED5AE2D3D1039A9EAC91150": {
+        "diffs": [
+            {
+                "pp": "163.907",
+                "star": "3.79",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "128.579",
+                "star": "2.97",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "77.417",
+                "star": "1.78",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "75b4",
+        "mapper": "Sakuragaoka High School Light Music Club",
+        "song": "Don't say \"lazy\" - ft. Afterglow"
+    },
+    "A82D821528D118F7AB16F7B237096D6779A33056": {
+        "diffs": [
+            {
+                "pp": "161.811",
+                "star": "3.75",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "2871",
+        "mapper": "Rogdude",
+        "song": "Redo (TV Size) - Konomi Suzuki"
+    },
+    "F83EDEC86D3FAF683711ECB0A9DF6BD65D2D0CE0": {
+        "diffs": [
+            {
+                "pp": "157.735",
+                "star": "3.65",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "13e9",
+        "mapper": "Mapped by roeek",
+        "song": "BUBBLE TEA - dark cat"
+    },
+    "B54881C288E83036EC8A67E774926CE334798F4E": {
+        "diffs": [
+            {
+                "pp": "157.319",
+                "star": "3.65",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "78.741",
+                "star": "1.81",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2441",
+        "mapper": "Edzo",
+        "song": "Crocodile Cacophony - Soshi Abe"
+    },
+    "5C6C1D7CFDA4C91920CE0510FE4B43D6CA918AFF": {
+        "diffs": [
+            {
+                "pp": "156.234",
+                "star": "3.63",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1f3b",
+        "mapper": "CoolingCloset",
+        "song": "Hammer o Denpa Song ni Shitemita - kana"
+    },
+    "49A92622AE19F0C317001476E8805F6234B6378C": {
+        "diffs": [
+            {
+                "pp": "155.169",
+                "star": "3.59",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "155.169",
+                "star": "3.59",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "83.07",
+                "star": "1.91",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "6f0a",
+        "mapper": "deadmau5",
+        "song": "Monophobia - (ft. Rob Swire) (Short Ver.)"
+    },
+    "DA30511AB750F7DF3B2E5416EACC1729F6A5D8B2": {
+        "diffs": [
+            {
+                "pp": "154.613",
+                "star": "3.59",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "204c",
+        "mapper": "Hexagonial",
+        "song": "Indoor Kei Nara Trackmaker - Yunomi & nicamoq"
+    },
+    "BF1F95EFCA1D131AF958F6B6AB905145637254DE": {
+        "diffs": [
+            {
+                "pp": "153.456",
+                "star": "3.56",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "25fc",
+        "mapper": "AaltopahWi",
+        "song": "Invulnerable - Taishi"
+    },
+    "8A959C2FCB00A410DC8E0C13C04ADE3F75F195E9": {
+        "diffs": [
+            {
+                "pp": "153.387",
+                "star": "3.57",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "147.564",
+                "star": "3.43",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "107.537",
+                "star": "2.48",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "25.891",
+                "star": "0.59",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "188c",
+        "mapper": "Freeek",
+        "song": "La Grange - ZZ Top"
+    },
+    "8FA57EA855A6BBE0AB65E710EA3F2241F839B50B": {
+        "diffs": [
+            {
+                "pp": "153.122",
+                "star": "3.55",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "135.736",
+                "star": "3.14",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "89.329",
+                "star": "2.06",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "263f",
+        "mapper": "Various Mappers",
+        "song": "Adieu, to this Lively Graveyard - Stack Bros."
+    },
+    "E195BD186A68D03BD586F50F71943D43A38D915C": {
+        "diffs": [
+            {
+                "pp": "151.405",
+                "star": "3.52",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "2785",
+        "mapper": "squeaksies",
+        "song": "Clear Rose - IZMIZM"
+    },
+    "0167975F8788AFBBC7D27B4C939395660C1DE854": {
+        "diffs": [
+            {
+                "pp": "150.676",
+                "star": "3.49",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "121.506",
+                "star": "2.8",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1d3",
+        "mapper": "DJ S3RL",
+        "song": "Click Bait - Feat. Gl!tch"
+    },
+    "E615A3E48405EC6B4304FF252460C33E9B5FDA9D": {
+        "diffs": [
+            {
+                "pp": "150.464",
+                "star": "3.5",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "127.864",
+                "star": "2.97",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "100.281",
+                "star": "2.32",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "85.524",
+                "star": "1.98",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "55.713",
+                "star": "1.28",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "6b34",
+        "mapper": "MIMI feat. Hatsune Miku",
+        "song": "Ai no Sukima (Short Ver.) - "
+    },
+    "F83EF9E57DE3DADF0E29F1DD470E3D10EF721196": {
+        "diffs": [
+            {
+                "pp": "147.02",
+                "star": "3.41",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1ec9",
+        "mapper": "Bakuenjin",
+        "song": "Another Dimension - Junghwan Park"
+    },
+    "21932091E575643F8A2E641757CE320284A53EB0": {
+        "diffs": [
+            {
+                "pp": "146.656",
+                "star": "3.41",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "910",
+        "mapper": "The Fray (Gammer Remix)",
+        "song": "BTH 5 - How To Save A Life - (Charted by M.Rappold)"
+    },
+    "176E1549CC6AA8CE28517676C0894F7C16308ED5": {
+        "diffs": [
+            {
+                "pp": "146.33",
+                "star": "3.39",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "69.76",
+                "star": "1.6",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "34.676",
+                "star": "0.8",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "70d7",
+        "mapper": "Freezer ft. Kiichigo",
+        "song": "Chocolate Planet - "
+    },
+    "071FE03CF0740E85B4A41F3DBD7BCAC05A2F3F84": {
+        "diffs": [
+            {
+                "pp": "145.429",
+                "star": "3.39",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1227",
+        "mapper": "Ruckus",
+        "song": "Solfeggietto - C.P.E. Bach"
+    },
+    "6FFE3B4B9506C77BEAA335E9D3841C77FDAC070D": {
+        "diffs": [
+            {
+                "pp": "145.248",
+                "star": "3.37",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "140e",
+        "mapper": "RinkuSenpai",
+        "song": "Responsibility Response - Izumi Akazawa (CV. Madoka Yonezawa)"
+    },
+    "A6CCABB105D0F2C24FE9F1DD6E4445782BC55616": {
+        "diffs": [
+            {
+                "pp": "143.379",
+                "star": "3.31",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "88.562",
+                "star": "2.04",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "6888",
+        "mapper": "Tia",
+        "song": "The Glory Days - "
+    },
+    "CA8C59E8DD196F841C3934D2BFBFA2CA43AEAD94": {
+        "diffs": [
+            {
+                "pp": "143.361",
+                "star": "3.33",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "136.53",
+                "star": "3.2",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "63.473",
+                "star": "1.47",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "881",
+        "mapper": "Todokete",
+        "song": "Hyadain no Kakata Katamoi-C - (Nichijou OP1) by Hyadain"
+    },
+    "60028EFC983EAB5E26243605CC113A4EF1EB97A3": {
+        "diffs": [
+            {
+                "pp": "143.215",
+                "star": "3.4",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "7cc",
+        "mapper": "Scott Brown",
+        "song": "BTH 4 - Elysium Plus - (Charted by M.Rappold"
+    },
+    "D6B9CD678D2C3AA9CE41762A22F24D867329044D": {
+        "diffs": [
+            {
+                "pp": "143.05",
+                "star": "3.33",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1373",
+        "mapper": "jackscape",
+        "song": "Nico Nico Douga Medley - "
+    },
+    "087CEDEAB4B9E4C3A4B9C594C97BEE6F446F0A77": {
+        "diffs": [
+            {
+                "pp": "142.723",
+                "star": "3.3",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "2649",
+        "mapper": "Hexagonial",
+        "song": "Soar - Erik McClure"
+    },
+    "DF27F79D91778CC141315B457D621D249C11DC6B": {
+        "diffs": [
+            {
+                "pp": "142.469",
+                "star": "3.3",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "2751",
+        "mapper": "Sotarks",
+        "song": "(can you) understand me? - Komiya Mao"
+    },
+    "E74AE84BBDFA329B93B39A941A2E5ED3DB0720BA": {
+        "diffs": [
+            {
+                "pp": "142.025",
+                "star": "3.29",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "117.566",
+                "star": "2.72",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "91.7",
+                "star": "2.12",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2acb",
+        "mapper": "AaltopahWi",
+        "song": "Synthesized Angel - Sakuzyo"
+    },
+    "B3F11301E4AC555184E7EF4344242049FEA41345": {
+        "diffs": [
+            {
+                "pp": "141.293",
+                "star": "3.28",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "136.876",
+                "star": "3.17",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "13a0",
+        "mapper": "Edzo",
+        "song": "Greenlights Serenade - Omoi ft. Hatsune Miku"
+    },
+    "C043C27D2825A4A368D7D899437491A0D56C2A1C": {
+        "diffs": [
+            {
+                "pp": "140.697",
+                "star": "3.33",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "103.358",
+                "star": "2.39",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1955",
+        "mapper": "Psyc0pathic",
+        "song": "Hitorigoto -TV MIX- - ClariS"
+    },
+    "125B07EBCC06FE9667E83FC2D6B9AE5ECBC72E8C": {
+        "diffs": [
+            {
+                "pp": "138.976",
+                "star": "3.21",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "26f6",
+        "mapper": "Joetastic",
+        "song": "IGNITE - Aoi Eir"
+    },
+    "65F78118110793E75B81422D01E67B0C7623CFF1": {
+        "diffs": [
+            {
+                "pp": "138.568",
+                "star": "3.35",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "17b1",
+        "mapper": "Kry",
+        "song": "sleepparalysis////////////// - isqa"
+    },
+    "F731E5AD48E6C938371039C9C7F84AF6AA6D9B5C": {
+        "diffs": [
+            {
+                "pp": "138.424",
+                "star": "3.22",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "7cb",
+        "mapper": "Ryu* & Dai",
+        "song": "BTH 4 - So Fabulous!! - (Charted by M.Rappold)"
+    },
+    "440C7251532EAD28F661D7DCE5750D3A3E487E7E": {
+        "diffs": [
+            {
+                "pp": "136.22",
+                "star": "3.15",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "98.985",
+                "star": "2.28",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "44.096",
+                "star": "1.01",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "34.798",
+                "star": "0.8",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "2474",
+        "mapper": "GreatYazer",
+        "song": "Game Time - 3LAU, feat. NINJA"
+    },
+    "28E8A3995E597B1F8BAADF6AFAB0666E39672D2A": {
+        "diffs": [
+            {
+                "pp": "136.077",
+                "star": "3.15",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "83.925",
+                "star": "1.93",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1d42",
+        "mapper": "Edzo",
+        "song": "Ai Kotoba III - DECO*27 ft. Hatsune Miku"
+    },
+    "727F16F8BEF6DDB62F7A1ABD3677737F5082A302": {
+        "diffs": [
+            {
+                "pp": "135.593",
+                "star": "3.14",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "77.478",
+                "star": "1.78",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "51.841",
+                "star": "1.19",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "243d",
+        "mapper": "Todokete",
+        "song": "Flat Zone 2 - Kenichi Okuma"
+    },
+    "74CB8192AEEE46A91CBFC47707C653179DFED8FE": {
+        "diffs": [
+            {
+                "pp": "134.385",
+                "star": "3.12",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1283",
+        "mapper": "woops",
+        "song": "Burn My Dread (Short Ver.) - Persona 3 OST"
+    },
+    "9ADD07A1625027A42110EFC4E1EFD03D8C960FEF": {
+        "diffs": [
+            {
+                "pp": "133.098",
+                "star": "3.08",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "1d07",
+        "mapper": "Brady",
+        "song": "Epic - Tokyo Machine"
+    },
+    "FBD8B9338BFFB98555A10C69887234FAC959D83D": {
+        "diffs": [
+            {
+                "pp": "132.556",
+                "star": "3.08",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "84.216",
+                "star": "1.96",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "49.641",
+                "star": "1.14",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "155",
+        "mapper": "BennyDaBeast",
+        "song": "Midnight City - M83"
+    },
+    "D06A8564708C3ACEF7FB889A194614F176236E4C": {
+        "diffs": [
+            {
+                "pp": "132.505",
+                "star": "3.07",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "15b1",
+        "mapper": "Rustic",
+        "song": "Blood Hunter - Varien"
+    },
+    "F55BB69E6F07EF93D84CB42A2FA6BC9189DD7E01": {
+        "diffs": [
+            {
+                "pp": "130.405",
+                "star": "3.25",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1d50",
+        "mapper": "Skyler Wallace",
+        "song": "Chaoz Fantasy - ParagonX9"
+    },
+    "00B539E86EA3F0B1E966544A297FB4942E499E6F": {
+        "diffs": [
+            {
+                "pp": "128.061",
+                "star": "2.97",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "57.951",
+                "star": "1.33",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "243c",
+        "mapper": "Todokete",
+        "song": "Ocarina of Time Medley - Michiko Naruke"
+    },
+    "F2F47F2ABD93AF32F2D91D8210F41315D8FC39B6": {
+        "diffs": [
+            {
+                "pp": "127.974",
+                "star": "3.27",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1d0a",
+        "mapper": "Heisenberg",
+        "song": "Rendezvous - Scandroid"
+    },
+    "9940853E37E69D6439CE4FBA2226DEA27833D5CD": {
+        "diffs": [
+            {
+                "pp": "127.474",
+                "star": "2.95",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1e9c",
+        "mapper": "JackoDEJ",
+        "song": "13 (Rukkus Remix) - Astronaut"
+    },
+    "5E439FC5CF3FC37E6EF5D5D2A7ACF68AFDDAE93D": {
+        "diffs": [
+            {
+                "pp": "127.226",
+                "star": "2.95",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "79.317",
+                "star": "1.83",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "4f3",
+        "mapper": "Mark Own - Matrix & Futurebound Remix",
+        "song": "BTH 2 - Stars - (Charted by M.Rappold)"
+    },
+    "3B6FA2F63B901F2407C676443B0A8896213ED387": {
+        "diffs": [
+            {
+                "pp": "126.835",
+                "star": "3.2",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "76.447",
+                "star": "1.97",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "58.53",
+                "star": "1.53",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "94c",
+        "mapper": "Ruckus",
+        "song": "Swiggity - IZECOLD"
+    },
+    "89BEC7DB9DF79519652BE2E63C3C40A35FD27205": {
+        "diffs": [
+            {
+                "pp": "126.246",
+                "star": "2.97",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "620",
+        "mapper": "ETIA.",
+        "song": "BTH 3 - Firestorm - (Charted by M.Rappold)"
+    },
+    "315924C64F57433C2157256662F67C2F3ECC0A57": {
+        "diffs": [
+            {
+                "pp": "125.065",
+                "star": "2.89",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "7c8",
+        "mapper": "Krewella",
+        "song": "BTH 4 - Come & Get It - (Charted by M.Rappold)"
+    },
+    "A1A5531F5A7C57D69DD694BE0497E06253AF8305": {
+        "diffs": [
+            {
+                "pp": "124.578",
+                "star": "2.89",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "877",
+        "mapper": "Edzo",
+        "song": "A New Frontier - VA-11 HALL-A"
+    },
+    "57E25A8D2645FE41A625C7E19AAC8FF96A619D29": {
+        "diffs": [
+            {
+                "pp": "123.874",
+                "star": "2.9",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "107.292",
+                "star": "2.52",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "63.976",
+                "star": "1.47",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "41.655",
+                "star": "0.96",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1f0d",
+        "mapper": "Todokete",
+        "song": "Hyadain no Joujou Yuujou - Hyadain"
+    },
+    "6A9042EB11D4DA0938BBDAA0F584131DEF762F4A": {
+        "diffs": [
+            {
+                "pp": "123.534",
+                "star": "2.85",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "36d5",
+        "mapper": "Oddloop",
+        "song": "MAYDAY - TheFatRat & Laura Brehm"
+    },
+    "E1E30AF04360132974CACBC604496FA38E2A6693": {
+        "diffs": [
+            {
+                "pp": "123.5",
+                "star": "2.86",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "77.957",
+                "star": "1.8",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "54.051",
+                "star": "1.24",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "3c8f",
+        "mapper": "ManDynasty",
+        "song": "Majesty (ft. Veela) - Ben Moon"
+    },
+    "03BA5157516EF3179ED9CE09F0EECE7B95ECA8ED": {
+        "diffs": [
+            {
+                "pp": "123.481",
+                "star": "2.86",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "88.98",
+                "star": "2.05",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1e1d",
+        "mapper": "Edzo (lighting by AaltoPahWi)",
+        "song": "Silicon XX - S3RL ft. Nikolett"
+    },
+    "BB9DE13539A2AB9A21F7FF68A2669F7887011456": {
+        "diffs": [
+            {
+                "pp": "123.448",
+                "star": "2.85",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "74.26",
+                "star": "1.71",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "54.654",
+                "star": "1.26",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "47.016",
+                "star": "1.08",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "2693",
+        "mapper": "ejiejidayo",
+        "song": "I Want You - DJMAX"
+    },
+    "21E16FE469294EE8E9741CB3BD1C5AC09A9B1961": {
+        "diffs": [
+            {
+                "pp": "123.367",
+                "star": "2.85",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "49.27",
+                "star": "1.13",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "35.835",
+                "star": "0.82",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "bc3",
+        "mapper": "Lite Show Magic",
+        "song": "Crack Traxxxx - Chart by Mystikmol"
+    },
+    "16A142EEF2298A561AC9A2914680804C0022F1C5": {
+        "diffs": [
+            {
+                "pp": "122.482",
+                "star": "2.85",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4ed",
+        "mapper": "Matrix & Futurebound ft. Luke Bingham",
+        "song": "BTH 2 - All I Know - (Charted by M.Rappold"
+    },
+    "E8ED13A78CD1E566F754D0CB47D4B5CDE8918ABE": {
+        "diffs": [
+            {
+                "pp": "120.838",
+                "star": "2.8",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "94.083",
+                "star": "2.17",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "39.432",
+                "star": "0.91",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "19ca",
+        "mapper": "Fafurion",
+        "song": "Bubble Pop - Hyuna"
+    },
+    "865989367D940D9964CC158CAC54768676176EA4": {
+        "diffs": [
+            {
+                "pp": "119.108",
+                "star": "2.76",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "76.754",
+                "star": "1.78",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "9d0",
+        "mapper": "BennyDaBeast",
+        "song": "Fake Love - BTS"
+    },
+    "BEB94EDEE41D9AAB16630EA96A752B2217EB95E9": {
+        "diffs": [
+            {
+                "pp": "117.101",
+                "star": "2.72",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "93.811",
+                "star": "2.24",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "70.22",
+                "star": "1.74",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "159",
+        "mapper": "The Oral Cigarettes",
+        "song": "Kyouran Hey Kids!! - Noragami Aragoto Opening"
+    },
+    "F22061809C798178786CA1B6E61B10CCBCBE8D28": {
+        "diffs": [
+            {
+                "pp": "117.063",
+                "star": "2.74",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "96.447",
+                "star": "2.25",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "79.794",
+                "star": "1.88",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "62.159",
+                "star": "1.45",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "c1d",
+        "mapper": "Awfulnaut",
+        "song": "Good Times Roll - Griz x Big Gigantic"
+    },
+    "532D6987004E927B5B54ED2AFC9EFC20C5970D51": {
+        "diffs": [
+            {
+                "pp": "116.106",
+                "star": "2.69",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "83.599",
+                "star": "1.93",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "17d",
+        "mapper": "Shoji Meguro",
+        "song": "Life Will Change - Persona 5 OST"
+    },
+    "022C187AE58A1897BBC309B4F6B62ECB4ADC5760": {
+        "diffs": [
+            {
+                "pp": "116.074",
+                "star": "2.71",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "96.16",
+                "star": "2.24",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "116b",
+        "mapper": "Panama",
+        "song": "Always - "
+    },
+    "BA3077A16C2259CF3C55E04129B4A4E91F4F9A74": {
+        "diffs": [
+            {
+                "pp": "115.623",
+                "star": "2.67",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "bdd",
+        "mapper": "Edzo",
+        "song": "Ghost Rule - DECO*27 ft. Hatsune Miku"
+    },
+    "B42FF8D822C0D3EF459F04DE3B6631FCDC21489D": {
+        "diffs": [
+            {
+                "pp": "114.44",
+                "star": "2.65",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "91.062",
+                "star": "2.11",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "16b0",
+        "mapper": "Edzo",
+        "song": "Little Kandi Raver 2012 - S3RL ft. Sara"
+    },
+    "4CB323A4340177D7B7CA74F67F6B920ED320EE5E": {
+        "diffs": [
+            {
+                "pp": "114.295",
+                "star": "2.64",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "84.628",
+                "star": "1.95",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "58.965",
+                "star": "1.36",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "44.449",
+                "star": "1.02",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "2475",
+        "mapper": "Kolezan",
+        "song": "Bring It On - Giga-P"
+    },
+    "13C217E8068A0986D695729B8165B91F38079BB4": {
+        "diffs": [
+            {
+                "pp": "114.111",
+                "star": "2.65",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "122f",
+        "mapper": "Edzo",
+        "song": "Nice To Meet You, Mr. Earthling ft. Hatsune Miku - Pinnochio-P"
+    },
+    "32D46D0837122896708C152A5E66215E496570BD": {
+        "diffs": [
+            {
+                "pp": "113.902",
+                "star": "2.65",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "7c9",
+        "mapper": "Manuel",
+        "song": "BTH 4 - Countdown To Destination - (Charted by M.Rappold)"
+    },
+    "D3C406D7683B588BC53E6D74A08311D75A243596": {
+        "diffs": [
+            {
+                "pp": "113.249",
+                "star": "2.63",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "54.224",
+                "star": "1.25",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "42.523",
+                "star": "0.98",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "9f1",
+        "mapper": "Krist0x",
+        "song": "Yeah! - Usher"
+    },
+    "E95E6B02DA5D37AF7864637DCA17E1B0D40DBBDB": {
+        "diffs": [
+            {
+                "pp": "112.454",
+                "star": "2.75",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "8c1",
+        "mapper": "Awfulnaut",
+        "song": "Liberation - Harold van Lennep"
+    },
+    "65D94D402E22AF95E95E69F38D41B05881E96AAF": {
+        "diffs": [
+            {
+                "pp": "112.314",
+                "star": "2.59",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "87.768",
+                "star": "2.02",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1084",
+        "mapper": "NovaShaft",
+        "song": "Conqueror - AURORA"
+    },
+    "2E6F858088C6D67E930E1BB357BD7455101B6626": {
+        "diffs": [
+            {
+                "pp": "111.774",
+                "star": "2.59",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "80.58",
+                "star": "1.86",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "40.649",
+                "star": "0.93",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "78e",
+        "mapper": "DownyCat",
+        "song": "Numb - Linkin Park"
+    },
+    "CB583CF25D1623E0D1BB8A4AAE9795DB40E6BFEF": {
+        "diffs": [
+            {
+                "pp": "110.949",
+                "star": "2.6",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "10de",
+        "mapper": "squeaksies",
+        "song": "Mirror Night - V.K"
+    },
+    "8E6FD170583FD5C0FBE86C1C811F2400D7C3D8F9": {
+        "diffs": [
+            {
+                "pp": "110.232",
+                "star": "2.55",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "67.18",
+                "star": "1.54",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "743",
+        "mapper": "Rustic",
+        "song": "EC1-Everything Goes - R3SPAWN"
+    },
+    "DE2FA331968696588DA1395E4E3414FAE13FE6C2": {
+        "diffs": [
+            {
+                "pp": "110.069",
+                "star": "2.55",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "85.616",
+                "star": "1.97",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "55.067",
+                "star": "1.27",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "40.637",
+                "star": "0.93",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "25dc",
+        "mapper": "Kolezan",
+        "song": "Hello, Morning (Short edit) - Nor ft. Kizuna AI"
+    },
+    "B9C0F43ADEF34726CFAF86AEFF9196FB66786760": {
+        "diffs": [
+            {
+                "pp": "109.647",
+                "star": "2.53",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "7cd",
+        "mapper": "The Chainsmokers",
+        "song": "BTH 4 - SELFIE - (Charted by M.Rappold)"
+    },
+    "CE72041935118A3271971239D59D6DFE5DEDDD41": {
+        "diffs": [
+            {
+                "pp": "107.798",
+                "star": "2.61",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "d61",
+        "mapper": "squeaksies",
+        "song": "Golden Hour - Electric Swing Circus"
+    },
+    "56AB93337898C37E5D0E8BD3FD6627F77F29BC6B": {
+        "diffs": [
+            {
+                "pp": "107.754",
+                "star": "2.5",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "194",
+        "mapper": "Squillistipated",
+        "song": "Marble Soda - Shawn Wasabi"
+    },
+    "F16443DE4216FC5F9435F103D77A6919423EDB8A": {
+        "diffs": [
+            {
+                "pp": "106.82",
+                "star": "2.47",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "61.755",
+                "star": "1.42",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "35.481",
+                "star": "0.81",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "65",
+        "mapper": "Rustic",
+        "song": "Awe - prototyperaptor"
+    },
+    "68744C619F4769305BF55C33AB99C013870DC96A": {
+        "diffs": [
+            {
+                "pp": "106.458",
+                "star": "2.45",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "4413",
+        "mapper": "SagittariusFam",
+        "song": "Ring Of Fortune (TV Size) - Eri Sasaki"
+    },
+    "3ED159A3439F52A1CBA7DE0E40FABFD9DC37BBDA": {
+        "diffs": [
+            {
+                "pp": "106.134",
+                "star": "2.45",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "60.154",
+                "star": "1.38",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "256",
+        "mapper": "Rustic",
+        "song": "Rainbow Notes - Approaching Nirvana"
+    },
+    "1DFE69E34C2F5B778FD807689249E8F1454CC79C": {
+        "diffs": [
+            {
+                "pp": "105.836",
+                "star": "2.45",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "a79",
+        "mapper": "???",
+        "song": "Boku no Pico - Opening Theme"
+    },
+    "1ECD372D412486AFD3AC3356C3333BE4E405B529": {
+        "diffs": [
+            {
+                "pp": "105.296",
+                "star": "2.44",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "33a",
+        "mapper": "Purphoros",
+        "song": "Dragonmaid Opening - Fhna"
+    },
+    "45C2C1287B5789D3EB98DCEA6F87C5DEA0BC882A": {
+        "diffs": [
+            {
+                "pp": "103.816",
+                "star": "2.4",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "236c",
+        "mapper": "Dorothyfeelings9 & ManDynasty",
+        "song": "Control (ft. Jex) - Unknown Brain & Rival"
+    },
+    "2CABD615FE4341A40B175F45F8FC27194D4AFD48": {
+        "diffs": [
+            {
+                "pp": "103.604",
+                "star": "2.39",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "76.214",
+                "star": "1.76",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "49.705",
+                "star": "1.14",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "26a0",
+        "mapper": "ManDynasty",
+        "song": "Weird Machine (ft. Nevve) (Syrex Nightcore) - DROELOE"
+    },
+    "9D31D3AAB3D58AB540DF63CAED06D62FF1CFEFDD": {
+        "diffs": [
+            {
+                "pp": "103.181",
+                "star": "2.41",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "65.226",
+                "star": "1.81",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "636",
+        "mapper": "BennyDaBeast",
+        "song": "Burn - Ellie Goulding"
+    },
+    "26933342740E324FFEEEB1FF53F5231E5CEA3D95": {
+        "diffs": [
+            {
+                "pp": "102.37",
+                "star": "2.37",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "89.383",
+                "star": "2.06",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "52.434",
+                "star": "1.21",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "32.573",
+                "star": "0.75",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1668",
+        "mapper": "Todokete",
+        "song": "Meltdown feat. Rin - by Iroha(Sasaki)"
+    },
+    "4D2559D4BE335632AE12BD53360297C6D2D58A90": {
+        "diffs": [
+            {
+                "pp": "100.299",
+                "star": "2.32",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "243b",
+        "mapper": "Edzo & Todokete",
+        "song": "Lifelight - Hideki Sakamoto, Erina Koga, Abby Trott"
+    },
+    "C56FCEC4BD36781573180B97CCCBF0568020B069": {
+        "diffs": [
+            {
+                "pp": "99.512",
+                "star": "2.3",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "24e1",
+        "mapper": "Map by AaltopahWi / Lights by Minty",
+        "song": "Enter the Aqua Terrarium - Yukimame"
+    },
+    "B1F7C08CD0CDC4C546C8E41386F75B70CDA4C08A": {
+        "diffs": [
+            {
+                "pp": "99.399",
+                "star": "2.3",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "5b6",
+        "mapper": "Ho-kago Tea Time",
+        "song": "No, Thank you! - K-On"
+    },
+    "35D58F383A4B13C385C37B4ED6FF6460B765C29A": {
+        "diffs": [
+            {
+                "pp": "98.705",
+                "star": "2.28",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "73.995",
+                "star": "1.71",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "fb",
+        "mapper": "BennyDaBeast",
+        "song": "Kids - MGMT"
+    },
+    "9993D9F5B03472EFA5B8B31D3DC4156301145D97": {
+        "diffs": [
+            {
+                "pp": "98.47",
+                "star": "2.28",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "78.744",
+                "star": "1.82",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "59.511",
+                "star": "1.37",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "48.028",
+                "star": "1.1",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1fff",
+        "mapper": "Kolezan",
+        "song": "Chiru Chiru - REOL"
+    },
+    "C1E37FDDA61DD63978EA65CD457810229CF02B74": {
+        "diffs": [
+            {
+                "pp": "97.979",
+                "star": "2.28",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "333",
+        "mapper": "Spongebob Squarepants",
+        "song": "Stadium Rave - (Jellyfish Jam)"
+    },
+    "A8FA6782C467F04EB4F27F0644C5BD94F48E9CDB": {
+        "diffs": [
+            {
+                "pp": "97.949",
+                "star": "2.26",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4f4",
+        "mapper": "High Maintenance & Mediks ft. Georgina Upton",
+        "song": "BTH 2 - Watching Me - (Charted by M.Rappold)"
+    },
+    "F15082586D31D238CFC33730C7D4A9BCE4594D35": {
+        "diffs": [
+            {
+                "pp": "97.872",
+                "star": "2.26",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "69.441",
+                "star": "1.6",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "49.074",
+                "star": "1.13",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "57c",
+        "mapper": "Todokete",
+        "song": "Zzz - by Sasaki Sayaka"
+    },
+    "BA7C94243BF8F07799E95E09B4A4C26598C1892C": {
+        "diffs": [
+            {
+                "pp": "97.138",
+                "star": "2.24",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "61c",
+        "mapper": "Ellie Goulding (kors k Hardcore Bootleg)",
+        "song": "BTH 3 - Stay Awake - (Charted by M.Rappold)"
+    },
+    "BE2F9049C1AF90024D84E45A253BD93CCF61F1D9": {
+        "diffs": [
+            {
+                "pp": "97.046",
+                "star": "2.33",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "77.99",
+                "star": "1.83",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "53.585",
+                "star": "1.24",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "653",
+        "mapper": "Nut3z",
+        "song": "Get Down - BJJ"
+    },
+    "AFF9AEDB62CC789EF43AFB5B69DD9310907970D6": {
+        "diffs": [
+            {
+                "pp": "96.568",
+                "star": "2.24",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "69.185",
+                "star": "1.64",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "51.95",
+                "star": "1.2",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "75a",
+        "mapper": "Todokete",
+        "song": "Snow Halation - by Muse"
+    },
+    "9FC6B409FF4566C74FB38FDB2671F10190566ACC": {
+        "diffs": [
+            {
+                "pp": "96.492",
+                "star": "2.23",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "4f1",
+        "mapper": "Tantrum Desire",
+        "song": "BTH 2 - Reach VIP - (Charted by M.Rappold)"
+    },
+    "4C750C4BA3EB6E0B61F1549169D814D54BE2CA01": {
+        "diffs": [
+            {
+                "pp": "96.475",
+                "star": "2.23",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "51.227",
+                "star": "1.18",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "48.073",
+                "star": "1.1",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "38.332",
+                "star": "0.88",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1d2",
+        "mapper": "Pendulum",
+        "song": "9,000 Miles - (Charted by M.Rappold)"
+    },
+    "AA0A150D83B499C8BECC3BEDA1C17AC4D9D97D40": {
+        "diffs": [
+            {
+                "pp": "96.454",
+                "star": "2.23",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "5b0",
+        "mapper": "Bakuenjin",
+        "song": "aLIEz - Sawano Hiroyuki"
+    },
+    "72705375D53EE75171CD96DE7E5264A3BE8A6D5A": {
+        "diffs": [
+            {
+                "pp": "95.419",
+                "star": "2.2",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "57.434",
+                "star": "1.32",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "42.5",
+                "star": "0.98",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "699f",
+        "mapper": "ChouCho",
+        "song": "Yasashisa no Riyuu (TV Size) - "
+    },
+    "D56898547D40BAFDF348492376F68C084674F118": {
+        "diffs": [
+            {
+                "pp": "95.259",
+                "star": "2.2",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "53.319",
+                "star": "1.23",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "744",
+        "mapper": "Rustic",
+        "song": "EC1-Haunted - Slips & Slurs"
+    },
+    "9EF601A1454766347491D4E1DF8C9F50ED94BAEC": {
+        "diffs": [
+            {
+                "pp": "95.255",
+                "star": "2.2",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "57.381",
+                "star": "1.32",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "74a",
+        "mapper": "Rustic",
+        "song": "EC1-I'm on Fire - Approaching Nirvana"
+    },
+    "00E5671E594A6FE621C3605FCC5A0E4466BA6478": {
+        "diffs": [
+            {
+                "pp": "94.908",
+                "star": "2.19",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "63.121",
+                "star": "1.45",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "4c6",
+        "mapper": "Rustic",
+        "song": "Uprising - Muse"
+    },
+    "AEE01374C29983B6E7488ED7F649C9F5D7BAD019": {
+        "diffs": [
+            {
+                "pp": "93.759",
+                "star": "2.16",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "90.536",
+                "star": "2.09",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "75.658",
+                "star": "1.74",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "459",
+        "mapper": "Awfulnaut",
+        "song": "Royals (Yinyues Remix) - Lorde"
+    },
+    "6A73AB2DB10559C3581D941CEF3DE0CC155C0394": {
+        "diffs": [
+            {
+                "pp": "93.469",
+                "star": "2.25",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "67.172",
+                "star": "1.56",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "623",
+        "mapper": "Skrillex",
+        "song": "Dirty Vibe - with Diplo, CL, & G-Dragon"
+    },
+    "D9D103EC2CBFC1D4CC229A9D118AEA286850039A": {
+        "diffs": [
+            {
+                "pp": "93.396",
+                "star": "2.4",
+                "scores": "0",
+                "diff": "Expert+"
+            }
+        ],
+        "key": "90f",
+        "mapper": "Omegatypez (Kutski & Gammer Remix)",
+        "song": "BTH 5 - Take Me High - (Charted by M.Rappold)"
+    },
+    "C9327A763605AF137B91F8DA5DF50B2102F82259": {
+        "diffs": [
+            {
+                "pp": "92.592",
+                "star": "2.15",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1d06",
+        "mapper": "Ruckus",
+        "song": "Wind - Thaehan"
+    },
+    "EF5917D63EC08BEE22E45602F70FE86FFD6F7A90": {
+        "diffs": [
+            {
+                "pp": "92.379",
+                "star": "2.14",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "788",
+        "mapper": "Jay Tholen",
+        "song": "Final Dream - (feat. Omri Loved Cela)"
+    },
+    "BC6C7EF1385DB4C11C59736D2B32EACF48C95BD9": {
+        "diffs": [
+            {
+                "pp": "91.991",
+                "star": "2.13",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "e4",
+        "mapper": "Cascada",
+        "song": "Every Time We Touch - "
+    },
+    "397F4485345E33CC0CA1212425C19274EC855740": {
+        "diffs": [
+            {
+                "pp": "91.973",
+                "star": "2.14",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "51.619",
+                "star": "1.19",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "282",
+        "mapper": "Rustic",
+        "song": "Awe (One Saber) - prototyperaptor"
+    },
+    "74406BAFE182AFECCEEC46CB0CD3C32B2629B639": {
+        "diffs": [
+            {
+                "pp": "89.84",
+                "star": "2.16",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "38c",
+        "mapper": "Lush & Simon & Gazzo",
+        "song": "Wasted Love - "
+    },
+    "8E41C0730EBB1A7D265925386CB9801D72427130": {
+        "diffs": [
+            {
+                "pp": "89.57",
+                "star": "2.07",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "61.457",
+                "star": "1.41",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "42.318",
+                "star": "0.97",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "166c",
+        "mapper": "Todokete",
+        "song": "Just be Friends feat. Luka - by Dixie Flatline"
+    },
+    "B7ACEF552681AB7221043B665D2EB92FDB72E7D6": {
+        "diffs": [
+            {
+                "pp": "88.984",
+                "star": "2.09",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "6b5",
+        "mapper": "Breaking Benjamin",
+        "song": "The Diary of Jane - "
+    },
+    "7837EC982B5C041E77366F8BEF8FC1BC0AAD35C8": {
+        "diffs": [
+            {
+                "pp": "88.225",
+                "star": "2.05",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "44d",
+        "mapper": "Orchan",
+        "song": "Be Alright - Stonebank"
+    },
+    "E22094588461C49EEC3A0F4B7AABF7EA21FC8EC5": {
+        "diffs": [
+            {
+                "pp": "87.396",
+                "star": "2.03",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "61.507",
+                "star": "1.42",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "50.038",
+                "star": "1.16",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "a59",
+        "mapper": "Tsukasa ft. Misato",
+        "song": "In My Heart - Chart by Mystikmol"
+    },
+    "E9530E656D468D80BA6B5F2EF3962588236ECCC8": {
+        "diffs": [
+            {
+                "pp": "87.176",
+                "star": "2.02",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "69.182",
+                "star": "1.6",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2b",
+        "mapper": "Jamie Christopherson & Logan Madler",
+        "song": "A Stranger I Remain - "
+    },
+    "FFB7514DA1F7E0399B07EBE60CF7AB18EA3BFC8B": {
+        "diffs": [
+            {
+                "pp": "87.039",
+                "star": "2.02",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "53.583",
+                "star": "1.25",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1f0",
+        "mapper": "Korn",
+        "song": "Narcissistic Cannibal - Ft. Skrillex and Kill The Noise"
+    },
+    "32AE684F553E7FA90D1E5325BD54581C0AFD37FA": {
+        "diffs": [
+            {
+                "pp": "86.403",
+                "star": "1.99",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "51.362",
+                "star": "1.18",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "acf",
+        "mapper": "Rustic",
+        "song": "EC2 - Still Waiting - Prototyperaptor"
+    },
+    "40D956A3CF8AEA0FA87871791E449A8F4874176C": {
+        "diffs": [
+            {
+                "pp": "85.663",
+                "star": "1.99",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "49.635",
+                "star": "1.14",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "29.639",
+                "star": "0.68",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "8bc",
+        "mapper": "Rustic",
+        "song": "Blood Sugar - Knife Party Remix"
+    },
+    "968386B284D9775231EE688C4C0BA7241AB4DEC0": {
+        "diffs": [
+            {
+                "pp": "85.592",
+                "star": "1.99",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "58.781",
+                "star": "1.36",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "37.735",
+                "star": "0.87",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "29.933",
+                "star": "0.69",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "48c",
+        "mapper": "Hugh Jackman, Keala Settle, Zac Efron, Zendaya",
+        "song": "The Greatest Show - The Greatest Showman"
+    },
+    "0FC89825A74B83C01F7ED763DD7C65769047695D": {
+        "diffs": [
+            {
+                "pp": "84.731",
+                "star": "1.96",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "66.988",
+                "star": "1.55",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "46.789",
+                "star": "1.08",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "842",
+        "mapper": "Todokete",
+        "song": "Everybody Wants To Rule The World - by Tears for Fears"
+    },
+    "C493DF222EA9A86AEE0FA0AB30495D1938F93144": {
+        "diffs": [
+            {
+                "pp": "84.705",
+                "star": "1.95",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "4dd",
+        "mapper": "Bakuenjin",
+        "song": "Those Everyday Feels - Kevin Penkin"
+    },
+    "E6FA1144CB626539E95AFD50243F6DF4493B5631": {
+        "diffs": [
+            {
+                "pp": "84.152",
+                "star": "1.96",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "65d",
+        "mapper": "drb",
+        "song": "Rocket League x Monstercat - Glide - Stephen Walking"
+    },
+    "717A5A49D6E3365BDD09EA4D4C22EF3CE6A89436": {
+        "diffs": [
+            {
+                "pp": "84.104",
+                "star": "1.94",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "24f4",
+        "mapper": "TigerAW",
+        "song": "Lost My Pieces - Yukari Hashimoto"
+    },
+    "E8B113C06700A9342E7EEAFD805B26F66458C23F": {
+        "diffs": [
+            {
+                "pp": "83.974",
+                "star": "1.97",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "6fc",
+        "mapper": "Demicross",
+        "song": "The Legend of Zelda Theme - Zedd Remix"
+    },
+    "232961FEDF93A41616BF7767763E52C45A106D8F": {
+        "diffs": [
+            {
+                "pp": "83.502",
+                "star": "1.92",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "7d7",
+        "mapper": "FEFELAND",
+        "song": "The SlyFox and The Curious Cat - Stuck In Your Radio"
+    },
+    "BB84A61400AE0F83A75E7FE6D887D5B0FC3569B1": {
+        "diffs": [
+            {
+                "pp": "83.376",
+                "star": "2.05",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "5c0",
+        "mapper": "brhkim",
+        "song": "Light It Up - Major Lazer feat. Nyla & Fuse ODG"
+    },
+    "0942A4CCAA61989A330F5CAB9F3C314FDAE15609": {
+        "diffs": [
+            {
+                "pp": "83.376",
+                "star": "2.02",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "8a1",
+        "mapper": "Hate vs Brilliance",
+        "song": "Qubism - Chart by Moriik"
+    },
+    "0A57D66307FE777A03A1281B0A40F716B188FCAB": {
+        "diffs": [
+            {
+                "pp": "82.862",
+                "star": "1.91",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "514",
+        "mapper": "Purphoros",
+        "song": "Color Pulse - Splatoon OST"
+    },
+    "76C9218878684411506B4E8F26DD2AA16E4BE6C5": {
+        "diffs": [
+            {
+                "pp": "82.443",
+                "star": "1.9",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2440",
+        "mapper": "Edzo",
+        "song": "Staff Credits - Kirby's Dream Land - MASAKI"
+    },
+    "1CB91E8E0A5B04484B04C773B24E8484D0AE766D": {
+        "diffs": [
+            {
+                "pp": "82.239",
+                "star": "1.91",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "9b0",
+        "mapper": "Sick Individuals Sagan",
+        "song": "Alpha - "
+    },
+    "24F34E47BDFCAE96D1F37117F6F1F4FBE25E58E5": {
+        "diffs": [
+            {
+                "pp": "82.115",
+                "star": "1.91",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "70.998",
+                "star": "1.65",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "dda",
+        "mapper": "Todokete",
+        "song": "Let Mom Sleep - by Hideki Naganuma"
+    },
+    "C60B9B22A0A376626CF67BC9C37B4A50C1979B80": {
+        "diffs": [
+            {
+                "pp": "81.914",
+                "star": "1.9",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "70.005",
+                "star": "1.62",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "14b",
+        "mapper": "Roselia",
+        "song": "Attack on Titan - Roselia - Guren no Yumiya Cover"
+    },
+    "FE387C4C7B03326139A5144ED21C4A02774B5DD9": {
+        "diffs": [
+            {
+                "pp": "80.918",
+                "star": "1.86",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "58.761",
+                "star": "1.35",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "57e",
+        "mapper": "Purphoros",
+        "song": "When Can I See You Again - Owl City"
+    },
+    "2F17E5246EA87B15FB83149DD5E59DF03BE60D18": {
+        "diffs": [
+            {
+                "pp": "80.544",
+                "star": "1.88",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "4b7",
+        "mapper": "FEFELAND",
+        "song": "Homies Unite - Stuck In Your Radio"
+    },
+    "88153B55AA44ACB502DF9CF3871012DEE3390BB4": {
+        "diffs": [
+            {
+                "pp": "80.449",
+                "star": "1.86",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "63.918",
+                "star": "1.48",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "21c",
+        "mapper": "Invidia Snow",
+        "song": "Freaks - Timmy Trumpet & Savage"
+    },
+    "5275DD35A4098B6CD9FBD45CB79A0D314A3A1D07": {
+        "diffs": [
+            {
+                "pp": "80.297",
+                "star": "2.02",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "50.197",
+                "star": "1.16",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "49.146",
+                "star": "1.13",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "608",
+        "mapper": "Kevin MacLeod",
+        "song": "Death to Disco - by Freeek"
+    },
+    "BC3F366CEE6C92D32B022CF4DBF41797EA26E319": {
+        "diffs": [
+            {
+                "pp": "79.877",
+                "star": "1.84",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "43.139",
+                "star": "0.99",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "3b1",
+        "mapper": "GreatYazer",
+        "song": "Lethargy - Bastille"
+    },
+    "EDADCB3D396992722FE2DA6FF497970C8C8384A0": {
+        "diffs": [
+            {
+                "pp": "79.26",
+                "star": "1.89",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "65a",
+        "mapper": "Klouder",
+        "song": "Posin(V2) - Peggy Suave"
+    },
+    "676BF0C78B1DE04C0760FA8FB8F112E0ACA5B4D6": {
+        "diffs": [
+            {
+                "pp": "79.072",
+                "star": "1.82",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1b5",
+        "mapper": "GreatYazer",
+        "song": "Electra Heart - Marina and the Diamonds (Betatraxx remix)"
+    },
+    "2500A6CD5D1ABFE0AE44237BEEC2DE4BD7DAEDBA": {
+        "diffs": [
+            {
+                "pp": "77.945",
+                "star": "1.81",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2f",
+        "mapper": "Rustic",
+        "song": "Escape - Netsky feat. darrison"
+    },
+    "067FFA3CF6C35FA8E33CB6720C85ED8A4369AD6A": {
+        "diffs": [
+            {
+                "pp": "77.898",
+                "star": "1.8",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "24",
+        "mapper": "Pegboard Nerds",
+        "song": "New Style - "
+    },
+    "8D9DF176C94ECF5C7725457525B6F959F5EF9296": {
+        "diffs": [
+            {
+                "pp": "77.564",
+                "star": "1.78",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "77.499",
+                "star": "1.78",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "40.258",
+                "star": "0.92",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "30.202",
+                "star": "0.69",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1ff0",
+        "mapper": "Rustic",
+        "song": "I can't stop - Flux Pavilion"
+    },
+    "DC4906A7F76965CDD2B75C72CF470344B698E352": {
+        "diffs": [
+            {
+                "pp": "76.384",
+                "star": "1.77",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "55.359",
+                "star": "1.27",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1ef",
+        "mapper": "Basshunter",
+        "song": "DotA - "
+    },
+    "7E9057B04FE1206194ABDA12C6039BEE46A86736": {
+        "diffs": [
+            {
+                "pp": "75.842",
+                "star": "1.75",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "746",
+        "mapper": "Rustic",
+        "song": "EC1-Summer - Modestep"
+    },
+    "794382D60291A704D6EA8FF43F9E0D6ADE99DB65": {
+        "diffs": [
+            {
+                "pp": "75.608",
+                "star": "1.75",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "29.826",
+                "star": "0.69",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "17.992",
+                "star": "0.41",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "233",
+        "mapper": "Freeek",
+        "song": "Witchcraft - Pendulum"
+    },
+    "1279A3FCAFF31E767E5DD7D7C016EC08733CF566": {
+        "diffs": [
+            {
+                "pp": "75.104",
+                "star": "1.73",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "71.383",
+                "star": "1.65",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "58.992",
+                "star": "1.36",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1c1",
+        "mapper": "Kleid",
+        "song": "Shia LaBeouf - Rob Cantor"
+    },
+    "15BA13D183C824F46D2FC68FF5D6BA52CED1FAD5": {
+        "diffs": [
+            {
+                "pp": "75.042",
+                "star": "1.73",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "44.917",
+                "star": "1.03",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "3c89",
+        "mapper": "Todokete",
+        "song": "99.9 - MOB CHOIR feat. sajou no hana"
+    },
+    "8AF82A87167070A08EC63DBA0459C829C2954067": {
+        "diffs": [
+            {
+                "pp": "75.027",
+                "star": "1.73",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "48.887",
+                "star": "1.12",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "22.137",
+                "star": "0.51",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "9d7",
+        "mapper": "Freeek",
+        "song": "Back in Black - AC/DC"
+    },
+    "998F9B0A3E8B85AD697E8A7AA2C8B7D1F70936CE": {
+        "diffs": [
+            {
+                "pp": "74.654",
+                "star": "1.74",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "58e",
+        "mapper": "Awfulnaut",
+        "song": "History Maker - Dean Fujioka"
+    },
+    "F4A7B0335869E42FF6A2FA82D2A527B0E6BC0C73": {
+        "diffs": [
+            {
+                "pp": "74.653",
+                "star": "1.72",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "46.228",
+                "star": "1.06",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "995",
+        "mapper": "Virtual Riot",
+        "song": "Energy Drink - Chart By Moriik"
+    },
+    "29F3A85E05D579E48AAFA670F4D8B8635ADB1805": {
+        "diffs": [
+            {
+                "pp": "74.627",
+                "star": "1.72",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "50.227",
+                "star": "1.15",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "107b",
+        "mapper": "t+pazolite",
+        "song": "Our Wrenally - Chart by Kizuflux"
+    },
+    "A9E6B0C1942C89ECDFD3D0F6162CCB68BC04CE28": {
+        "diffs": [
+            {
+                "pp": "74.553",
+                "star": "1.8",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1490",
+        "mapper": "killthealias",
+        "song": "Underworld - Eptic"
+    },
+    "A3B58689284AB91AF4B79E8E9A0BE8C0D35DCC51": {
+        "diffs": [
+            {
+                "pp": "74.254",
+                "star": "1.81",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "6aa",
+        "mapper": "G3No",
+        "song": "Haru yo Koi - Yumi Matsutoya"
+    },
+    "FFF756F6D76BD0049082D125773B6EC97C28C89B": {
+        "diffs": [
+            {
+                "pp": "74.146",
+                "star": "2.02",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1ae",
+        "mapper": "Marshmello",
+        "song": "Alone - Made By JWaters"
+    },
+    "85A675DA674FB13E576F2AC9B61A5ADC767B060A": {
+        "diffs": [
+            {
+                "pp": "73.743",
+                "star": "1.7",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "52.209",
+                "star": "1.2",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "34.024",
+                "star": "0.78",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "41b",
+        "mapper": "GreatYazer",
+        "song": "Dangerous Night - 30 Seconds to Mars"
+    },
+    "4B2DA842B687EC4CFBC948C583C21C79D4120DE0": {
+        "diffs": [
+            {
+                "pp": "73.576",
+                "star": "1.7",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "27.934",
+                "star": "0.64",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "16.828",
+                "star": "0.39",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "217",
+        "mapper": "Freeek",
+        "song": "Beat it - Michael Jackson"
+    },
+    "5575BBA243BFFD83201C3493951D2D50D1ADB300": {
+        "diffs": [
+            {
+                "pp": "73.051",
+                "star": "1.69",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "6c",
+        "mapper": "Cash Cash",
+        "song": "Overtime - OrangeW"
+    },
+    "05ADE6C52249659190140EBD4540786EF7752E06": {
+        "diffs": [
+            {
+                "pp": "72.469",
+                "star": "1.67",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "39.68",
+                "star": "0.91",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "28.519",
+                "star": "0.65",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1fec",
+        "mapper": "Bakuenjin",
+        "song": "The Merchant Guild - 100k Contest - Junghwan Park"
+    },
+    "5D1464476AFA2CAE02879B1BA8DF477BCF4E74B6": {
+        "diffs": [
+            {
+                "pp": "71.858",
+                "star": "1.66",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "189",
+        "mapper": "Elektrospy",
+        "song": "The Wolf - SIAMS"
+    },
+    "40B2D900D8301AB15DF8043CDCE8FD2686AFFF4F": {
+        "diffs": [
+            {
+                "pp": "71.718",
+                "star": "1.65",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1500",
+        "mapper": "Stumi",
+        "song": "Test Drive - John Powell"
+    },
+    "1B0E538ED914F54F00374AF0A876DEA67D366114": {
+        "diffs": [
+            {
+                "pp": "71.363",
+                "star": "1.65",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "72f3",
+        "mapper": "Toby Fox",
+        "song": "sans. - "
+    },
+    "6CBE4F85271656591CF5402C3BAB3364BF8B98AA": {
+        "diffs": [
+            {
+                "pp": "71.229",
+                "star": "1.64",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "45.93",
+                "star": "1.05",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "32.161",
+                "star": "0.74",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "2b4",
+        "mapper": "EasyPop",
+        "song": "Happy Synthesizer - Chart by Mystikmol"
+    },
+    "477FAC9561E8931C7EFAF49FAA065611348F159D": {
+        "diffs": [
+            {
+                "pp": "70.505",
+                "star": "1.66",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "42.96",
+                "star": "1.03",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "14bd",
+        "mapper": "GreatYazer, Rustic, BennyDaBeast",
+        "song": "We Built this City - Starship"
+    },
+    "DF2039F7F39CB39459C984C88D713F0F1691B330": {
+        "diffs": [
+            {
+                "pp": "69.675",
+                "star": "1.61",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "54a",
+        "mapper": "Bakuenjin",
+        "song": "First Layer - Kevin Penkin"
+    },
+    "5F73283FCC93BA018A93C3714811E26E4F751CBB": {
+        "diffs": [
+            {
+                "pp": "69.509",
+                "star": "1.61",
+                "scores": "0",
+                "diff": "Expert+"
+            },
+            {
+                "pp": "53.539",
+                "star": "1.23",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "28.481",
+                "star": "0.65",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "6021",
+        "mapper": "Parry Gripp",
+        "song": "Guinea Pig Bridge - "
+    },
+    "1A03282973A9FF2F493CC308D0F40C3140ADB0CF": {
+        "diffs": [
+            {
+                "pp": "69.328",
+                "star": "1.69",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2c0",
+        "mapper": "Zanqeon",
+        "song": "Sick Boy (Prismo Remix) - The Chainsmokers"
+    },
+    "FDA568FC27C20D21F8DC6F3709B49B5CC96723BE": {
+        "diffs": [
+            {
+                "pp": "69.085",
+                "star": "1.75",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "1",
+        "mapper": "succducc",
+        "song": "me & u - "
+    },
+    "8B176DE1E1CDAC314746A70E5B1F62847A7A12F2": {
+        "diffs": [
+            {
+                "pp": "68.315",
+                "star": "1.57",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "2ef",
+        "mapper": "Purphoros",
+        "song": "Evangelion Opening - A Cruel Angel's Thesis"
+    },
+    "528EC747C2716A78496C870CAEED5A2C757CA217": {
+        "diffs": [
+            {
+                "pp": "68.202",
+                "star": "1.57",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1a9",
+        "mapper": "Dr.Disrespect",
+        "song": "Gillette - "
+    },
+    "9811E3EAEB31CB5903CCF76D49452299AD24F4A3": {
+        "diffs": [
+            {
+                "pp": "68.151",
+                "star": "1.56",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "44.23",
+                "star": "1.01",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "26.451",
+                "star": "0.61",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "5a0",
+        "mapper": "Rustic",
+        "song": "Gladiator - Zayde Wolf"
+    },
+    "2AA1F5192828E075C30DD015B1E132BBA912EB86": {
+        "diffs": [
+            {
+                "pp": "66.759",
+                "star": "1.55",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "9",
+        "mapper": "a-ha",
+        "song": "Take On Me - "
+    },
+    "4B7CDFCF558F66ACC4B7A506C2DD50FBD9A76354": {
+        "diffs": [
+            {
+                "pp": "66.652",
+                "star": "1.54",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "47.022",
+                "star": "1.1",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "5fc",
+        "mapper": "Rocket",
+        "song": "Waiting For Love - Avicii"
+    },
+    "3F147F8AFA9089B76197E18CFF36E08A261BA072": {
+        "diffs": [
+            {
+                "pp": "66.564",
+                "star": "1.54",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1c16",
+        "mapper": "Ruckus",
+        "song": "Victor's Piano Solo - Danny Elfman, The Wild Conductor"
+    },
+    "91E78271A7E4FB42092DC5671E82012293997723": {
+        "diffs": [
+            {
+                "pp": "66.185",
+                "star": "1.52",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "12e",
+        "mapper": "Waveshaper",
+        "song": "You Are the End - "
+    },
+    "BE1A39B41F2089CAD9AA8D775F55E8707447B5CA": {
+        "diffs": [
+            {
+                "pp": "64.955",
+                "star": "1.55",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "42",
+        "mapper": "Madeon",
+        "song": "Icarus - "
+    },
+    "848B35A0028465BC4D76FD3CAFB5ACC4B2C70D5A": {
+        "diffs": [
+            {
+                "pp": "64.608",
+                "star": "1.49",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "12d9",
+        "mapper": "FEFELAND",
+        "song": "Pixel Galaxy - Snail's House"
+    },
+    "0A5F887D9ADEC49122BE302AC01D9E29296DE7CA": {
+        "diffs": [
+            {
+                "pp": "64.385",
+                "star": "1.48",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "391",
+        "mapper": "Brett Kettler",
+        "song": "Space Smasher - (Original)"
+    },
+    "BFE26DD52BCFDFA695D07F055889B7A12194855E": {
+        "diffs": [
+            {
+                "pp": "63.496",
+                "star": "1.46",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "8dd",
+        "mapper": "Ruckus",
+        "song": "Tieduprightnow - Parcels"
+    },
+    "236173D5BA7DC379D480B9CB5FB6B4FA5ABE77DA": {
+        "diffs": [
+            {
+                "pp": "63.408",
+                "star": "1.46",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "570",
+        "mapper": "GreatYazer",
+        "song": "Mr. Blue Sky - Electric Light Orchestra"
+    },
+    "EB74B91F52762FD9010F93B4A9CC98BBDA4B91E4": {
+        "diffs": [
+            {
+                "pp": "63.331",
+                "star": "2.04",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "29.925",
+                "star": "1.04",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "597",
+        "mapper": "Virtual Riot",
+        "song": "Buttonmasher - chart by Moriik"
+    },
+    "DF7E75AB20B9A27960C9F95E9F2B5AD0927C46DC": {
+        "diffs": [
+            {
+                "pp": "62.753",
+                "star": "1.45",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "39",
+        "mapper": "TheFatRat",
+        "song": "Xenogenesis - "
+    },
+    "19F2879D11A91B51A5C090D63471C3E8D9B7AEE3": {
+        "diffs": [
+            {
+                "pp": "62.718",
+                "star": "1.44",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "b",
+        "mapper": "Rustic",
+        "song": "Believer - Imagine Dragons"
+    },
+    "B18C86ACE7415D27D48162A7EAFEF40F03A1869D": {
+        "diffs": [
+            {
+                "pp": "62.514",
+                "star": "1.47",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "50e",
+        "mapper": "Smash Into Pieces",
+        "song": "Boomerang - "
+    },
+    "28D084533B3F69ACB53E611EA383C026A87154AB": {
+        "diffs": [
+            {
+                "pp": "62.425",
+                "star": "1.45",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "4bb",
+        "mapper": "Camellia as \"Bang Riot\"",
+        "song": "Blastix Riotz - Chart by Mystikmol"
+    },
+    "388517D0E690E081FBFAE54AC8407EF908354827": {
+        "diffs": [
+            {
+                "pp": "62.17",
+                "star": "1.44",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "e2",
+        "mapper": "Avenged Sevenfold",
+        "song": "God Damn - "
+    },
+    "D5AF11F4C5CAED00D68CD030FE9E269B0D12EFF0": {
+        "diffs": [
+            {
+                "pp": "62.149",
+                "star": "1.43",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "39.445",
+                "star": "0.91",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "2fe",
+        "mapper": "Vicetone ft. Cozi Zuehlsdorff",
+        "song": "Way Back - "
+    },
+    "8BA8BC2465C017C7643ECC645263F03BCCFAFA64": {
+        "diffs": [
+            {
+                "pp": "61.583",
+                "star": "1.42",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "3b0",
+        "mapper": "CXZman",
+        "song": "Face to face - Daft Punk"
+    },
+    "A79E0B6CBDF1FA11473802188C1D70EA4AC5BF0E": {
+        "diffs": [
+            {
+                "pp": "61.415",
+                "star": "1.42",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "89b",
+        "mapper": "RinkuSenpai",
+        "song": "Armada - Skies of Arcadia OST"
+    },
+    "CE42EA216F58F72DBAF0F18E99C8B1E636E8C126": {
+        "diffs": [
+            {
+                "pp": "61.116",
+                "star": "1.41",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "47.109",
+                "star": "1.08",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "728",
+        "mapper": "Ayewyn",
+        "song": "Cotton Eyed Joe - Rednex"
+    },
+    "A83749111C38DD072C8ED4CB56AD0DA1F4ADDD47": {
+        "diffs": [
+            {
+                "pp": "60.752",
+                "star": "1.41",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "42.407",
+                "star": "1.01",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "210",
+        "mapper": "Unzor",
+        "song": "cYsmix - Escapism (BilliumMoto Flip) - "
+    },
+    "B33B4F6DC1E9AE98E204BDC78DD26BE51A650D76": {
+        "diffs": [
+            {
+                "pp": "60.466",
+                "star": "1.39",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "3dd",
+        "mapper": "STRFKR",
+        "song": "While I'm Alive - (Stoker)"
+    },
+    "7F123B09A16FF0BDCE6B0B9182CD89C46B936A5F": {
+        "diffs": [
+            {
+                "pp": "60.253",
+                "star": "1.39",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "31.645",
+                "star": "0.73",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "22a",
+        "mapper": "D.J Totto",
+        "song": "Astrogazer - D.J Totto - "
+    },
+    "5C02D26B30E413CAFE1B80CD57F8061FFFD2CEC2": {
+        "diffs": [
+            {
+                "pp": "60.193",
+                "star": "1.38",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "46.641",
+                "star": "1.07",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "640",
+        "mapper": "Robbie Danzie",
+        "song": "RIGHT ON TIME - from GF and DM"
+    },
+    "634B02591DE26875948B70BDC502F74C71C2EF35": {
+        "diffs": [
+            {
+                "pp": "59.696",
+                "star": "1.39",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "74d",
+        "mapper": "Thomas Bergersen",
+        "song": "Magika - "
+    },
+    "E1176B97EE4786F0CDFACB8770AD2B4ABDDEAF02": {
+        "diffs": [
+            {
+                "pp": "59.343",
+                "star": "1.37",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "26.588",
+                "star": "0.61",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "19.666",
+                "star": "0.45",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "216",
+        "mapper": "Freeek",
+        "song": "Cut Your Teeth - Kygo & Kyla La Grange"
+    },
+    "49246D2574CA91C5134D51DE8484581AB44EF07E": {
+        "diffs": [
+            {
+                "pp": "59.178",
+                "star": "1.36",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "39.824",
+                "star": "0.91",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "27.904",
+                "star": "0.64",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "793",
+        "mapper": "Rustic",
+        "song": "Hyper Drive - Jaroslav Beck, Generdyn"
+    },
+    "56AFB126C31A5191F2D6EB195811E80CE1899724": {
+        "diffs": [
+            {
+                "pp": "58.557",
+                "star": "1.35",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "40.766",
+                "star": "0.94",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "f3",
+        "mapper": "Yumiko Kanki & Takuto Kitsuta",
+        "song": "Mute City - F-Zero"
+    },
+    "884E2D9A82F5675DE7C3FA35199EBF24C4F15D23": {
+        "diffs": [
+            {
+                "pp": "56.518",
+                "star": "1.3",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "33.137",
+                "star": "0.76",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "858",
+        "mapper": "kamome sano",
+        "song": "citrus - Chart by Mystikmol"
+    },
+    "9DAB46C9D19CB11F896C577C37AA4A99F33C057D": {
+        "diffs": [
+            {
+                "pp": "55.952",
+                "star": "1.31",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "8ac",
+        "mapper": "shadowlord723",
+        "song": "Lonely Departure - Chroma"
+    },
+    "9BCFBD06C6CEAC3E4FF44093FBC33AB83587108B": {
+        "diffs": [
+            {
+                "pp": "55.792",
+                "star": "1.28",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "45",
+        "mapper": "Knife Party",
+        "song": "Give It Up - "
+    },
+    "E39D28AABE102E2681C231FBFD884CC15ABFE8D3": {
+        "diffs": [
+            {
+                "pp": "55.587",
+                "star": "1.28",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "42.349",
+                "star": "0.97",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "35.148",
+                "star": "0.81",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "235",
+        "mapper": "Logomik",
+        "song": "Doomsday - Nero - "
+    },
+    "2DE36009613E11C00380D71C70A42189A2E5BBDB": {
+        "diffs": [
+            {
+                "pp": "55.497",
+                "star": "1.48",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "41.207",
+                "star": "1.18",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "10f",
+        "mapper": "Machinae Supremacy",
+        "song": "Gerudo Valley METAL - "
+    },
+    "E10A6A96310AE35F366A24DE802B20F82B4624AB": {
+        "diffs": [
+            {
+                "pp": "54.854",
+                "star": "1.3",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "1d7",
+        "mapper": "E-Type",
+        "song": "Make Us High - "
+    },
+    "00CCD52A38D10E367D78402270182EBD21D43F85": {
+        "diffs": [
+            {
+                "pp": "53.798",
+                "star": "1.24",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "76a",
+        "mapper": "MDK",
+        "song": "Pandora - "
+    },
+    "6D3890AA6C534167332BFC098A0084F6FDD8E250": {
+        "diffs": [
+            {
+                "pp": "52.511",
+                "star": "1.21",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "301",
+        "mapper": "Machinae Supremacy",
+        "song": "Cryosleep - "
+    },
+    "906160FD1F808E2F34F33C2CA5920118855C065D": {
+        "diffs": [
+            {
+                "pp": "52.2",
+                "star": "1.2",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "1bf",
+        "mapper": "Caravan Palace",
+        "song": "Lone Digger - "
+    },
+    "F8FAAC8D332EB77B698A9BF284140C36216A14B7": {
+        "diffs": [
+            {
+                "pp": "52.128",
+                "star": "1.2",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "ae",
+        "mapper": "Holy Ghost",
+        "song": "Do It Again - "
+    },
+    "2B92A21BC94FDBD8FECDBC872785CE2BDC9BA89E": {
+        "diffs": [
+            {
+                "pp": "51.249",
+                "star": "1.18",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "382",
+        "mapper": "Junko Ohashi",
+        "song": "Telephone Awoo - Telephone Number (1984)"
+    },
+    "F8B7871978EF1D32FD559E5AACC825168E84C62E": {
+        "diffs": [
+            {
+                "pp": "51.039",
+                "star": "1.17",
+                "scores": "0",
+                "diff": "Normal"
+            },
+            {
+                "pp": "41.835",
+                "star": "0.96",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "551",
+        "mapper": "Robin Williams",
+        "song": "Friend Like Me - Aladdin OST"
+    },
+    "3B6E21A491136A4598B1D2FE12BA99637733A75B": {
+        "diffs": [
+            {
+                "pp": "50.243",
+                "star": "1.15",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "392",
+        "mapper": "GreatNate",
+        "song": "Symphony - Clean Bandit"
+    },
+    "7A606DD1A2BA28A9A371ABCABB68CEE8C00FB749": {
+        "diffs": [
+            {
+                "pp": "50.212",
+                "star": "1.16",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "687",
+        "mapper": "Todokete",
+        "song": "Death by Glamour - by Toby Fox"
+    },
+    "8E7E553099436AF31564ADF1977A5EC42A61CFFF": {
+        "diffs": [
+            {
+                "pp": "50.029",
+                "star": "1.15",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "141",
+        "mapper": "GreatYazer",
+        "song": "Gangnam Style - PSY"
+    },
+    "90EA6FF40832AE26D69CE66580DCB95E4744072B": {
+        "diffs": [
+            {
+                "pp": "49.677",
+                "star": "1.18",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "41.324",
+                "star": "1",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "388",
+        "mapper": "Jovian",
+        "song": "Shooting Stars (Onderkoffer Remix) - Bag Raiders"
+    },
+    "82B8E2C82DCC84CBB5D70CF5EE545EBB145C6311": {
+        "diffs": [
+            {
+                "pp": "49.365",
+                "star": "1.14",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "2e9",
+        "mapper": "GreatYazer",
+        "song": "Blow Me Away - Breaking Benjamin"
+    },
+    "65DF0198B8656EC353B9DFD560ECFF7FB852318C": {
+        "diffs": [
+            {
+                "pp": "47.158",
+                "star": "1.09",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "465",
+        "mapper": "Todokete",
+        "song": "POP TEAM EPIC - by Sumire Uesaka"
+    },
+    "F40D605585EB597155236104E0829B4DEDDBB8C1": {
+        "diffs": [
+            {
+                "pp": "46.423",
+                "star": "1.07",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "439",
+        "mapper": "Georgin",
+        "song": "Short Change Hero - the Heavy"
+    },
+    "851DAAB7074F65FCB2ED2AC686F6A0CFB460BA61": {
+        "diffs": [
+            {
+                "pp": "46.137",
+                "star": "1.06",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "42.325",
+                "star": "0.97",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "4d5",
+        "mapper": "Rustic",
+        "song": "Tetris Effect Trailer - I'm yours forever"
+    },
+    "CECC5757FD4ABEA631113C672EC5FBBF9F686457": {
+        "diffs": [
+            {
+                "pp": "44.489",
+                "star": "1.06",
+                "scores": "0",
+                "diff": "Hard"
+            }
+        ],
+        "key": "656",
+        "mapper": "Caeden117",
+        "song": "Arcana - Xtrullor"
+    },
+    "5973AA025C3835D6C23E5153D688E9DB9E8F3B56": {
+        "diffs": [
+            {
+                "pp": "41.844",
+                "star": "0.96",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "9c9",
+        "mapper": "Reborn",
+        "song": "The Final Countdown - Europe"
+    },
+    "2738E2374B821B6AA9839F128A70CAAE8333CB1C": {
+        "diffs": [
+            {
+                "pp": "41.384",
+                "star": "0.95",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "900",
+        "mapper": "Ayewyn",
+        "song": "Limbo - Daddy Yankee"
+    },
+    "2C002D2874E029DB43F3C7CF9BB271AE0D769B74": {
+        "diffs": [
+            {
+                "pp": "39.858",
+                "star": "0.92",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "462",
+        "mapper": "Avicii",
+        "song": "The Nights - "
+    },
+    "BA87C404AA17731570811FBCE5E1030036BAA8B2": {
+        "diffs": [
+            {
+                "pp": "39.504",
+                "star": "0.98",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "833",
+        "mapper": "Freeek",
+        "song": "GHOST - Jaden Smith (Ft Christian Rich)"
+    },
+    "D0457C1DEE4A78F5496C3B282F8B834EC45F75A8": {
+        "diffs": [
+            {
+                "pp": "37.8",
+                "star": "0.93",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "860",
+        "mapper": "DownyCat",
+        "song": "Wake Me Up When September Ends - Green Day"
+    },
+    "F71A3E96D3FA3675EB16BE368EE984395AD910FB": {
+        "diffs": [
+            {
+                "pp": "35.63",
+                "star": "0.82",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "73b",
+        "mapper": "Jaroslav Beck",
+        "song": "PSVR Announcement Song - E3 2018"
+    },
+    "A4DB5E8CFB99B835DA0429B5586B15217C3335D7": {
+        "diffs": [
+            {
+                "pp": "33.693",
+                "star": "0.77",
+                "scores": "0",
+                "diff": "Expert"
+            }
+        ],
+        "key": "467a",
+        "mapper": "carrot",
+        "song": "FREEDOM DiVE - R3 Music Box"
+    },
+    "FD77126F3ED9900A045A3625C36E2AAD4C1F4C3E": {
+        "diffs": [
+            {
+                "pp": "33.264",
+                "star": "0.77",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "426",
+        "mapper": "Radle_jr",
+        "song": "Love Runs Out - OneRepublic"
+    },
+    "F4E319DB2C4EF676A3E6C79CA9383F1C836CEF0E": {
+        "diffs": [
+            {
+                "pp": "31.184",
+                "star": "0.72",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "323",
+        "mapper": "Dr_Marc",
+        "song": "Future Overture (Short ver.18) - Mitchie M"
+    },
+    "2CD02101BE925DECF2C98DC3884FFCC7770ABE31": {
+        "diffs": [
+            {
+                "pp": "29.636",
+                "star": "0.68",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "7e",
+        "mapper": "Freeek",
+        "song": "Batshit - Sofi Tukker"
+    },
+    "8B53010B2F6656C5BE03C110724703763CC3CB03": {
+        "diffs": [
+            {
+                "pp": "29.548",
+                "star": "0.68",
+                "scores": "0",
+                "diff": "Expert"
+            },
+            {
+                "pp": "21.004",
+                "star": "0.48",
+                "scores": "0",
+                "diff": "Hard"
+            },
+            {
+                "pp": "6.981",
+                "star": "0.16",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "7a6",
+        "mapper": "Rustic",
+        "song": "Gas Mask - Generdyn"
+    },
+    "7641706012EE4EF9BF7D7E26A18F9D87D4807F22": {
+        "diffs": [
+            {
+                "pp": "29.274",
+                "star": "0.67",
+                "scores": "0",
+                "diff": "Normal"
+            }
+        ],
+        "key": "1b7",
+        "mapper": "Rustic",
+        "song": "WALK ON WATER - 30 SECONDS TO MARS"
+    },
+    "A098FD424C66FEDF0ADE7E7B1926F1C834F36A52": {
+        "diffs": [
+            {
+                "pp": "17.372",
+                "star": "0.4",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "7f",
+        "mapper": "Freeek",
+        "song": "G.O.M.D - Sickick"
+    },
+    "6D24C4477B498830E78E2F9B4DBD9AB97642B3E7": {
+        "diffs": [
+            {
+                "pp": "1.392",
+                "star": "0.03",
+                "scores": "0",
+                "diff": "Easy"
+            }
+        ],
+        "key": "722f",
+        "mapper": "Toby Fox",
+        "song": "Small Shock - "
+    }
+}
