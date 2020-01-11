@@ -1,15 +1,18 @@
 package types
 
 import (
-	"regexp"
 	"bytes"
 	"crypto/sha1"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"os"
+	"regexp"
 	"sort"
 )
+
+// Matches all invalid NTFS characters
+var reInvalid *regexp.Regexp = regexp.MustCompile(`[<>:"\/\\|?*\n]+`)
 
 // Playlist holds the filename, raw JSON content and list of songs
 type Playlist struct {
@@ -151,6 +154,8 @@ type Song struct {
 // Merge returns a new song merged with the argument song
 //
 // Prioritizes self, that is, only adds missing fields
+//
+// BTW, I know this is awful
 func (s *Song) Merge(os *Song) Song {
 	var retSong Song
 	if len(s.Path) == 0 {
@@ -286,7 +291,6 @@ func (s *Song) DirName() string {
 		ret += ")"
 	}
 	// Strip invalid NTFS characters
-	reInvalid := regexp.MustCompile(`[<>:"\/\\|?*\n]+`)
 	ret = reInvalid.ReplaceAllString(ret, "")
 	return ret
 }
