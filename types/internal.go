@@ -325,16 +325,16 @@ type Config struct {
 func NewConfig(path string) (c Config, err error) {
 	var jc ConfigJSON
 	file, err := ioutil.ReadFile(path)
-	if err != nil {
-		err = fmt.Errorf("Config file error: %v ", err)
-		return
+	if err == nil {
+		errJ := json.Unmarshal(file, &jc)
+		if errJ != nil {
+			err = fmt.Errorf("Cannot parse %s: %v", path, errJ)
+			return
+		}
+	} else {
+		// Try to run without config file
+		err = nil
 	}
-	err = json.Unmarshal(file, &jc)
-	if err != nil {
-		err = fmt.Errorf("Cannot parse %s: %v", path, err)
-		return
-	}
-
 	// Default to C Steam folder
 	if len(jc.Game) == 0 {
 		c.Base = "C:/Program Files (x86)/Steam/steamapps/common/Beat Saber"
