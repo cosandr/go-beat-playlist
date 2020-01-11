@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"path/filepath"
 	"time"
 
 	"github.com/cosandr/go-beat-playlist/input"
@@ -13,6 +12,8 @@ import (
 )
 
 var conf mt.Config
+var installedSongs mt.Playlist
+var allPlaylists []mt.Playlist
 
 func init() {
 	c, err := mt.NewConfig("./config.json")
@@ -20,9 +21,23 @@ func init() {
 		panic(err)
 	}
 	conf = c
+	loadAll()
 }
 
-func decideRun(playlists *[]mt.Playlist, installed *mt.Playlist) {
+func loadAll() {
+	newInstalled, err := readInstalledSongs(conf.Songs)
+	if err != nil {
+		panic(err)
+	}
+	installedSongs = newInstalled
+	newPlaylists, err := readAllPlaylists(conf.Playlists)
+	if err != nil {
+		panic(err)
+	}
+	allPlaylists = newPlaylists
+}
+
+func decideRun() {
 	const helpText = `Beat Saber Playlist editor written in Go
 1: Show all read playlists and their songs
 2: Show all installed song data
@@ -31,31 +46,22 @@ func decideRun(playlists *[]mt.Playlist, installed *mt.Playlist) {
 0: Exit`
 	for {
 		fmt.Printf("\n%s\n", helpText)
-		fmt.Printf("Loaded %d songs and %d playlists.\n", len((*installed).Songs), len(*playlists))
+		fmt.Printf("Loaded %d songs and %d playlists.\n", len(installedSongs.Songs), len(allPlaylists))
 		in := input.GetInputNumber()
 		fmt.Println()
 		switch in {
 		case 0:
 			return
 		case 1:
-			printAllPlaylists(playlists)
+			printAllPlaylists()
 		case 2:
-			fmt.Println(installed.String())
+			fmt.Println(installedSongs.String())
 		case 3:
-			songsWithoutPlaylists(playlists, installed)
+			songsWithoutPlaylists()
 			// Reload
-			newInstalled, err := readInstalledSongs(conf.Songs)
-			if err != nil {
-				panic(err)
-			}
-			newPlaylists, err := readAllPlaylists(conf.Playlists, &newInstalled)
-			if err != nil {
-				panic(err)
-			}
-			installed = &newInstalled
-			playlists = &newPlaylists
+			loadAll()
 		case 4:
-			missingFromPlaylists(playlists, installed)
+			missingFromPlaylists()
 		default:
 			fmt.Println("Invalid option")
 		}
@@ -63,14 +69,14 @@ func decideRun(playlists *[]mt.Playlist, installed *mt.Playlist) {
 }
 
 // songsWithoutPlaylists provides the UX for handling songs without playlists
-func songsWithoutPlaylists(playlists *[]mt.Playlist, installed *mt.Playlist) {
+func songsWithoutPlaylists() {
 	var helpText = `## %d songs without playlists ##
 1: Show songs
 2: Add to playlist
 3: Delete or move all
 0: Back to main menu`
 	for {
-		orphansPlaylist := getSongsWithoutPlaylists(playlists, installed)
+		orphansPlaylist := getSongsWithoutPlaylists()
 		fmt.Printf(helpText, len((orphansPlaylist).Songs))
 		fmt.Println()
 		in := input.GetInputNumber()
@@ -135,29 +141,10 @@ func songsWithoutPlaylists(playlists *[]mt.Playlist, installed *mt.Playlist) {
 	}
 }
 
-// getSongsWithoutPlaylists returns a Playlist of songs not already in any playlists
-func getSongsWithoutPlaylists(playlists *[]mt.Playlist, installed *mt.Playlist) mt.Playlist {
-	var orphans []mt.Song
-	var isOrphan bool
-	for _, s := range (*installed).Songs {
-		isOrphan = true
-		for _, p := range *playlists {
-			if p.Contains(s) {
-				isOrphan = false
-				break
-			}
-		}
-		if isOrphan {
-			orphans = append(orphans, s)
-		}
-	}
-	return mt.Playlist{Title: "Orphans", Songs: orphans}
-}
-
-func missingFromPlaylists(playlists *[]mt.Playlist, installed *mt.Playlist) {
+func missingFromPlaylists() {
 	var missing = make(map[string][]mt.Song)
 	// Populate song paths
-	for _, p := range *playlists {
+	for _, p := range allPlaylists {
 		songs := []mt.Song{}
 		for _, s := range p.Songs {
 			if s.Path == "" {
@@ -185,80 +172,11 @@ func main() {
 	flag.BoolVar(&timing, "timing", false, "Enable timing")
 	flag.Parse()
 
-	startTimes["Read installed"] = time.Now()
-	installed, err := readInstalledSongs(conf.Songs)
-	if err != nil {
-		panic(err)
-	}
-	endTimes["Read installed"] = time.Now()
-
-	startTimes["Read playlists"] = time.Now()
-	playlists, err := readAllPlaylists(conf.Playlists, &installed)
-	if err != nil {
-		panic(err)
-	}
-	endTimes["Read playlists"] = time.Now()
-
-	decideRun(&playlists, &installed)
+	decideRun()
 
 	if timing {
 		for k, v := range endTimes {
 			fmt.Printf("%s in: %s\n", k, (v.Sub(startTimes[k]).String()))
 		}
-	}
-}
-
-func writePlaylist(path string, playlist *mt.Playlist) {
-	err := ioutil.WriteFile(path, playlist.ToJSON(), 0755)
-	if err != nil {
-		err = fmt.Errorf("JSON write error: %v ", err)
-		return
-	}
-}
-
-func readAllPlaylists(path string, installed *mt.Playlist) (playlists []mt.Playlist, err error) {
-	files, err := ioutil.ReadDir(path)
-	if err != nil {
-		return
-	}
-	for _, file := range files {
-		p, readErr := mt.MakePlaylist(path + "/" + file.Name())
-		if readErr != nil {
-			fmt.Println(readErr)
-			continue
-		}
-		p.Installed(installed)
-		playlists = append(playlists, p)
-	}
-	return
-}
-
-func readInstalledSongs(path string) (p mt.Playlist, err error) {
-	var songs []mt.Song
-	err = filepath.Walk(path, func(subpath string, info os.FileInfo, err error) error {
-		if err != nil {
-			return err
-		}
-		if info.Name() == "info.dat" {
-			s, makeErr := mt.MakeSong(subpath)
-			if makeErr != nil {
-				fmt.Printf("Cannot create song: %v\n", makeErr)
-				return nil
-			}
-			songs = append(songs, s)
-		}
-		return nil
-	})
-	if err != nil {
-		fmt.Printf("error walking the path: %v\n", err)
-		return
-	}
-	p = mt.Playlist{Title: "Installed Songs", Songs: songs}
-	return
-}
-
-func printAllPlaylists(playlists *[]mt.Playlist) {
-	for _, p := range *playlists {
-		fmt.Println(p.String())
 	}
 }
