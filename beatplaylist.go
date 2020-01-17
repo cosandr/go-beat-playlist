@@ -357,7 +357,7 @@ func getMissingFromPlaylists() map[string]mt.Playlist {
 	for _, p := range allPlaylists {
 		songs := []mt.Song{}
 		for _, s := range p.Songs {
-			if s.Path == "" {
+			if len(s.Path) == 0 {
 				songs = append(songs, s)
 			}
 		}

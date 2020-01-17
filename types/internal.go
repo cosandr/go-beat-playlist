@@ -9,6 +9,7 @@ import (
 	"os"
 	"regexp"
 	"sort"
+	"strings"
 )
 
 // Matches all invalid NTFS characters
@@ -46,9 +47,7 @@ func (p *Playlist) Debug() string {
 // Contains returns true if Song is in it
 func (p *Playlist) Contains(comp Song) bool {
 	for _, s := range p.Songs {
-		if s.Hash != "" && s.Hash == comp.Hash {
-			return true
-		} else if s.Key != "" && s.Key == comp.Key {
+		if s.Equals(&comp) {
 			return true
 		}
 	}
@@ -58,12 +57,11 @@ func (p *Playlist) Contains(comp Song) bool {
 // SongPath returns the requested song's path, if it exists
 func (p *Playlist) SongPath(comp Song) string {
 	for _, s := range p.Songs {
+		// Ignore if we have no path or if both key and hash are missing
 		if s.Path == "" || (s.Hash == "" && s.Key == "") {
 			continue
 		}
-		if s.Hash == comp.Hash {
-			return s.Path
-		} else if s.Key == comp.Key {
+		if s.Equals(&comp) {
 			return s.Path
 		}
 	}
@@ -75,7 +73,7 @@ func (p *Playlist) Installed(installed *Playlist) {
 	var newSongs []Song
 	for _, s := range p.Songs {
 		newSong := s
-		newSong.Path = installed.SongPath(s)
+		newSong.Path = installed.SongPath(newSong)
 		newSongs = append(newSongs, newSong)
 	}
 	p.Songs = newSongs
@@ -149,6 +147,16 @@ type Song struct {
 	PP     float64
 	Stars  float64
 	URL    string
+}
+
+// Equals returns true if the key or hash matches
+func (s *Song) Equals(other *Song) bool {
+	if s.Hash != "" && s.Hash == other.Hash {
+		return true
+	} else if s.Key != "" && s.Key == other.Key {
+		return true
+	}
+	return false
 }
 
 // Merge returns a new song merged with the argument song
@@ -292,6 +300,8 @@ func (s *Song) DirName() string {
 	}
 	// Strip invalid NTFS characters
 	ret = reInvalid.ReplaceAllString(ret, "")
+	// Remove trailing space
+	ret = strings.TrimSuffix(ret, " ")
 	return ret
 }
 
