@@ -1,4 +1,4 @@
-package download
+package main
 
 import (
 	"archive/zip"
@@ -7,11 +7,11 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
-
-	mt "github.com/cosandr/go-beat-playlist/types"
 )
 
 const (
+	// The user agent used for HTTP GET requests
+	httpUserAgent = "go_beat_playlist/1.0"
 	// ScoreSaberStarsURL Scoresaber API URL for getting top X stars
 	scoreSaberStarsURL = "https://scoresaber.com/api.php?function=get-leaderboards&cat=3&limit=%[1]d&page=1&ranked=1"
 	// BeatStarAll Dump of all maps
@@ -26,14 +26,26 @@ const (
 	beatSaverByHash = "https://beatsaver.com/api/maps/by-hash/%s"
 )
 
-// Song tries to download a song from BeatSaver using its hash or key, returns a Song
+var httpClient = &http.Client{}
+
+func httpGet(url string) (resp *http.Response, err error) {
+	req, err := http.NewRequest("GET", url, nil)
+	if err != nil {
+		return
+	}
+	req.Header.Set("User-Agent", httpUserAgent)
+	resp, err = httpClient.Do(req)
+	return
+}
+
+// DownloadSong tries to download a song from BeatSaver using its hash or key, returns a DownloadSong
 //
 // Function merges downloaded metadata with argument, downloaded song is saved to `path`
-func Song(path string, s *mt.Song) (retSong mt.Song, err error) {
+func DownloadSong(path string, s *Song) (retSong Song, err error) {
 	// Working Song
-	var dlSong mt.Song
+	var dlSong Song
 	if len(s.URL) == 0 {
-		bsSong, errDl := SongInfo(s)
+		bsSong, errDl := DownloadSongInfo(s)
 		if errDl != nil {
 			err = errDl
 			return
@@ -42,8 +54,8 @@ func Song(path string, s *mt.Song) (retSong mt.Song, err error) {
 	} else {
 		dlSong = *s
 	}
-	if !mt.DirExists(path) {
-		songBytes, errB := SongBytes(dlSong.URL)
+	if !DirExists(path) {
+		songBytes, errB := DownloadSongBytes(dlSong.URL)
 		if errB != nil {
 			err = errB
 			return
@@ -55,7 +67,7 @@ func Song(path string, s *mt.Song) (retSong mt.Song, err error) {
 		}
 	}
 	// Load downloaded song
-	retSong, err = mt.MakeSong(path + "/info.dat")
+	retSong, err = MakeSong(path + "/info.dat")
 	if err != nil {
 		return
 	}
@@ -67,9 +79,9 @@ func Song(path string, s *mt.Song) (retSong mt.Song, err error) {
 	return
 }
 
-// SongBytes tries to download a song from BeatSaver using its url, returns byte array
-func SongBytes(url string) (out []byte, err error) {
-	dl, err := http.Get("https://beatsaver.com" + url)
+// DownloadSongBytes tries to download a song from BeatSaver using its url, returns byte array
+func DownloadSongBytes(url string) (out []byte, err error) {
+	dl, err := httpGet("https://beatsaver.com" + url)
 	if err != nil {
 		return
 	}
@@ -80,7 +92,7 @@ func SongBytes(url string) (out []byte, err error) {
 
 // ExtractZIP extract byte slice (ZIP file) to `path`
 func ExtractZIP(path string, in *[]byte) (err error) {
-	if !mt.DirExists(path) {
+	if !DirExists(path) {
 		errMk := os.MkdirAll(path, 0755)
 		if errMk != nil {
 			err = errMk
@@ -116,8 +128,8 @@ func readZipFile(zf *zip.File) ([]byte, error) {
 	return ioutil.ReadAll(f)
 }
 
-// SongInfo fetches song info from BeatSaver API, returns a new Song
-func SongInfo(s *mt.Song) (dlSong mt.Song, err error) {
+// DownloadSongInfo fetches song info from BeatSaver API, returns a new Song
+func DownloadSongInfo(s *Song) (dlSong Song, err error) {
 	var url string
 	if len(s.Hash) > 0 {
 		url = fmt.Sprintf(beatSaverByHash, s.Hash)
@@ -127,31 +139,35 @@ func SongInfo(s *mt.Song) (dlSong mt.Song, err error) {
 		err = fmt.Errorf("%s has no key or hash", s.Name)
 		return
 	}
-	resp, err := http.Get(url)
+	resp, err := httpGet(url)
 	if err != nil {
 		return
 	}
 	defer resp.Body.Close()
+	if resp.StatusCode != 200 {
+		err = fmt.Errorf("HTTP GET failed: %s", resp.Status)
+		return
+	}
 	outSong, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return
 	}
-	dlSong, err = mt.MakeBeatSaverSong(&outSong)
+	dlSong, err = MakeBeatSaverSong(&outSong)
 	if err != nil {
 		return
 	}
 	return
 }
 
-// StarsPlaylist returns a Playlist of top `num` songs sorted by star difficulty
-func StarsPlaylist(num int) (p mt.Playlist, err error) {
-	resp, err := http.Get(fmt.Sprintf(scoreSaberStarsURL, num))
+// DownloadStarsPlaylist returns a Playlist of top `num` songs sorted by star difficulty
+func DownloadStarsPlaylist(num int) (p Playlist, err error) {
+	resp, err := httpGet(fmt.Sprintf(scoreSaberStarsURL, num))
 	if err != nil {
 		return
 	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
-	p, err = mt.MakeScoreSaberPlaylist(&body)
+	p, err = MakeScoreSaberPlaylist(&body)
 	if err != nil {
 		return
 	}
@@ -162,15 +178,15 @@ func StarsPlaylist(num int) (p mt.Playlist, err error) {
 	return
 }
 
-// PPPlaylist returns a Playlist of top `num` songs sorted by PP
-func PPPlaylist(num int) (p mt.Playlist, err error) {
-	resp, err := http.Get(beatStarRanked)
+// DownloadPPPlaylist returns a Playlist of top `num` songs sorted by PP
+func DownloadPPPlaylist(num int) (p Playlist, err error) {
+	resp, err := httpGet(beatStarRanked)
 	if err != nil {
 		return
 	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
-	p, err = mt.MakeSongBrowserPlaylist(&body)
+	p, err = MakeSongBrowserPlaylist(&body)
 	if err != nil {
 		return
 	}

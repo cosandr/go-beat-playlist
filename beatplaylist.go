@@ -7,20 +7,16 @@ import (
 	"os"
 	"regexp"
 	"time"
-
-	"github.com/cosandr/go-beat-playlist/download"
-	"github.com/cosandr/go-beat-playlist/input"
-	mt "github.com/cosandr/go-beat-playlist/types"
 )
 
-var conf mt.Config
-var installedSongs mt.Playlist
-var allPlaylists map[string]mt.Playlist
+var conf Config
+var installedSongs Playlist
+var allPlaylists map[string]Playlist
 
 var rePlayExt *regexp.Regexp = regexp.MustCompile(`(\.json$|\.bplist$)`)
 
 func init() {
-	c, err := mt.NewConfig("./config.json")
+	c, err := NewConfig("./config.json")
 	if err != nil {
 		panic(err)
 	}
@@ -38,7 +34,7 @@ func loadAll() {
 	if err != nil {
 		panic(err)
 	}
-	allPlaylists = make(map[string]mt.Playlist)
+	allPlaylists = make(map[string]Playlist)
 	for _, p := range newPlaylists {
 		allPlaylists[p.Title] = p
 	}
@@ -58,7 +54,7 @@ func mainMenu() {
 		fmt.Printf("%s\n", helpText)
 		fmt.Printf("Loaded %d songs and %d playlists.\n", len(installedSongs.Songs), len(allPlaylists))
 		fmt.Print("Select option: ")
-		in := input.GetInputNumber()
+		in := GetInputNumber()
 		fmt.Println()
 		switch in {
 		case 0:
@@ -96,8 +92,8 @@ func songsFromSongBrowser() {
 2: Add to playlist
 0: Back to main menu`
 	fmt.Print("Enter max number of songs to fetch: ")
-	numSongs := input.GetInputNumber()
-	ppSongs, err := (download.PPPlaylist(numSongs))
+	numSongs := GetInputNumber()
+	ppSongs, err := (DownloadPPPlaylist(numSongs))
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -107,7 +103,7 @@ func songsFromSongBrowser() {
 		fmt.Printf(helpText, numSongs)
 		fmt.Println()
 		fmt.Print("Select option: ")
-		in := input.GetInputNumber()
+		in := GetInputNumber()
 		switch in {
 		case 0:
 			return
@@ -119,8 +115,8 @@ func songsFromSongBrowser() {
 			path := fmt.Sprintf("Top%dPP.bplist", numSongs)
 			fmt.Printf("Saving as %s\n", path)
 			path = fmt.Sprintf("%s/%s", conf.Playlists, path)
-			if mt.FileExists(path) {
-				backup := input.GetConfirm("Backup existing file? (Y/n) ")
+			if FileExists(path) {
+				backup := GetConfirm("Backup existing file? (Y/n) ")
 				if backup {
 					err := os.Rename(path, rePlayExt.ReplaceAllString(path, ".bak"))
 					if err != nil {
@@ -148,8 +144,8 @@ func songsFromScoreSaber() {
 2: Add to playlist
 0: Back to main menu`
 	fmt.Print("Enter max number of songs to fetch: ")
-	numSongs := input.GetInputNumber()
-	starSongs, err := (download.StarsPlaylist(numSongs))
+	numSongs := GetInputNumber()
+	starSongs, err := (DownloadStarsPlaylist(numSongs))
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -159,7 +155,7 @@ func songsFromScoreSaber() {
 		fmt.Printf(helpText, numSongs)
 		fmt.Println()
 		fmt.Print("Select option: ")
-		in := input.GetInputNumber()
+		in := GetInputNumber()
 		switch in {
 		case 0:
 			return
@@ -171,8 +167,8 @@ func songsFromScoreSaber() {
 			path := fmt.Sprintf("Top%dStars.bplist", numSongs)
 			fmt.Printf("Saving as %s\n", path)
 			path = fmt.Sprintf("%s/%s", conf.Playlists, path)
-			if mt.FileExists(path) {
-				backup := input.GetConfirm("Backup existing file? (Y/n) ")
+			if FileExists(path) {
+				backup := GetConfirm("Backup existing file? (Y/n) ")
 				if backup {
 					err := os.Rename(path, rePlayExt.ReplaceAllString(path, ".bak"))
 					if err != nil {
@@ -206,7 +202,7 @@ func songsWithoutPlaylists() {
 		fmt.Printf(helpText, len((orphansPlaylist).Songs))
 		fmt.Println()
 		fmt.Print("Select option: ")
-		in := input.GetInputNumber()
+		in := GetInputNumber()
 		fmt.Println()
 		switch in {
 		case 0:
@@ -216,13 +212,13 @@ func songsWithoutPlaylists() {
 		case 2:
 			var outBytes []byte
 			// Ask for playlist path
-			path, exists := input.GetInputPlaylist(conf.Playlists)
+			path, exists := GetInputPlaylist(conf.Playlists)
 			// Confirm override
 			if exists {
-				merging := input.GetConfirm("File already exists, merge? (Y/n) ")
+				merging := GetConfirm("File already exists, merge? (Y/n) ")
 				if merging {
 					// Read existing playlist
-					existing, err := mt.MakePlaylist(path)
+					existing, err := MakePlaylist(path)
 					if err != nil {
 						fmt.Printf("Cannot read playlist: %v\n", err)
 						continue
@@ -243,7 +239,7 @@ func songsWithoutPlaylists() {
 			}
 			return
 		case 3:
-			move := input.GetConfirm("Move to DeletedSongs instead of deleting? (Y/n) ")
+			move := GetConfirm("Move to DeletedSongs instead of deleting? (Y/n) ")
 			for _, s := range orphansPlaylist.Songs {
 				if !move {
 					err := os.Remove(s.Path)
@@ -287,7 +283,7 @@ func missingFromPlaylists() {
 		fmt.Printf(helpText, missingTotal, missingSummary)
 		fmt.Println()
 		fmt.Print("Select option: ")
-		in := input.GetInputNumber()
+		in := GetInputNumber()
 		fmt.Println()
 		switch in {
 		case 0:
@@ -297,9 +293,9 @@ func missingFromPlaylists() {
 				fmt.Println(p.String())
 			}
 		case 2:
-			var writePlaylist mt.Playlist
+			var writePlaylist Playlist
 			for name, p := range missingPlaylists {
-				songs := []mt.Song{}
+				songs := []Song{}
 				for _, s := range allPlaylists[name].Songs {
 					if s.Path != "" {
 						songs = append(songs, s)
@@ -308,7 +304,7 @@ func missingFromPlaylists() {
 				if len(songs) == 0 {
 					continue
 				}
-				writePlaylist = mt.Playlist{
+				writePlaylist = Playlist{
 					Title:  p.Title,
 					Author: p.Author,
 					Image:  p.Image,
@@ -317,7 +313,7 @@ func missingFromPlaylists() {
 				}
 				outBytes := writePlaylist.ToJSON()
 				path := p.File
-				backup := input.GetConfirm(fmt.Sprintf("Backup %s? (Y/n) ", p.Title))
+				backup := GetConfirm(fmt.Sprintf("Backup %s? (Y/n) ", p.Title))
 				if backup {
 					err := os.Rename(path, rePlayExt.ReplaceAllString(path, ".bak"))
 					if err != nil {
@@ -338,7 +334,7 @@ func missingFromPlaylists() {
 				for _, s := range p.Songs {
 					fmt.Printf(" --> Downloading %s\n", s.String())
 					path := fmt.Sprintf("%s/%s", conf.Songs, s.DirName())
-					_, err := download.Song(path, &s)
+					_, err := DownloadSong(path, &s)
 					if err != nil {
 						fmt.Printf("  -> Failed: %v\n", err)
 						continue
@@ -351,18 +347,18 @@ func missingFromPlaylists() {
 	}
 }
 
-func getMissingFromPlaylists() map[string]mt.Playlist {
-	var missing = make(map[string]mt.Playlist)
+func getMissingFromPlaylists() map[string]Playlist {
+	var missing = make(map[string]Playlist)
 	// Populate song paths
 	for _, p := range allPlaylists {
-		songs := []mt.Song{}
+		songs := []Song{}
 		for _, s := range p.Songs {
 			if len(s.Path) == 0 {
 				songs = append(songs, s)
 			}
 		}
 		if len(songs) > 0 {
-			missing[p.Title] = mt.Playlist{
+			missing[p.Title] = Playlist{
 				Title:  p.Title,
 				Author: p.Author,
 				Image:  p.Image,

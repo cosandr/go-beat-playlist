@@ -1,4 +1,4 @@
-package types
+package main
 
 // ConfigJSON is the structure of the config.json file
 type ConfigJSON struct {

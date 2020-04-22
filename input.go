@@ -1,4 +1,4 @@
-package input
+package main
 
 import (
 	"bufio"
@@ -6,8 +6,6 @@ import (
 	"os"
 	"strconv"
 	"strings"
-
-	mt "github.com/cosandr/go-beat-playlist/types"
 )
 
 // GetInputNumber returns first valid number from user input
@@ -30,7 +28,7 @@ func GetInputPlaylist(dirPath string) (path string, exists bool) {
 	fmt.Print("Enter playlist file: ")
 	for scanner.Scan() {
 		path = dirPath + "/" + scanner.Text()
-		exists = mt.FileExists(path)
+		exists = FileExists(path)
 		return
 	}
 	return

@@ -6,13 +6,11 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-
-	mt "github.com/cosandr/go-beat-playlist/types"
 )
 
 // getSongsWithoutPlaylists returns a Playlist of songs not already in any playlists
-func getSongsWithoutPlaylists() mt.Playlist {
-	var orphans []mt.Song
+func getSongsWithoutPlaylists() Playlist {
+	var orphans []Song
 	var isOrphan bool
 	for _, s := range installedSongs.Songs {
 		isOrphan = true
@@ -26,10 +24,10 @@ func getSongsWithoutPlaylists() mt.Playlist {
 			orphans = append(orphans, s)
 		}
 	}
-	return mt.Playlist{Title: "Orphans", Songs: orphans}
+	return Playlist{Title: "Orphans", Songs: orphans}
 }
 
-func readAllPlaylists(path string) (playlists []mt.Playlist, err error) {
+func readAllPlaylists(path string) (playlists []Playlist, err error) {
 	files, err := ioutil.ReadDir(path)
 	if err != nil {
 		return
@@ -41,7 +39,7 @@ func readAllPlaylists(path string) (playlists []mt.Playlist, err error) {
 			}
 			continue
 		}
-		p, readErr := mt.MakePlaylist(path + "/" + file.Name())
+		p, readErr := MakePlaylist(path + "/" + file.Name())
 		if readErr != nil {
 			fmt.Println(readErr)
 			continue
@@ -52,14 +50,14 @@ func readAllPlaylists(path string) (playlists []mt.Playlist, err error) {
 	return
 }
 
-func readInstalledSongs(path string) (p mt.Playlist, err error) {
-	var songs []mt.Song
+func readInstalledSongs(path string) (p Playlist, err error) {
+	var songs []Song
 	err = filepath.Walk(path, func(subpath string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
 		if info.Name() == "info.dat" {
-			s, makeErr := mt.MakeSong(subpath)
+			s, makeErr := MakeSong(subpath)
 			if makeErr != nil {
 				fmt.Printf("Cannot create song: %v\n", makeErr)
 				return nil
@@ -72,7 +70,7 @@ func readInstalledSongs(path string) (p mt.Playlist, err error) {
 		fmt.Printf("error walking the path: %v\n", err)
 		return
 	}
-	p = mt.Playlist{Title: "Installed Songs", Songs: songs}
+	p = Playlist{Title: "Installed Songs", Songs: songs}
 	return
 }
 
