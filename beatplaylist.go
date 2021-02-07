@@ -9,6 +9,8 @@ import (
 	"time"
 )
 
+const configPath = "./config.json"
+
 var conf Config
 var installedSongs Playlist
 var allPlaylists map[string]Playlist
@@ -16,7 +18,7 @@ var allPlaylists map[string]Playlist
 var rePlayExt *regexp.Regexp = regexp.MustCompile(`(\.json$|\.bplist$)`)
 
 func init() {
-	c, err := NewConfig("./config.json")
+	c, err := NewConfig(configPath)
 	if err != nil {
 		panic(err)
 	}
@@ -242,7 +244,7 @@ func songsWithoutPlaylists() {
 			move := GetConfirm("Move to DeletedSongs instead of deleting? (Y/n) ")
 			for _, s := range orphansPlaylist.Songs {
 				if !move {
-					err := os.Remove(s.Path)
+					err := os.RemoveAll(s.Path)
 					if err != nil {
 						fmt.Printf("Cannot delete %s: %v\n", s.String(), err)
 						continue
