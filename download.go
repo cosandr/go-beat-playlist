@@ -78,6 +78,7 @@ func DownloadSong(s *Song) (retSong Song, err error) {
 	}
 	if dlSong.Hash != retSong.Hash {
 		err = fmt.Errorf("download failed, hash mismatch")
+		os.RemoveAll(dlPath)
 		return
 	}
 	retSong = retSong.Merge(&dlSong)
