@@ -56,7 +56,7 @@ func readInstalledSongs(path string) (p Playlist, err error) {
 		if err != nil {
 			return err
 		}
-		if info.Name() == "info.dat" {
+		if strings.ToLower(info.Name()) == "info.dat" {
 			s, makeErr := MakeSong(subpath)
 			if makeErr != nil {
 				fmt.Printf("Cannot create song: %v\n", makeErr)

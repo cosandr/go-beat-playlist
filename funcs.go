@@ -5,9 +5,13 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
+	"path"
+	"path/filepath"
 	"regexp"
 	"runtime"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
 
 // MakePlaylist returns a Playlist from a json file path
@@ -38,19 +42,20 @@ func MakePlaylist(path string) (p Playlist, err error) {
 		})
 	}
 	p = Playlist{
-		Title: j.Title,
+		Title:  j.Title,
 		Author: j.Author,
-		Image: j.Image,
-		File: path,
-		Songs: songs,
+		Image:  j.Image,
+		File:   path,
+		Songs:  songs,
 	}
 	return
 }
 
 // MakeSong returns a Song from a info.dat file path
-func MakeSong(path string) (s Song, err error) {
+func MakeSong(infoPath string) (s Song, err error) {
 	var j InfoJSON
-	file, err := ioutil.ReadFile(path)
+	log.Debugf("MakeSong: read %s", infoPath)
+	file, err := ioutil.ReadFile(infoPath)
 	if err != nil {
 		return
 	}
@@ -68,12 +73,13 @@ func MakeSong(path string) (s Song, err error) {
 		}
 	}
 	s = Song{
-		Path: strings.TrimSuffix(path, "info.dat"),
-		Name: j.SongName,
+		Path:   path.Dir(strings.ReplaceAll(infoPath, "\\", "/")),
+		Name:   j.SongName,
 		Author: j.SongAuthor,
 		Mapper: j.Mapper,
-		Maps: maps,
+		Maps:   maps,
 	}
+	log.Debugf("MakeSong: output\n%s", s.Debug())
 	err = s.CalcHash()
 	return
 }
@@ -111,4 +117,19 @@ func DirExists(path string) bool {
 		return false
 	}
 	return info.IsDir()
+}
+
+// FindInfo returns the path to info.dat, case insensitive search
+func FindInfo(basePath string) (string, error) {
+	var infoPath string
+	err := filepath.Walk(basePath, func(subpath string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		if strings.ToLower(info.Name()) == "info.dat" {
+			infoPath = subpath
+		}
+		return nil
+	})
+	return infoPath, err
 }

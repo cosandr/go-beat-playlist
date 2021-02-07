@@ -11,6 +11,8 @@ import (
 	"regexp"
 	"sort"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
 
 // Matches all invalid NTFS characters
@@ -235,15 +237,20 @@ func (s *Song) Merge(os *Song) Song {
 // song.Hash must end with a trailing slash
 func (s *Song) CalcHash() (err error) {
 	// sha1 hash of (info.dat contents + contents of diff.dat files in order listed in info.dat)
-	var files = []string{s.Path + "info.dat"}
+	infoPath, err := FindInfo(s.Path)
+	if err != nil {
+		log.Debugf("base: %s, info: %s, err: %v", s.Path, infoPath, err)
+		return
+	}
+	var files = []string{infoPath}
 	for _, bm := range s.Maps {
-		files = append(files, s.Path+bm.File)
+		files = append(files, s.Path+"/"+bm.File)
 	}
 	var buf bytes.Buffer
 	for _, f := range files {
 		file, errF := ioutil.ReadFile(f)
 		if errF != nil {
-			err = fmt.Errorf("%s hash failed: %v", s.Name, err)
+			err = fmt.Errorf("%s hash failed: %v", s.Name, errF)
 			return
 		}
 		buf.Write(file)

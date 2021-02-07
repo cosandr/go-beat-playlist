@@ -41,7 +41,7 @@ func httpGet(url string) (resp *http.Response, err error) {
 // DownloadSong tries to download a song from BeatSaver using its hash or key, returns a DownloadSong
 //
 // Function merges downloaded metadata with argument, downloaded song is saved to `path`
-func DownloadSong(path string, s *Song) (retSong Song, err error) {
+func DownloadSong(s *Song) (retSong Song, err error) {
 	// Working Song
 	var dlSong Song
 	if len(s.URL) == 0 {
@@ -54,20 +54,25 @@ func DownloadSong(path string, s *Song) (retSong Song, err error) {
 	} else {
 		dlSong = *s
 	}
-	if !DirExists(path) {
+	dlPath := fmt.Sprintf("%s/%s", conf.Songs, dlSong.DirName())
+	if !DirExists(dlPath) {
 		songBytes, errB := DownloadSongBytes(dlSong.URL)
 		if errB != nil {
 			err = errB
 			return
 		}
-		errB = ExtractZIP(path, &songBytes)
+		errB = ExtractZIP(dlPath, &songBytes)
 		if errB != nil {
 			err = errB
 			return
 		}
 	}
 	// Load downloaded song
-	retSong, err = MakeSong(path + "/info.dat")
+	infoPath, err := FindInfo(dlPath)
+	if err != nil {
+		return
+	}
+	retSong, err = MakeSong(infoPath)
 	if err != nil {
 		return
 	}

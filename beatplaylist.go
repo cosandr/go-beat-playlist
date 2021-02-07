@@ -6,7 +6,8 @@ import (
 	"io/ioutil"
 	"os"
 	"regexp"
-	"time"
+
+	log "github.com/sirupsen/logrus"
 )
 
 const configPath = "./config.json"
@@ -23,7 +24,6 @@ func init() {
 		panic(err)
 	}
 	conf = c
-	loadAll()
 }
 
 func loadAll() {
@@ -335,8 +335,7 @@ func missingFromPlaylists() {
 				fmt.Printf("--> Downloading missing from %s\n", name)
 				for _, s := range p.Songs {
 					fmt.Printf(" --> Downloading %s\n", s.String())
-					path := fmt.Sprintf("%s/%s", conf.Songs, s.DirName())
-					_, err := DownloadSong(path, &s)
+					_, err := DownloadSong(&s)
 					if err != nil {
 						fmt.Printf("  -> Failed: %v\n", err)
 						continue
@@ -373,19 +372,15 @@ func getMissingFromPlaylists() map[string]Playlist {
 }
 
 func main() {
-	var timing bool
-	var startTimes = make(map[string]time.Time)
-	var endTimes = make(map[string]time.Time)
+	var debug bool
 
 	// Parse arguments
-	flag.BoolVar(&timing, "timing", false, "Enable timing")
+	flag.BoolVar(&debug, "debug", false, "Debug logging")
 	flag.Parse()
-
-	mainMenu()
-
-	if timing {
-		for k, v := range endTimes {
-			fmt.Printf("%s in: %s\n", k, (v.Sub(startTimes[k]).String()))
-		}
+	if debug {
+		log.SetLevel(log.DebugLevel)
 	}
+
+	loadAll()
+	mainMenu()
 }

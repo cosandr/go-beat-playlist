@@ -2,7 +2,6 @@ package main
 
 import "testing"
 
-
 func TestDownloadSongInfo(t *testing.T) {
 	s := Song{Hash: "9bf202f68c333421c69ca6aa15c648d65d4a1e0f", Name: "Night Raid"}
 	out, err := DownloadSongInfo(&s)
@@ -13,10 +12,9 @@ func TestDownloadSongInfo(t *testing.T) {
 	}
 }
 
-
 func TestDownloadSong(t *testing.T) {
 	s := Song{Hash: "9bf202f68c333421c69ca6aa15c648d65d4a1e0f", Name: "Night Raid"}
-	out, err := DownloadSong("test-nightraid", &s)
+	out, err := DownloadSong(&s)
 	if err != nil {
 		t.Errorf("Song download failed: %v", err)
 	} else {
