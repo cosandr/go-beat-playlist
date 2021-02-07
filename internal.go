@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"bytes"
 	"crypto/sha1"
 	"encoding/json"
@@ -356,9 +357,31 @@ func NewConfig(path string) (c Config, err error) {
 		c.Base = NewPath(jc.Game)
 	}
 	// Check for valid game path
-	if !DirExists(c.Base) {
-		err = fmt.Errorf("game not found at %s", c.Base)
-		return
+	for {
+		if !FileExists(c.Base + "/Beat Saber.exe") {
+			fmt.Printf("game not found at %s, enter game path: ", c.Base)
+			scanner := bufio.NewScanner(os.Stdin)
+			for scanner.Scan() {
+				c.Base = scanner.Text()
+				break
+			}
+		} else {
+			break
+		}
+	}
+	// Write to config
+	if jc.Game != c.Base {
+		jc.Game = c.Base
+		file, errJ := json.MarshalIndent(&jc, "", " ")
+		if errJ != nil {
+			fmt.Printf("cannot marshal config file: %v", errJ)
+		} else {
+			if errJ = ioutil.WriteFile(path, file, 0644); errJ != nil {
+				fmt.Printf("cannot marshal config file: %v", errJ)
+			} else {
+				fmt.Printf("updated config file %s\n", path)
+			}
+		}
 	}
 	mkdirMap := map[string]string{
 		"Playlists":     c.Base + "/Playlists",
