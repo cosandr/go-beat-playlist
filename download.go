@@ -184,15 +184,27 @@ func DownloadStarsPlaylist(num int) (p Playlist, err error) {
 	return
 }
 
-// DownloadPPPlaylist returns a Playlist of top `num` songs sorted by PP
-func DownloadPPPlaylist(num int) (p Playlist, err error) {
-	resp, err := httpGet(beatStarRanked)
+// DownloadScrapedData downloads scraped data for all or ranked songs
+func DownloadScrapedData(ranked bool) (p Playlist, err error) {
+	var url string
+	if ranked {
+		url = beatStarRanked
+	} else {
+		url = beatStarAll
+	}
+	resp, err := httpGet(url)
 	if err != nil {
 		return
 	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
 	p, err = MakeSongBrowserPlaylist(&body)
+	return
+}
+
+// DownloadPPPlaylist returns a Playlist of top `num` songs sorted by PP
+func DownloadPPPlaylist(num int) (p Playlist, err error) {
+	p, err = DownloadScrapedData(true)
 	if err != nil {
 		return
 	}

@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"regexp"
+	"strings"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -51,6 +52,7 @@ func mainMenu() {
 4: Songs missing from playlists
 5: Create playlist sorted by ScoreSaber star difficulty
 6: Create playlist sorted by PP using Song Browser data
+7: Check local song hashes
 0: Exit`
 	for {
 		fmt.Printf("%s\n", helpText)
@@ -79,10 +81,79 @@ func mainMenu() {
 			loadAll()
 		case 6:
 			songsFromSongBrowser()
+		case 7:
+			// Check hashes
+			checkLocalSongs()
 			// Reload
 			loadAll()
 		default:
 			fmt.Println("Invalid option")
+		}
+	}
+}
+
+func checkLocalSongs() {
+	var ok int
+	var fail []Song
+	var mismatch []Song
+	allSongs, err := DownloadScrapedData(false)
+	if err != nil {
+		fmt.Printf("Cannot download scraped data: %v", err)
+		return
+	}
+	isOK := func(other Song) rune {
+		// Look for hash
+		for _, s := range allSongs.Songs {
+			if s.Hash == other.Hash {
+				return 'o'
+			}
+		}
+		// Check for name matches
+		for _, s := range allSongs.Songs {
+			// Using Contains because scraped data has an extra ' - ' at the end
+			if strings.Contains(other.Name, s.Name) {
+				log.Debugf("%s name match with %s\n", s.Name, other.Name)
+				// Only if the author matches as well
+				if s.Mapper == s.Mapper || s.Mapper == s.Author {
+					// Maybe try to download song info from ScoreSaber as well?
+					// Scraped data might be out of date
+					return 'm'
+				}
+			}
+		}
+		return 'f'
+	}
+	for _, s := range installedSongs.Songs {
+		switch isOK(s) {
+		case 'o':
+			ok++
+		case 'm':
+			mismatch = append(mismatch, s)
+			fmt.Printf("-> Mismatch: %s\n", s.String())
+		case 'f':
+			fail = append(fail, s)
+			fmt.Printf("-> Cannot find: %s\n", s.String())
+		}
+	}
+	var helpText = `## %d OK, %d mismatched, %d failed ##
+
+1: Delete mismatches and failed
+0: Back to main menu`
+	fmt.Printf(helpText, ok, len(mismatch), len(fail))
+	fmt.Println()
+	fmt.Print("Select option: ")
+	in := GetInputNumber()
+	switch in {
+	case 0:
+		return
+	case 1:
+		if len(mismatch) > 0 {
+			move := GetConfirm("Move mismatches to DeletedSongs instead of deleting? (Y/n) ")
+			deleteSongsFromPlaylist(Playlist{Songs: mismatch}, move)
+		}
+		if len(fail) > 0 {
+			move := GetConfirm("Move failed songs to DeletedSongs instead of deleting? (Y/n) ")
+			deleteSongsFromPlaylist(Playlist{Songs: fail}, move)
 		}
 	}
 }
@@ -191,6 +262,26 @@ func songsFromScoreSaber() {
 	}
 }
 
+func deleteSongsFromPlaylist(p Playlist, move bool) {
+	for _, s := range p.Songs {
+		if !move {
+			err := os.RemoveAll(s.Path)
+			if err != nil {
+				fmt.Printf("Cannot delete %s: %v\n", s.String(), err)
+				continue
+			}
+			fmt.Printf("Deleted %s\n", s.String())
+		} else {
+			err := os.Rename(s.Path, fmt.Sprintf("%s/%s", conf.DeletedSongs, s.DirName()))
+			if err != nil {
+				fmt.Printf("Cannot move %s: %v\n", s.String(), err)
+				continue
+			}
+			fmt.Printf("Moved %s\n", s.String())
+		}
+	}
+}
+
 // songsWithoutPlaylists provides the UX for handling songs without playlists
 func songsWithoutPlaylists() {
 	var helpText = `## %d songs without playlists ##
@@ -242,23 +333,7 @@ func songsWithoutPlaylists() {
 			return
 		case 3:
 			move := GetConfirm("Move to DeletedSongs instead of deleting? (Y/n) ")
-			for _, s := range orphansPlaylist.Songs {
-				if !move {
-					err := os.RemoveAll(s.Path)
-					if err != nil {
-						fmt.Printf("Cannot delete %s: %v\n", s.String(), err)
-						continue
-					}
-					fmt.Printf("Deleted %s\n", s.String())
-				} else {
-					err := os.Rename(s.Path, fmt.Sprintf("%s/%s", conf.DeletedSongs, s.DirName()))
-					if err != nil {
-						fmt.Printf("Cannot move %s: %v\n", s.String(), err)
-						continue
-					}
-					fmt.Printf("Moved %s\n", s.String())
-				}
-			}
+			deleteSongsFromPlaylist(orphansPlaylist, move)
 			return
 		default:
 			fmt.Println("Invalid option")
